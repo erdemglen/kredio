@@ -5,6 +5,8 @@ import { useMemo } from "react";
 import { AmountField, OptionField } from "./Fields";
 import { Panel, Stat } from "./Shell";
 import { ShareButton } from "./ShareButton";
+import { PrintButton } from "./PrintButton";
+import { PrintFooter, PrintHeader, PrintParams } from "./PrintSummary";
 import {
   calculateAffordability,
   calculateLoan,
@@ -89,8 +91,29 @@ export function AffordabilityCalculator() {
   const overExtended = result.currentDebtRatio >= state.ratio / 100;
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
-      <div className="min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
+    <div className="print-flow grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
+      <PrintHeader
+        title="Borçlanma Kapasitesi Özeti"
+        subtitle={`${formatTRY(state.income)} aylık net gelir · ${formatPercent(
+          state.ratio,
+          0,
+        )} taksit/gelir tavanı`}
+      />
+      <PrintParams
+        rows={[
+          { label: "Aylık net hane geliri", value: formatTRY(state.income) },
+          { label: "Mevcut borç ödemeleri", value: formatTRY(state.debts) },
+          { label: "Kredi türü", value: LOAN_LABELS[state.type] },
+          { label: "Aylık faiz oranı", value: formatPercent(state.rate, 2) },
+          { label: "Vade", value: formatDuration(state.term) },
+          { label: "Taksit/gelir tavanı", value: formatPercent(state.ratio, 0) },
+          ...(isHousing
+            ? [{ label: "Hazır peşinat", value: formatTRY(state.downPayment) }]
+            : []),
+        ]}
+      />
+
+      <div className="no-print min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
         <Panel title="Gelir ve Borç Durumunuz">
           <div className="space-y-5">
             <AmountField
@@ -225,7 +248,16 @@ export function AffordabilityCalculator() {
           />
         </div>
 
-        <Panel title="Farklı vadelerde ne değişir?" action={<ShareButton />}>
+        <Panel
+          className="print-block"
+          title="Farklı vadelerde ne değişir?"
+          action={
+            <div className="flex gap-2">
+              <ShareButton />
+              <PrintButton fileName="kredio-borclanma-kapasitesi" />
+            </div>
+          }
+        >
           <div className="scroll-thin -mx-4 overflow-x-auto px-4">
             <table className="tabular w-full min-w-[480px] text-right text-sm">
               <thead>
@@ -286,6 +318,7 @@ export function AffordabilityCalculator() {
             daha az maliyet demektir.
           </p>
         </Panel>
+        <PrintFooter />
       </div>
     </div>
   );

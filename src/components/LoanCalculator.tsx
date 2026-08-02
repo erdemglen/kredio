@@ -15,6 +15,8 @@ import {
 import { AmountField, Disclosure, OptionField, ToggleField } from "./Fields";
 import { Panel, Stat } from "./Shell";
 import { ShareButton } from "./ShareButton";
+import { PrintButton } from "./PrintButton";
+import { PrintFooter, PrintHeader, PrintParams } from "./PrintSummary";
 import { MobileSummary, MobileSummarySpacer } from "./MobileSummary";
 import {
   compareWithExtraPayments,
@@ -151,9 +153,8 @@ export function LoanCalculator({
     }));
   }, [active.schedule]);
 
-  const visibleRows = showAllRows
-    ? active.schedule
-    : active.schedule.slice(0, 12);
+  // Ekranda ilk 12 ay görünür; kalanlar .print-row ile yalnızca çıktıda çıkar.
+  const screenRowCount = showAllRows ? active.schedule.length : 12;
 
   // Faiz taksitten büyükse kredi kapanmaz; kullanıcıyı uyaralım.
   const notViable =
@@ -161,8 +162,55 @@ export function LoanCalculator({
     active.schedule.length > 0 &&
     active.schedule[active.schedule.length - 1].balance > 1;
 
+  // Yazdırma çıktısında slider'lar yerine düz bir parametre listesi basılır.
+  const printRows = [
+    { label: "Kredi türü", value: LOAN_LABELS[state.type] },
+    { label: "Kredi tutarı", value: formatTRY(state.principal) },
+    { label: "Aylık faiz oranı", value: formatPercent(state.rate, 2) },
+    { label: "Vade", value: `${state.term} ay (${formatDuration(state.term)})` },
+    {
+      label: "KKDF / BSMV",
+      value: hasTax
+        ? `%${taxes.kkdf * 100} / %${taxes.bsmv * 100}`
+        : "İstisna",
+    },
+    ...(state.monthlyExtra > 0
+      ? [
+          {
+            label: "Her ay ek ödeme",
+            value: formatTRY(state.monthlyExtra),
+          },
+        ]
+      : []),
+    ...(state.lumpAmount > 0
+      ? [
+          {
+            label: "Tek seferlik ara ödeme",
+            value: `${formatTRY(state.lumpAmount)} — ${state.lumpMonth}. ay`,
+          },
+        ]
+      : []),
+    ...(hasExtra
+      ? [
+          {
+            label: "Ara ödeme etkisi",
+            value:
+              state.extraMode === "vade" ? "Vadeyi kısaltır" : "Taksiti düşürür",
+          },
+        ]
+      : []),
+    ...(state.fee
+      ? [
+          {
+            label: "Erken kapama tazminatı",
+            value: formatTRY(active.earlyPaymentFee),
+          },
+        ]
+      : []),
+  ];
+
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
+    <div className="print-flow grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
       <MobileSummary
         label="Aylık Taksit"
         value={formatTRY(active.basePayment)}
@@ -171,8 +219,17 @@ export function LoanCalculator({
         )}`}
       />
 
+      <PrintHeader
+        title={`${LOAN_LABELS[state.type]} Ödeme Özeti`}
+        subtitle={`${formatTRY(state.principal)} · ${formatPercent(
+          state.rate,
+          2,
+        )} aylık faiz · ${state.term} ay vade`}
+      />
+      <PrintParams rows={printRows} />
+
       {/* ---------------- Girdiler ---------------- */}
-      <div className="min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
+      <div className="no-print min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
         <Panel title="Kredi Bilgileri">
           <div className="space-y-5">
             <OptionField
@@ -375,7 +432,12 @@ export function LoanCalculator({
 
         <Panel
           title="Borcunuz nasıl eriyor?"
-          action={<ShareButton text="Kredi hesaplamam" />}
+          action={
+            <div className="flex gap-2">
+              <ShareButton text="Kredi hesaplamam" />
+              <PrintButton fileName="kredio-kredi-ozeti" />
+            </div>
+          }
         >
           <div className="h-72 w-full">
             <ResponsiveContainer width="100%" height="100%">
@@ -455,10 +517,12 @@ export function LoanCalculator({
                 </tr>
               </thead>
               <tbody>
-                {visibleRows.map((row) => (
+                {active.schedule.map((row) => (
                   <tr
                     key={row.month}
-                    className="border-b border-line/60 last:border-0"
+                    className={`border-b border-line/60 last:border-0 ${
+                      row.month > screenRowCount ? "print-row" : ""
+                    }`}
                   >
                     <td className="py-2 text-left">
                       <span className="font-medium">{row.month}</span>
@@ -499,6 +563,8 @@ export function LoanCalculator({
             </button>
           ) : null}
         </Panel>
+
+        <PrintFooter />
 
         <MobileSummarySpacer />
       </div>

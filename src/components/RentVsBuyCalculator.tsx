@@ -19,6 +19,8 @@ import {
 import { AmountField, Disclosure, ToggleField } from "./Fields";
 import { Panel, Stat } from "./Shell";
 import { ShareButton } from "./ShareButton";
+import { PrintButton } from "./PrintButton";
+import { PrintFooter, PrintHeader, PrintParams } from "./PrintSummary";
 import { MobileSummary, MobileSummarySpacer } from "./MobileSummary";
 import { simulateRentVsBuy, yearlySnapshots } from "@/lib/rentVsBuy";
 import {
@@ -155,7 +157,7 @@ export function RentVsBuyCalculator() {
   const firstMonth = result.months[0];
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
+    <div className="print-flow grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
       <MobileSummary
         label={`${state.horizon} yıl sonunda`}
         value={
@@ -167,8 +169,35 @@ export function RentVsBuyCalculator() {
         sub={breakEvenYear ? `Kesişim ${breakEvenYear}. yıl` : "Kesişim yok"}
       />
 
+      <PrintHeader
+        title="Kira mı, Satın Alma mı? Karşılaştırma Özeti"
+        subtitle={`${formatTRY(state.homePrice)} konut · ${formatTRY(
+          state.rent,
+        )} aylık kira · ${state.horizon} yıllık karşılaştırma`}
+      />
+      <PrintParams
+        rows={[
+          { label: "Konut fiyatı", value: formatTRY(state.homePrice) },
+          { label: "Peşinat", value: formatTRY(state.downPayment) },
+          { label: "Kredi tutarı", value: formatTRY(result.loanAmount) },
+          { label: "Aylık faiz oranı", value: formatPercent(state.rate, 2) },
+          { label: "Kredi vadesi", value: formatDuration(state.term) },
+          { label: "Aylık taksit", value: formatTRY(result.monthlyPayment) },
+          { label: "Bugünkü aylık kira", value: formatTRY(state.rent) },
+          { label: "Yıllık kira artışı", value: formatPercent(state.rentIncrease, 0) },
+          { label: "Yıllık konut değer artışı", value: formatPercent(state.appreciation, 0) },
+          { label: "Alternatif yatırım getirisi", value: formatPercent(state.investReturn, 0) },
+          { label: "Alım masrafları", value: formatPercent(state.purchaseCost, 1) },
+          { label: "Satış masrafları", value: formatPercent(state.sellingCost, 1) },
+          { label: "Yıllık emlak vergisi", value: formatPercent(state.propertyTax, 2) },
+          { label: "Yıllık bakım", value: formatPercent(state.maintenance, 1) },
+          { label: "Aylık aidat", value: formatTRY(state.dues) },
+          { label: "Yıllık sigorta", value: formatTRY(state.insurance) },
+        ]}
+      />
+
       {/* ---------------- Girdiler ---------------- */}
-      <div className="min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
+      <div className="no-print min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
         <Panel title="Satın Alma Senaryosu">
           <div className="space-y-5">
             <AmountField
@@ -412,7 +441,12 @@ export function RentVsBuyCalculator() {
 
         <Panel
           title="Satın almanın kira karşısındaki farkı"
-          action={<ShareButton text="Kira mı satın alma mı?" />}
+          action={
+            <div className="flex gap-2">
+              <ShareButton text="Kira mı satın alma mı?" />
+              <PrintButton fileName="kredio-kira-vs-satin-alma" />
+            </div>
+          }
         >
           <div className="h-56 w-full">
             <ResponsiveContainer width="100%" height="100%">
@@ -462,7 +496,7 @@ export function RentVsBuyCalculator() {
           </p>
         </Panel>
 
-        <Panel title="Net varlık karşılaştırması">
+        <Panel className="print-block" title="Net varlık karşılaştırması">
           <div className="h-80 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart
@@ -584,6 +618,8 @@ export function RentVsBuyCalculator() {
           almak öne çıkar. Uzun vadeli yüksek yüzdeler bileşik etkiyle çok büyük
           rakamlar üretir; 5–10 yıllık bir ufukla bakmanızı öneririz.
         </p>
+        <PrintFooter />
+
         <MobileSummarySpacer />
       </div>
     </div>

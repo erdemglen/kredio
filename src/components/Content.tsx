@@ -9,7 +9,7 @@ export function PageHeader({
   description: string;
 }) {
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-8 pb-6">
+    <div className="no-print mx-auto max-w-6xl px-4 pt-8 pb-6">
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h1>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
         {description}
@@ -28,7 +28,7 @@ export function Container({ children }: { children: ReactNode }) {
  */
 export function Article({ children }: { children: ReactNode }) {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12">
+    <div className="no-print mx-auto max-w-3xl px-4 py-12">
       <div className="space-y-6 text-[15px] leading-relaxed text-ink [&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-bold [&_h3]:mt-6 [&_h3]:text-base [&_h3]:font-semibold [&_p]:text-muted [&_li]:text-muted [&_ul]:list-disc [&_ul]:space-y-1.5 [&_ul]:pl-5">
         {children}
       </div>

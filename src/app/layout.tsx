@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { PageShell } from "@/components/Shell";
 import { SITE_URL } from "@/lib/site";
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="tr" className="h-full">
       <body className="min-h-full">
         <PageShell>{children}</PageShell>
+        <Analytics />
       </body>
     </html>
   );

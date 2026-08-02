@@ -91,8 +91,90 @@ input[type="range"]:focus-visible::-webkit-slider-thumb {
   outline-offset: 2px;
 }
 
+/* Yazdırma çıktısına özel bölümler ekranda gizli durur. */
+.print-only {
+  display: none;
+}
+
+/* Ekranda gizli, kâğıtta görünen tablo satırı: amortisman tablosu ekranda
+   ilk 12 ayı gösterirken çıktıda tamamı yer alsın diye. */
+.print-row {
+  display: none;
+}
+
 @media print {
   .no-print {
     display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-row {
+    display: table-row !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 14mm 12mm;
+  }
+
+  html,
+  body {
+    background: #fff;
+    font-size: 10pt;
+  }
+
+  /* Ekran düzeni iki sütun; kâğıtta tek sütun akış istiyoruz. */
+  .print-flow {
+    display: block !important;
+  }
+
+  /* Grafikler ve kartlar sayfa ortasından bölünmesin. */
+  .print-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-break-before {
+    break-before: page;
+    page-break-before: page;
+  }
+
+  /* Uzun tablolarda başlık her sayfada tekrar etsin. */
+  thead {
+    display: table-header-group;
+  }
+  tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Ekranda yatay kaydırılan tablolar kâğıda tam sığsın. */
+  .scroll-thin {
+    overflow: visible !important;
+  }
+  table {
+    min-width: 0 !important;
+    width: 100% !important;
+    font-size: 8pt;
+  }
+
+  /* Yapışkan konumlandırma yazdırmada boş alan bırakır. */
+  .lg\:sticky,
+  [class*="sticky"] {
+    position: static !important;
+  }
+
+  section,
+  .rounded-xl,
+  .rounded-lg {
+    box-shadow: none !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }

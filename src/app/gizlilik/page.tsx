@@ -32,9 +32,12 @@ export default function Page() {
 
         <h2>Çerezler ve ölçümleme</h2>
         <p>
-          Sitede kullanım istatistiklerini anlamak için gizlilik dostu bir
-          ölçümleme aracı kullanılabilir. Bu araç kişisel veri toplamaz,
-          çerezlerle sizi cihazlar arası takip etmez.
+          Hangi sayfaların ne kadar ziyaret edildiğini anlamak için Vercel
+          Analytics kullanıyoruz. Bu araç çerez kullanmaz, sizi cihazlar arası
+          takip etmez ve parmak izi (fingerprinting) çıkarmaz; yalnızca sayfa
+          görüntüleme sayısı, yönlendiren site, ülke ve cihaz türü gibi toplu
+          istatistikler üretir. Hesaplayıcılara girdiğiniz hiçbir değer bu
+          ölçümlemeye dahil edilmez.
         </p>
 
         <h2>Reklamlar</h2>
