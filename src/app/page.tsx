@@ -1,65 +1,113 @@
-import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
+import { LoanCalculator } from "@/components/LoanCalculator";
+import { Article, Container } from "@/components/Content";
+import { JsonLd, SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Kredi Hesaplama — Kredio.co",
+  description:
+    "Kredi taksitinizi, ara ödeme tasarrufunuzu ve kira mı satın alma mı sorusunu saniyeler içinde hesaplayın. Reklam yığını yok, üyelik yok, veri toplama yok.",
+  alternates: { canonical: "/" },
+};
+
+const TOOLS = [
+  {
+    href: "/kredi-hesaplama",
+    title: "Kredi ve Ara Ödeme Hesaplama",
+    description:
+      "Taksitinizi KKDF ve BSMV dahil hesaplayın, ara ödeme yaparsanız vadenin ne kadar kısalacağını görün.",
+  },
+  {
+    href: "/kira-mi-satin-almi",
+    title: "Kira mı, Satın Alma mı?",
+    description:
+      "Kirada kalmakla ev almak arasındaki farkı yıl yıl karşılaştırın, kesişim noktasını bulun.",
+  },
+  {
+    href: "/kredi-cekebilir-miyim",
+    title: "Ne Kadar Kredi Çekebilirim?",
+    description:
+      "Gelirinize ve mevcut borçlarınıza göre güvenli borçlanma limitinizi hesaplayın.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Kredio.co",
+          url: SITE_URL,
+          inLanguage: "tr-TR",
+        }}
+      />
+
+      <div className="border-b border-line bg-surface">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:py-14">
+          <h1 className="max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">
+            Kredi kararlarınızı tahminle değil, rakamla verin.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
+            Taksitinizi hesaplayın, ara ödemenin size ne kazandıracağını görün,
+            kirada kalmakla ev almayı karşılaştırın. Anında sonuç, gizli masraf
+            yok, üyelik yok.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      <Container>
+        <div className="py-8">
+          <LoanCalculator initialType="konut" />
         </div>
-      </main>
-    </div>
+
+        <section className="grid gap-4 sm:grid-cols-3">
+          {TOOLS.map((tool) => (
+            <Link
+              key={tool.href}
+              href={tool.href}
+              className="group rounded-xl border border-line bg-surface p-5 transition hover:border-accent hover:shadow-sm"
+            >
+              <h2 className="font-semibold group-hover:text-accent">
+                {tool.title}
+              </h2>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">
+                {tool.description}
+              </p>
+            </Link>
+          ))}
+        </section>
+      </Container>
+
+      <Article>
+        <h2>Neden Kredio.co?</h2>
+        <p>
+          Kredi hesaplama araçlarının çoğu ya sizi form doldurmaya zorlar ya da
+          asıl amacı bilgilerinizi bankalara satmaktır. Kredio.co&apos;da
+          &quot;Hesapla&quot; butonu bile yok: bir değeri değiştirdiğiniz anda
+          tablolar ve grafikler yeniden çizilir. Hiçbir kişisel bilgi
+          istemiyoruz, hiçbir veri sunucuya gönderilmiyor — tüm hesaplamalar
+          kendi tarayıcınızda yapılıyor.
+        </p>
+
+        <h2>Türkiye&apos;ye özel doğru matematik</h2>
+        <p>
+          İhtiyaç ve taşıt kredilerinde faiz üzerinden alınan %15 KKDF ve %10
+          BSMV, konut kredisinin bu vergilerden istisna olması, erken ödeme
+          tazminatının yasal tavanı — hepsi hesaba dahil. İlan edilen faiz
+          oranıyla gerçekte ödeyeceğiniz tutar arasındaki farkı net olarak
+          görürsünüz.
+        </p>
+
+        <h2>Sonucunuzu paylaşabilirsiniz</h2>
+        <p>
+          Yaptığınız her hesaplama adres çubuğuna işlenir. Bağlantıyı
+          kopyalayıp eşinize veya arkadaşınıza gönderdiğinizde, onlar da tam
+          olarak sizin gördüğünüz senaryoyu açar.
+        </p>
+      </Article>
+    </>
   );
 }
