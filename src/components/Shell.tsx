@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { href: "/kredi-hesaplama", label: "Kredi Hesaplama" },
   { href: "/kira-mi-satin-almi", label: "Kira mı, Satın Alma mı?" },
   { href: "/kredi-cekebilir-miyim", label: "Ne Kadar Kredi Çekebilirim?" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export function SiteHeader() {

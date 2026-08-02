@@ -107,13 +107,18 @@ const RANGES: Record<LoanType, { maxAmount: number; maxTerm: number; presets: nu
   },
 };
 
+/** Açılış sayfalarının senaryoyu önceden doldurabilmesi için. */
+export type LoanPreset = Partial<State>;
+
 export function LoanCalculator({
   initialType = "konut",
+  preset,
 }: {
   initialType?: LoanType;
+  preset?: LoanPreset;
 }) {
   const { state, update } = useUrlState<State>(
-    { ...DEFAULTS, type: initialType },
+    { ...DEFAULTS, type: initialType, ...preset },
     encode,
     decode,
   );

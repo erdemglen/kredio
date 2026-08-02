@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     url: SITE_URL,
   },
   robots: { index: true, follow: true },
+  // Search Console doğrulama kodu Vercel'de NEXT_PUBLIC_GSC_VERIFICATION
+  // ortam değişkeni olarak tanımlanır; yoksa etiket hiç basılmaz.
+  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({

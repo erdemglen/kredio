@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { LoanCalculator } from "@/components/LoanCalculator";
 import { Article, Container } from "@/components/Content";
 import { JsonLd, SITE_URL } from "@/lib/site";
+import { SORTED_POSTS } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Kredi Hesaplama — Kredio.co",
@@ -78,6 +79,30 @@ export default function Home() {
               </p>
             </Link>
           ))}
+        </section>
+        <section className="mt-10">
+          <div className="flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Rehberden son yazılar</h2>
+            <Link href="/blog" className="text-sm text-accent hover:underline">
+              Tümünü gör →
+            </Link>
+          </div>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {SORTED_POSTS.slice(0, 3).map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group rounded-lg border border-line bg-surface p-4 transition hover:border-accent"
+              >
+                <span className="text-xs font-medium text-accent">
+                  {post.category}
+                </span>
+                <h3 className="mt-1 text-sm font-semibold leading-snug group-hover:text-accent">
+                  {post.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
         </section>
       </Container>
 
