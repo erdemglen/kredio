@@ -133,19 +133,40 @@ export function RentVsBuyCalculator() {
     [state],
   );
 
-  const chartData = useMemo(
-    () =>
-      yearlySnapshots(result.months).map((m) => ({
-        name: `${m.year}. yıl`,
-        year: m.year,
-        "Satın Alan": Math.round(m.buyNetWorth),
-        "Kirada Kalan": Math.round(m.rentNetWorth),
-        // İki eğri birbirine çok yakın seyrettiği için farkı ayrıca çiziyoruz;
-        // asıl okunabilir sinyal bu.
-        Fark: Math.round(m.difference),
-      })),
-    [result.months],
-  );
+  const chartData = useMemo(() => {
+    const points = yearlySnapshots(result.months).map((m) => ({
+      name: `${m.year}. yıl`,
+      year: m.year,
+      "Satın Alan": Math.round(m.buyNetWorth),
+      "Kirada Kalan": Math.round(m.rentNetWorth),
+      // İki eğri birbirine çok yakın seyrettiği için farkı ayrıca çiziyoruz;
+      // asıl okunabilir sinyal bu.
+      Fark: Math.round(m.difference),
+    }));
+    // Recharts bir çizgiyi çizebilmek için en az iki nokta ister. Karşılaştırma
+    // süresi 1 yıl seçildiğinde tek nokta kalır; "0. yıl" başlangıcını (peşinat
+    // yeni ödenmiş, henüz hiçbir değerleme veya getiri işlememişken) eklemek
+    // çizgiyi her zaman görünür kılar ve satın almanın neden geriden
+    // başladığını da gösterir.
+    const buyStart =
+      state.homePrice * (1 - state.sellingCost / 100) - result.loanAmount;
+    return [
+      {
+        name: "0. yıl",
+        year: 0,
+        "Satın Alan": Math.round(buyStart),
+        "Kirada Kalan": Math.round(result.upfrontCost),
+        Fark: Math.round(buyStart - result.upfrontCost),
+      },
+      ...points,
+    ];
+  }, [
+    result.months,
+    result.loanAmount,
+    result.upfrontCost,
+    state.homePrice,
+    state.sellingCost,
+  ]);
 
   const breakEvenYear = result.breakEvenMonth
     ? Math.ceil(result.breakEvenMonth / 12)

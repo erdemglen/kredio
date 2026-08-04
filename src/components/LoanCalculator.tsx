@@ -151,12 +151,20 @@ export function LoanCalculator({
 
   const chartData = useMemo(() => {
     const years = summarizeByYear(active.schedule);
-    return years.map((y) => ({
+    const points = years.map((y) => ({
       name: `${y.year}. yıl`,
       "Kalan Anapara": Math.round(y.endingBalance),
       "Ödenen Toplam Faiz": Math.round(y.cumulativeInterest),
     }));
-  }, [active.schedule]);
+    // Recharts bir çizgiyi çizebilmek için en az iki nokta ister. Vade 12 ay
+    // veya altı olduğunda (ihtiyaç/taşıt kredilerinde sık görülür) yıllık özet
+    // tek noktaya düşer; başlangıcı da eklemek çizgiyi her zaman görünür kılar
+    // ve ayrıca borcun sıfırdan başladığını doğru biçimde gösterir.
+    return [
+      { name: "Başlangıç", "Kalan Anapara": state.principal, "Ödenen Toplam Faiz": 0 },
+      ...points,
+    ];
+  }, [active.schedule, state.principal]);
 
   // Ekranda ilk 12 ay görünür; kalanlar .print-row ile yalnızca çıktıda çıkar.
   const screenRowCount = showAllRows ? active.schedule.length : 12;
