@@ -15,12 +15,20 @@ function formatDate(iso: string) {
  * Blog yazılarının ortak çerçevesi: başlık, tarih, içerik tipografisi,
  * ilgili yazılar ve Article şeması.
  */
+export interface BlogSource {
+  label: string;
+  url: string;
+}
+
 export function PostLayout({
   post,
   children,
+  sources,
 }: {
   post: BlogPost;
   children: ReactNode;
+  /** Yazıda kullanılan güncel veri/haber kaynakları — E-E-A-T ve şeffaflık için. */
+  sources?: BlogSource[];
 }) {
   const related = relatedPosts(post.slug);
 
@@ -65,6 +73,35 @@ export function PostLayout({
         <div className="mt-8 space-y-5 text-[15px] leading-relaxed [&_a]:text-accent [&_a]:underline [&_h2]:mt-9 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-ink [&_h3]:mt-7 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-ink [&_li]:text-muted [&_ol]:list-decimal [&_ol]:space-y-1.5 [&_ol]:pl-5 [&_p]:text-muted [&_strong]:text-ink [&_ul]:list-disc [&_ul]:space-y-1.5 [&_ul]:pl-5">
           {children}
         </div>
+
+        <p className="mt-8 rounded-lg border border-line bg-surface px-4 py-3 text-xs leading-relaxed text-muted">
+          Bu yazı Kredio Ekibi tarafından, aşağıdaki kaynaklar ve genel
+          hesaplama metodolojimiz esas alınarak hazırlanmıştır. Detaylar için{" "}
+          <Link href="/metodoloji" className="text-accent underline">
+            metodoloji sayfamıza
+          </Link>{" "}
+          bakabilirsiniz.
+        </p>
+
+        {sources && sources.length > 0 ? (
+          <aside className="mt-6 border-t border-line pt-5">
+            <h2 className="text-sm font-semibold">Kaynaklar</h2>
+            <ul className="mt-3 space-y-1.5">
+              {sources.map((s) => (
+                <li key={s.url} className="text-sm">
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-accent underline"
+                  >
+                    {s.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        ) : null}
 
         {related.length > 0 ? (
           <aside className="mt-12 border-t border-line pt-6">

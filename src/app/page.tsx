@@ -31,6 +31,30 @@ const TOOLS = [
     description:
       "Gelirinize ve mevcut borçlarınıza göre güvenli borçlanma limitinizi hesaplayın.",
   },
+  {
+    href: "/tasit-kredisi-hesaplama",
+    title: "Taşıt Kredisi Hesaplama",
+    description:
+      "Taşıt kredisi taksitinizi KKDF ve BSMV dahil hesaplayın, vade seçeneklerini karşılaştırın.",
+  },
+  {
+    href: "/kredi-karti-borc-kapama",
+    title: "Kredi Kartı Borcu Kapama Planlayıcısı",
+    description:
+      "Sabit ödeme ile asgari ödemeyi karşılaştırın, hangisinin kaç ay ve kaç TL faize mal olduğunu görün.",
+  },
+  {
+    href: "/kira-artis-hesaplama",
+    title: "Kira Artış Oranı Hesaplama",
+    description:
+      "Güncel TÜFE oranına göre kiranıza yasal olarak ne kadar zam yapılabileceğini hesaplayın.",
+  },
+  {
+    href: "/faiz-oranlari",
+    title: "Güncel Faiz Oranları",
+    description:
+      "Konut, ihtiyaç ve taşıt kredisi için haftalık güncellenen piyasa faiz referansı.",
+  },
 ];
 
 export default function Home() {

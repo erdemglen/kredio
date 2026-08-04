@@ -7,7 +7,12 @@ const ROUTES = [
   { path: "/kredi-hesaplama", priority: 0.9 },
   { path: "/kira-mi-satin-almi", priority: 0.9 },
   { path: "/kredi-cekebilir-miyim", priority: 0.8 },
+  { path: "/faiz-oranlari", priority: 0.8 },
+  { path: "/tasit-kredisi-hesaplama", priority: 0.7 },
+  { path: "/kredi-karti-borc-kapama", priority: 0.7 },
+  { path: "/kira-artis-hesaplama", priority: 0.7 },
   { path: "/blog", priority: 0.6 },
+  { path: "/metodoloji", priority: 0.3 },
   { path: "/gizlilik", priority: 0.2 },
 ];
 

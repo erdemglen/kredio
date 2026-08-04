@@ -5,9 +5,24 @@ import { getPost, postMetadata } from "@/lib/blog";
 const SLUG = "konut-kredisinde-kredi-tutari-nasil-belirleniyor";
 export const metadata: Metadata = postMetadata(SLUG);
 
+const SOURCES = [
+  {
+    label: "BDDK'nın konut kredisi kararı: İlk izlenimler — Ekonomi Gazetesi",
+    url: "https://www.ekonomigazetesi.com/kose-yazisi/bddknin-konut-kredisi-karari-ilk-izlenimler-72271",
+  },
+  {
+    label: "Kredi kartı limiti ve konut kredisi kullanım miktarı 2026 — Bigpara",
+    url: "https://bigpara.hurriyet.com.tr/ekonomi-haberleri/galeri-kredi-karti-limiti-en-az-ne-kadar-dustu-mu-ne-zaman-dusecek_ID1624441/",
+  },
+  {
+    label: "BDDK Mevzuat — Konut Kredilerinde ilgili karar metni",
+    url: "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1327",
+  },
+];
+
 export default function Page() {
   return (
-    <PostLayout post={getPost(SLUG)}>
+    <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
         Konut kredisi çekerken &quot;ne kadar kredi alabilirim&quot; sorusunun
         cevabı 2026 başına kadar büyük ölçüde evin birinci el mi ikinci el mi

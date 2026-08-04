@@ -5,9 +5,24 @@ import { getPost, postMetadata } from "@/lib/blog";
 const SLUG = "tcmb-faizi-sabit-konut-kredisi-neden-dusuk";
 export const metadata: Metadata = postMetadata(SLUG);
 
+const SOURCES = [
+  {
+    label: "Konut Kredisi Faiz Oranları — Hesapkurdu.com",
+    url: "https://www.hesapkurdu.com/konut-kredisi",
+  },
+  {
+    label: "TCMB Temmuz 2026 faiz kararı — Bigpara",
+    url: "https://bigpara.hurriyet.com.tr/ekonomi-haberleri/galeri-tc-merkez-bankasi-faiz-karari-ne-zaman-saat-kacta-aciklanacak_ID102214502/",
+  },
+  {
+    label: "TCMB Ağustos 2026 PPK takvimi — Yatirimx.com.tr",
+    url: "https://www.yatirimx.com.tr/ekonomi/tcmb-agustos-2026-faiz-karari-ne-zaman-iste-merkez-bankasi-ppk-takvimi/22561",
+  },
+];
+
 export default function Page() {
   return (
-    <PostLayout post={getPost(SLUG)}>
+    <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
         TCMB&apos;nin politika faizi %37 seviyesindeyken bazı bankaların konut
         kredisini %2,84 aylık faizle sunduğunu görünce şaşırmış olabilirsiniz.

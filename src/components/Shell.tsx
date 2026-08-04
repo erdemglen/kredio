@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { href: "/kredi-hesaplama", label: "Kredi Hesaplama" },
   { href: "/kira-mi-satin-almi", label: "Kira mı, Satın Alma mı?" },
   { href: "/kredi-cekebilir-miyim", label: "Ne Kadar Kredi Çekebilirim?" },
+  { href: "/faiz-oranlari", label: "Güncel Faiz Oranları" },
   { href: "/blog", label: "Blog" },
 ];
 
@@ -43,6 +44,9 @@ export function SiteFooter() {
           ))}
           <Link href="/gizlilik" className="hover:text-accent">
             Gizlilik ve KVKK
+          </Link>
+          <Link href="/metodoloji" className="hover:text-accent">
+            Metodoloji ve Kaynaklar
           </Link>
         </div>
         <p className="max-w-3xl text-xs leading-relaxed">
