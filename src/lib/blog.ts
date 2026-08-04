@@ -20,6 +20,24 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "konut-kredisinde-kredi-tutari-nasil-belirleniyor",
+    title: "Konut kredisinde kredi tutarı nasıl belirleniyor? BDDK'nın yeni kuralı",
+    description:
+      "BDDK'nın Ocak 2026'da yürürlüğe koyduğu düzenlemeyle konut kredisi tutarı artık evin yeni ya da ikinci el olmasına değil bedeline, enerji sınıfına ve yapım yılına göre belirleniyor.",
+    date: "2026-08-04",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
+    slug: "tcmb-faizi-sabit-konut-kredisi-neden-dusuk",
+    title: "TCMB faizi %37'de sabit, konut kredisi faizi neden hâlâ %3'ün altında?",
+    description:
+      "Merkez Bankası politika faizini 23 Temmuz'da %37'de sabit tuttu ama konut kredisi faizleri %2,84-3,66 bandında seyrediyor. Aradaki makasın nedeni ve 10 Eylül'deki toplantıda izlenmesi gerekenler.",
+    date: "2026-08-04",
+    readingMinutes: 5,
+    category: "Kredi",
+  },
+  {
     slug: "ara-odeme-vadeyi-ne-kadar-dusurur",
     title: "Ara ödeme kredi vadesini ne kadar düşürür?",
     description:
