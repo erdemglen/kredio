@@ -143,7 +143,7 @@ export function ToolCallout({
       <p className="mt-1 text-sm leading-relaxed text-muted">{description}</p>
       <Link
         href={href}
-        className="mt-2.5 inline-block rounded-md bg-accent px-3 py-1.5 text-sm font-medium text-white transition hover:opacity-90"
+        className="mt-2.5 inline-block rounded-md bg-accent px-3 py-1.5 text-sm font-medium !text-white !no-underline transition hover:opacity-90"
       >
         {cta} →
       </Link>
