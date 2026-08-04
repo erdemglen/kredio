@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const TOOLS = [
+const MAIN_TOOLS = [
   {
     href: "/kredi-hesaplama",
     title: "Kredi ve Ara Ödeme Hesaplama",
@@ -31,35 +31,33 @@ const TOOLS = [
     description:
       "Gelirinize ve mevcut borçlarınıza göre güvenli borçlanma limitinizi hesaplayın.",
   },
+];
+
+const MORE_TOOLS = [
   {
     href: "/tasit-kredisi-hesaplama",
     title: "Taşıt Kredisi Hesaplama",
-    description:
-      "Taşıt kredisi taksitinizi KKDF ve BSMV dahil hesaplayın, vade seçeneklerini karşılaştırın.",
+    description: "Taşıt kredisi taksitinizi vergi dahil hesaplayın.",
   },
   {
     href: "/kredi-karti-borc-kapama",
-    title: "Kredi Kartı Borcu Kapama Planlayıcısı",
-    description:
-      "Sabit ödeme ile asgari ödemeyi karşılaştırın, hangisinin kaç ay ve kaç TL faize mal olduğunu görün.",
+    title: "Kredi Kartı Borcu Kapama",
+    description: "Sabit ödeme ile asgari ödemeyi karşılaştırın.",
   },
   {
     href: "/kira-artis-hesaplama",
     title: "Kira Artış Oranı Hesaplama",
-    description:
-      "Güncel TÜFE oranına göre kiranıza yasal olarak ne kadar zam yapılabileceğini hesaplayın.",
+    description: "TÜFE'ye göre yasal kira zammınızı hesaplayın.",
   },
   {
     href: "/birikim-hedefi-hesaplama",
-    title: "Emeklilik ve Birikim Hedefi Hesaplama",
-    description:
-      "Aylık düzenli katkınızla bir hedefe ne zaman ulaşacağınızı veya hedefe ulaşmak için ne kadar ayırmanız gerektiğini hesaplayın.",
+    title: "Emeklilik ve Birikim Hedefi",
+    description: "Bir hedefe ne zaman ulaşacağınızı görün.",
   },
   {
     href: "/faiz-oranlari",
     title: "Güncel Faiz Oranları",
-    description:
-      "Konut, ihtiyaç ve taşıt kredisi için haftalık güncellenen piyasa faiz referansı.",
+    description: "Haftalık güncellenen piyasa faiz referansı.",
   },
 ];
 
@@ -95,7 +93,7 @@ export default function Home() {
         </div>
 
         <section className="grid gap-4 sm:grid-cols-3">
-          {TOOLS.map((tool) => (
+          {MAIN_TOOLS.map((tool) => (
             <Link
               key={tool.href}
               href={tool.href}
@@ -110,6 +108,29 @@ export default function Home() {
             </Link>
           ))}
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-muted">
+            Diğer Hesaplayıcılar
+          </h2>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {MORE_TOOLS.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group rounded-lg border border-line bg-surface p-3.5 transition hover:border-accent hover:shadow-sm"
+              >
+                <h3 className="text-sm font-semibold group-hover:text-accent">
+                  {tool.title}
+                </h3>
+                <p className="mt-1 text-xs leading-relaxed text-muted">
+                  {tool.description}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section className="mt-10">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold">Rehberden son yazılar</h2>
