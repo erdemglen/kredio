@@ -132,6 +132,12 @@ export default function Page() {
         </a>{" "}
         yazımızda bulabilirsiniz.
       </p>
+
+      <ToolCallout
+        href="/birikim-hedefi-hesaplama"
+        title="Parayı yatırımda tutarsanız ne olur?"
+        description="Aylık getiri varsayımınızı girip, o parayı krediyi kapatmak yerine biriktirseydiniz kaç yıl sonra ne kadar birikime ulaşacağınızı görün."
+      />
     </PostLayout>
   );
 }

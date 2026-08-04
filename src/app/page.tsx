@@ -50,6 +50,12 @@ const TOOLS = [
       "Güncel TÜFE oranına göre kiranıza yasal olarak ne kadar zam yapılabileceğini hesaplayın.",
   },
   {
+    href: "/birikim-hedefi-hesaplama",
+    title: "Emeklilik ve Birikim Hedefi Hesaplama",
+    description:
+      "Aylık düzenli katkınızla bir hedefe ne zaman ulaşacağınızı veya hedefe ulaşmak için ne kadar ayırmanız gerektiğini hesaplayın.",
+  },
+  {
     href: "/faiz-oranlari",
     title: "Güncel Faiz Oranları",
     description:
