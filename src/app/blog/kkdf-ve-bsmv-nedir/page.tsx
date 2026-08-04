@@ -116,7 +116,9 @@ export default function Page() {
         <a href="/blog/kredi-taksiti-nasil-hesaplanir">
           kredi taksiti nasıl hesaplanır
         </a>{" "}
-        yazımızda formülü adım adım açıkladık.
+        yazımızda formülü adım adım açıkladık. Taşıt kredisi düşünüyorsanız{" "}
+        <a href="/tasit-kredisi-hesaplama">taşıt kredisi hesaplayıcımızla</a>{" "}
+        vergiler dahil taksitinizi doğrudan görebilirsiniz.
       </p>
     </PostLayout>
   );

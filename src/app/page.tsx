@@ -4,6 +4,7 @@ import { LoanCalculator } from "@/components/LoanCalculator";
 import { Article, Container } from "@/components/Content";
 import { JsonLd, SITE_URL } from "@/lib/site";
 import { SORTED_POSTS } from "@/lib/blog";
+import { MAIN_TOOLS, MORE_TOOLS } from "@/lib/tools";
 
 export const metadata: Metadata = {
   title: "Kredi Hesaplama — Kredio.co",
@@ -11,55 +12,6 @@ export const metadata: Metadata = {
     "Kredi taksitinizi, ara ödeme tasarrufunuzu ve kira mı satın alma mı sorusunu saniyeler içinde hesaplayın. Reklam yığını yok, üyelik yok, veri toplama yok.",
   alternates: { canonical: "/" },
 };
-
-const MAIN_TOOLS = [
-  {
-    href: "/kredi-hesaplama",
-    title: "Kredi ve Ara Ödeme Hesaplama",
-    description:
-      "Taksitinizi KKDF ve BSMV dahil hesaplayın, ara ödeme yaparsanız vadenin ne kadar kısalacağını görün.",
-  },
-  {
-    href: "/kira-mi-satin-almi",
-    title: "Kira mı, Satın Alma mı?",
-    description:
-      "Kirada kalmakla ev almak arasındaki farkı yıl yıl karşılaştırın, kesişim noktasını bulun.",
-  },
-  {
-    href: "/kredi-cekebilir-miyim",
-    title: "Ne Kadar Kredi Çekebilirim?",
-    description:
-      "Gelirinize ve mevcut borçlarınıza göre güvenli borçlanma limitinizi hesaplayın.",
-  },
-];
-
-const MORE_TOOLS = [
-  {
-    href: "/tasit-kredisi-hesaplama",
-    title: "Taşıt Kredisi Hesaplama",
-    description: "Taşıt kredisi taksitinizi vergi dahil hesaplayın.",
-  },
-  {
-    href: "/kredi-karti-borc-kapama",
-    title: "Kredi Kartı Borcu Kapama",
-    description: "Sabit ödeme ile asgari ödemeyi karşılaştırın.",
-  },
-  {
-    href: "/kira-artis-hesaplama",
-    title: "Kira Artış Oranı Hesaplama",
-    description: "TÜFE'ye göre yasal kira zammınızı hesaplayın.",
-  },
-  {
-    href: "/birikim-hedefi-hesaplama",
-    title: "Emeklilik ve Birikim Hedefi",
-    description: "Bir hedefe ne zaman ulaşacağınızı görün.",
-  },
-  {
-    href: "/faiz-oranlari",
-    title: "Güncel Faiz Oranları",
-    description: "Haftalık güncellenen piyasa faiz referansı.",
-  },
-];
 
 export default function Home() {
   return (
@@ -84,6 +36,17 @@ export default function Home() {
             kirada kalmakla ev almayı karşılaştırın. Anında sonuç, gizli masraf
             yok, üyelik yok.
           </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {MORE_TOOLS.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs font-medium text-muted transition hover:border-accent hover:text-accent"
+              >
+                {tool.title}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
 

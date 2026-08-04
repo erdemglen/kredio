@@ -106,9 +106,11 @@ export default function Page() {
       <ul>
         <li>
           <strong>Kira artışı ile piyasa kirası aynı şey değil.</strong> Mevcut
-          sözleşmenizdeki artış yasal sınırlara tabidir, ama taşınmak zorunda
-          kaldığınızda kira bir anda piyasa seviyesine sıçrar. Kirada kalma
-          senaryosunu kurarken bu riski göz ardı etmeyin.
+          sözleşmenizdeki artış yasal sınırlara tabidir (bkz.{" "}
+          <a href="/kira-artis-hesaplama">kira artış oranı hesaplayıcımız</a>
+          ), ama taşınmak zorunda kaldığınızda kira bir anda piyasa
+          seviyesine sıçrar. Kirada kalma senaryosunu kurarken bu riski göz
+          ardı etmeyin.
         </li>
         <li>
           <strong>Son yılların konut değer artışı büyük ölçüde

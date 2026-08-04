@@ -70,6 +70,14 @@ export default function Page() {
         <li>Kredi kartıyla döndürülen ama borç sayılmayan düzenli harcamalar</li>
       </ul>
       <p>
+        Kredi kartı bakiyesini sadece asgari ödemeyle çevirmek, bu hesaba
+        görünmeyen ama en pahalı borçlardan biridir.{" "}
+        <a href="/kredi-karti-borc-kapama">
+          Kredi kartı borcu kapama planlayıcısı
+        </a>{" "}
+        ile bu borcun taksit hesabınızı ne kadar etkilediğini görebilirsiniz.
+      </p>
+      <p>
         Ev sahibi olmak, kira giderinizi ortadan kaldırırken yenilerini ekler.
         &quot;Kira kadar taksit ödüyorum&quot; hesabı, aidat ve bakım kalemleri
         yüzünden neredeyse hiçbir zaman doğru çıkmaz.

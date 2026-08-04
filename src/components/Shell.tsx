@@ -1,13 +1,43 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { ALL_TOOLS } from "@/lib/tools";
 
 export const NAV_LINKS = [
   { href: "/kredi-hesaplama", label: "Kredi Hesaplama" },
   { href: "/kira-mi-satin-almi", label: "Kira mı, Satın Alma mı?" },
   { href: "/kredi-cekebilir-miyim", label: "Ne Kadar Kredi Çekebilirim?" },
-  { href: "/faiz-oranlari", label: "Güncel Faiz Oranları" },
   { href: "/blog", label: "Blog" },
 ];
+
+/** Tüm 8 hesaplayıcıyı listeleyen açılır menü — JS gerektirmez. */
+function ToolsDropdown() {
+  return (
+    <details className="group relative shrink-0">
+      <summary className="flex cursor-pointer list-none items-center gap-1 whitespace-nowrap rounded-md px-2.5 py-1.5 text-sm font-medium text-muted transition hover:bg-accent-soft hover:text-accent [&::-webkit-details-marker]:hidden">
+        Tüm Araçlar
+        <span className="text-xs transition-transform group-open:rotate-180">
+          ▾
+        </span>
+      </summary>
+      <div className="absolute right-0 z-40 mt-2 w-72 rounded-xl border border-line bg-surface p-2 shadow-lg">
+        {ALL_TOOLS.map((tool) => (
+          <Link
+            key={tool.href}
+            href={tool.href}
+            className="block rounded-lg px-3 py-2 transition hover:bg-accent-soft"
+          >
+            <span className="block text-sm font-medium text-ink">
+              {tool.title}
+            </span>
+            <span className="block text-xs text-muted">
+              {tool.description}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </details>
+  );
+}
 
 export function SiteHeader() {
   return (
@@ -27,6 +57,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
+        <ToolsDropdown />
       </div>
     </header>
   );
@@ -37,11 +68,14 @@ export function SiteFooter() {
     <footer className="mt-16 border-t border-line bg-surface no-print">
       <div className="mx-auto max-w-6xl space-y-6 px-4 py-10 text-sm text-muted">
         <div className="flex flex-wrap gap-x-6 gap-y-2">
-          {NAV_LINKS.map((l) => (
-            <Link key={l.href} href={l.href} className="hover:text-accent">
-              {l.label}
+          {ALL_TOOLS.map((tool) => (
+            <Link key={tool.href} href={tool.href} className="hover:text-accent">
+              {tool.title}
             </Link>
           ))}
+          <Link href="/blog" className="hover:text-accent">
+            Blog
+          </Link>
           <Link href="/gizlilik" className="hover:text-accent">
             Gizlilik ve KVKK
           </Link>
