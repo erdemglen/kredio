@@ -36,17 +36,6 @@ export default function Home() {
             kirada kalmakla ev almayı karşılaştırın. Anında sonuç, gizli masraf
             yok, üyelik yok.
           </p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {MORE_TOOLS.map((tool) => (
-              <Link
-                key={tool.href}
-                href={tool.href}
-                className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs font-medium text-muted transition hover:border-accent hover:text-accent"
-              >
-                {tool.title}
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
 
