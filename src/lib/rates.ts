@@ -31,6 +31,16 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi 23 Temmuz'da %37'de sabit tutuldu. Konut kredisi faizleri KKDF/BSMV istisnası ve kamu bankası rekabeti nedeniyle piyasa ortalamasının belirgin altında.",
   },
+  {
+    date: "2026-08-10",
+    policyRate: 37,
+    konut: { min: 2.87, avg: 3.72, source: "Kuveyt Türk (en uygun), Hesapkurdu.com piyasa ortalaması" },
+    ihtiyac: { min: 1.99, avg: 3.72, source: "Kuveyt Türk (en uygun, 100.000 TL), Hesapkurdu.com piyasa ortalaması" },
+    tasit: { min: 3.14, avg: 3.72, source: "Vakıf Katılım (en uygun, 200.000 TL), Hesapkurdu.com piyasa ortalaması" },
+    nextPpkDate: "2026-09-10",
+    note:
+      "TCMB politika faizi %37'de sabit, Ağustos'ta PPK toplantısı yok. Konut kredisinde en uygun teklif Vakıf Katılım'dan Kuveyt Türk'e geçti. Ağustos 2026 kira artış tavanı (TÜFE 12 aylık ortalama) %31,90 olarak açıklandı.",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

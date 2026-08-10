@@ -20,6 +20,24 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "kira-artis-orani-agustos-2026",
+    title: "Ağustos 2026 kira artış oranı %31,90: nasıl hesaplanır?",
+    description:
+      "TÜİK'in açıkladığı TÜFE 12 aylık ortalamaya göre Ağustos 2026'da yenilenen kira sözleşmelerinde uygulanabilecek yasal tavan %31,90 oldu. Hangi oranın esas alındığını ve hesabı anlatıyoruz.",
+    date: "2026-08-10",
+    readingMinutes: 5,
+    category: "Konut",
+  },
+  {
+    slug: "tasit-kredisi-faiz-oranlari-agustos-2026",
+    title: "Taşıt kredisi faiz oranları Ağustos 2026: hangi banka en avantajlı?",
+    description:
+      "Taşıt kredisinde piyasa ortalaması ve en uygun teklifler, KKDF/BSMV'nin taşıt kredisini nasıl pahalılaştırdığı ve taksit hesabında dikkat edilmesi gerekenler.",
+    date: "2026-08-10",
+    readingMinutes: 6,
+    category: "Kredi",
+  },
+  {
     slug: "konut-kredisinde-kredi-tutari-nasil-belirleniyor",
     title: "Konut kredisinde kredi tutarı nasıl belirleniyor? BDDK'nın yeni kuralı",
     description:
