@@ -19,16 +19,20 @@ export function PageHeader({
 }
 
 export function Container({ children }: { children: ReactNode }) {
-  return <div className="mx-auto max-w-6xl px-4 pb-12">{children}</div>;
+  return <div className="mx-auto max-w-6xl px-4 pb-10">{children}</div>;
 }
 
 /**
  * Hesaplayıcının altındaki açıklama içeriği. Hem kullanıcıya yardımcı olur
  * hem de sayfanın "ince içerik" sayılmaması için Google'a metin verir.
+ *
+ * Üstteki boşluk kasıtlı olarak küçük tutulur: bu bileşen neredeyse her
+ * zaman bir <Container> hemen ardından gelir, o da zaten alt boşluk
+ * bırakır — ikisi üst üste binince aradaki boşluk kanyon gibi açılıyordu.
  */
 export function Article({ children }: { children: ReactNode }) {
   return (
-    <div className="no-print mx-auto max-w-3xl px-4 py-12">
+    <div className="no-print mx-auto max-w-3xl px-4 pt-2 pb-12">
       <div className="space-y-6 text-[15px] leading-relaxed text-ink [&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-bold [&_h3]:mt-6 [&_h3]:text-base [&_h3]:font-semibold [&_p]:text-muted [&_li]:text-muted [&_ul]:list-disc [&_ul]:space-y-1.5 [&_ul]:pl-5">
         {children}
       </div>

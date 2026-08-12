@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ALL_TOOLS } from "@/lib/tools";
+import { ALL_TOOLS, MAIN_TOOLS, MORE_TOOLS } from "@/lib/tools";
 
 export const NAV_LINKS = [
   { href: "/kredi-hesaplama", label: "Kredi Hesaplama" },
@@ -9,17 +9,39 @@ export const NAV_LINKS = [
   { href: "/blog", label: "Blog" },
 ];
 
-/** Tüm 8 hesaplayıcıyı listeleyen açılır menü — JS gerektirmez. */
+/**
+ * Açılır menü — JS gerektirmez.
+ *
+ * Mobilde ana navigasyon linkleri sığmadığı için onlar da bu menüye
+ * ekleniyor; masaüstünde linkler zaten üstte durduğundan menü yalnızca
+ * hesaplayıcıları listeler.
+ */
 function ToolsDropdown() {
   return (
     <details className="group relative shrink-0">
       <summary className="flex cursor-pointer list-none items-center gap-1 whitespace-nowrap rounded-md px-2.5 py-1.5 text-sm font-medium text-muted transition hover:bg-accent-soft hover:text-accent [&::-webkit-details-marker]:hidden">
-        Tüm Araçlar
+        <span className="sm:hidden">Menü</span>
+        <span className="hidden sm:inline">Tüm Araçlar</span>
         <span className="text-xs transition-transform group-open:rotate-180">
           ▾
         </span>
       </summary>
-      <div className="absolute right-0 z-40 mt-2 w-72 rounded-xl border border-line bg-surface p-2 shadow-lg">
+      <div className="absolute right-0 z-40 mt-2 max-h-[70vh] w-72 overflow-y-auto rounded-xl border border-line bg-surface p-2 shadow-lg">
+        <div className="sm:hidden">
+          {NAV_LINKS.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="block rounded-lg px-3 py-2 text-sm font-medium text-ink transition hover:bg-accent-soft"
+            >
+              {l.label}
+            </Link>
+          ))}
+          <div className="my-2 border-t border-line" />
+          <p className="px-3 pb-1 text-xs font-medium uppercase tracking-wide text-muted">
+            Tüm Araçlar
+          </p>
+        </div>
         {ALL_TOOLS.map((tool) => (
           <Link
             key={tool.href}
@@ -46,7 +68,8 @@ export function SiteHeader() {
         <Link href="/" className="text-lg font-bold tracking-tight">
           kredio<span className="text-accent">.co</span>
         </Link>
-        <nav className="scroll-thin ml-auto flex gap-1 overflow-x-auto">
+        {/* Mobilde bu linkler menüye taşınır; burada gizlenir. */}
+        <nav className="ml-auto hidden gap-1 sm:flex">
           {NAV_LINKS.map((l) => (
             <Link
               key={l.href}
@@ -57,7 +80,9 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <ToolsDropdown />
+        <div className="ml-auto sm:ml-0">
+          <ToolsDropdown />
+        </div>
       </div>
     </header>
   );
@@ -66,22 +91,58 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="mt-16 border-t border-line bg-surface no-print">
-      <div className="mx-auto max-w-6xl space-y-6 px-4 py-10 text-sm text-muted">
-        <div className="flex flex-wrap gap-x-6 gap-y-2">
-          {ALL_TOOLS.map((tool) => (
-            <Link key={tool.href} href={tool.href} className="hover:text-accent">
-              {tool.title}
-            </Link>
-          ))}
-          <Link href="/blog" className="hover:text-accent">
-            Blog
-          </Link>
-          <Link href="/gizlilik" className="hover:text-accent">
-            Gizlilik ve KVKK
-          </Link>
-          <Link href="/metodoloji" className="hover:text-accent">
-            Metodoloji ve Kaynaklar
-          </Link>
+      <div className="mx-auto max-w-6xl space-y-8 px-4 py-10 text-sm text-muted">
+        <div className="grid gap-8 sm:grid-cols-3">
+          <div>
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-ink">
+              Ana Araçlar
+            </h2>
+            <ul className="mt-2.5 space-y-1.5">
+              {MAIN_TOOLS.map((tool) => (
+                <li key={tool.href}>
+                  <Link href={tool.href} className="hover:text-accent">
+                    {tool.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-ink">
+              Diğer Hesaplayıcılar
+            </h2>
+            <ul className="mt-2.5 space-y-1.5">
+              {MORE_TOOLS.map((tool) => (
+                <li key={tool.href}>
+                  <Link href={tool.href} className="hover:text-accent">
+                    {tool.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-ink">
+              Kredio.co
+            </h2>
+            <ul className="mt-2.5 space-y-1.5">
+              <li>
+                <Link href="/blog" className="hover:text-accent">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/metodoloji" className="hover:text-accent">
+                  Metodoloji ve Kaynaklar
+                </Link>
+              </li>
+              <li>
+                <Link href="/gizlilik" className="hover:text-accent">
+                  Gizlilik ve KVKK
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
         <p className="max-w-3xl text-xs leading-relaxed">
           Kredio.co&apos;daki hesaplamalar yalnızca bilgilendirme amaçlıdır ve

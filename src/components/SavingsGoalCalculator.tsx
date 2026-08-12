@@ -1,15 +1,28 @@
 "use client";
 
 import { useMemo } from "react";
+import {
+  Area,
+  AreaChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 import { AmountField } from "./Fields";
 import { Panel, Stat } from "./Shell";
 import { ShareButton } from "./ShareButton";
+import { PrintButton } from "./PrintButton";
+import { PrintFooter, PrintHeader, PrintParams } from "./PrintSummary";
+import { MobileSummary, MobileSummarySpacer } from "./MobileSummary";
 import {
   projectSavings,
   requiredMonthlyContribution,
 } from "@/lib/savings";
-import { formatTRY } from "@/lib/format";
+import { formatCompact, formatPercent, formatTRY } from "@/lib/format";
 import { num, useUrlState } from "@/lib/useUrlState";
 
 interface State {
@@ -71,9 +84,53 @@ export function SavingsGoalCalculator() {
 
   const onTrack = projection.futureValue >= state.target;
 
+  const chartData = useMemo(
+    () => [
+      {
+        name: "Başlangıç",
+        "Kendi Katkınız": Math.round(state.initial),
+        Getiri: 0,
+      },
+      ...projection.schedule.map((row) => ({
+        name: `${row.year}. yıl`,
+        "Kendi Katkınız": Math.round(row.contributed),
+        Getiri: Math.round(row.growth),
+      })),
+    ],
+    [projection.schedule, state.initial],
+  );
+
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
-      <div className="min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
+    <div className="print-flow grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
+      <MobileSummary
+        label={`${state.years} yıl sonra`}
+        value={formatTRY(projection.futureValue)}
+        tone={onTrack ? "positive" : "accent"}
+        sub={`Katkı ${formatTRY(projection.totalContributed)}`}
+      />
+
+      <PrintHeader
+        title="Birikim Hedefi Özeti"
+        subtitle={`${formatTRY(state.monthly)}/ay · ${formatPercent(
+          state.rate,
+          1,
+        )} yıllık getiri · ${state.years} yıl`}
+      />
+      <PrintParams
+        rows={[
+          { label: "Mevcut birikim", value: formatTRY(state.initial) },
+          { label: "Aylık katkı", value: formatTRY(state.monthly) },
+          {
+            label: "Beklenen yıllık getiri",
+            value: formatPercent(state.rate, 1),
+          },
+          { label: "Süre", value: `${state.years} yıl` },
+          { label: "Hedef", value: formatTRY(state.target) },
+          { label: "Ulaşılan tutar", value: formatTRY(projection.futureValue) },
+        ]}
+      />
+
+      <div className="no-print min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
         <Panel title="Birikim Planınız">
           <div className="space-y-5">
             <AmountField
@@ -186,9 +243,77 @@ export function SavingsGoalCalculator() {
           </div>
         ) : null}
 
+        <Panel className="print-block" title="Katkınız ve getirinin payı">
+          <div className="h-72 w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart
+                data={chartData}
+                margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
+              >
+                <CartesianGrid stroke="#eef0f3" vertical={false} />
+                <XAxis
+                  dataKey="name"
+                  tick={{ fontSize: 11, fill: "#5b6472" }}
+                  tickLine={false}
+                  axisLine={{ stroke: "#e5e7eb" }}
+                  minTickGap={16}
+                />
+                <YAxis
+                  tickFormatter={formatCompact}
+                  tick={{ fontSize: 11, fill: "#5b6472" }}
+                  tickLine={false}
+                  axisLine={false}
+                  width={54}
+                />
+                <Tooltip
+                  formatter={(v) => formatTRY(Number(v))}
+                  contentStyle={{
+                    borderRadius: 8,
+                    border: "1px solid #e5e7eb",
+                    fontSize: 12,
+                  }}
+                />
+                <Legend wrapperStyle={{ fontSize: 12 }} />
+                {/* Yığılmış alan: toplam yükseklik bakiyeyi verir; alt katman
+                    kendi cebinizden çıkan para, üst katman bileşik getiri. */}
+                <Area
+                  type="monotone"
+                  dataKey="Kendi Katkınız"
+                  stackId="1"
+                  stroke="#1d4ed8"
+                  fill="#1d4ed8"
+                  fillOpacity={0.25}
+                  strokeWidth={2}
+                  isAnimationActive={false}
+                />
+                <Area
+                  type="monotone"
+                  dataKey="Getiri"
+                  stackId="1"
+                  stroke="#047857"
+                  fill="#047857"
+                  fillOpacity={0.25}
+                  strokeWidth={2}
+                  isAnimationActive={false}
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
+          <p className="mt-2 text-xs leading-relaxed text-muted">
+            Süre uzadıkça yeşil alanın maviyi geçtiğini görürsünüz — bu,
+            birikiminizin kendi katkınızdan çok getiriyle büyümeye başladığı
+            noktadır.
+          </p>
+        </Panel>
+
         <Panel
           title="Yıl yıl birikim projeksiyonu"
-          action={<ShareButton text="Birikim hedefim" />}
+          action={
+            <div className="flex gap-2">
+              <ShareButton text="Birikim hedefim" />
+              <PrintButton fileName="kredio-birikim-hedefi" />
+            </div>
+          }
         >
           <div className="scroll-thin -mx-4 overflow-x-auto px-4">
             <table className="tabular w-full min-w-[420px] text-right text-sm">
@@ -224,6 +349,10 @@ export function SavingsGoalCalculator() {
             tavsiyesi değildir.
           </p>
         </Panel>
+
+        <PrintFooter />
+
+        <MobileSummarySpacer />
       </div>
     </div>
   );

@@ -1,12 +1,30 @@
 "use client";
 
 import { useMemo } from "react";
+import {
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 import { AmountField, OptionField } from "./Fields";
 import { Panel, Stat } from "./Shell";
 import { ShareButton } from "./ShareButton";
+import { PrintButton } from "./PrintButton";
+import { PrintFooter, PrintHeader, PrintParams } from "./PrintSummary";
+import { MobileSummary, MobileSummarySpacer } from "./MobileSummary";
 import { calculateCreditCardPayoff } from "@/lib/creditCard";
-import { formatDuration, formatPercent, formatTRY } from "@/lib/format";
+import {
+  formatCompact,
+  formatDuration,
+  formatPercent,
+  formatTRY,
+} from "@/lib/format";
 import { num, str, useUrlState } from "@/lib/useUrlState";
 
 const MODES = ["fixed", "minPercent"] as const;
@@ -70,9 +88,86 @@ export function CreditCardPayoffCalculator() {
     [state.balance, state.rate, state.minPercent],
   );
 
+  // İki senaryonun bakiyesini aynı grafikte karşılaştırıyoruz.
+  const chartData = useMemo(() => {
+    if (chosen.neverPaysOff) return [];
+
+    // Yüzdesel asgari ödemede bakiye üstel olarak erir: birkaç ayda dibe
+    // yaklaşır ama teknik kapanışı onlarca ay sürer. Tüm vadeyi çizmek
+    // grafiği okunmaz bir düz kuyruğa çeviriyor; iki senaryonun da
+    // anaparanın %1'inin altına düştüğü ayda kesiyoruz.
+    const threshold = state.balance * 0.01;
+    const meaningfulLength = (rows: { balance: number }[]) => {
+      const i = rows.findIndex((r) => r.balance <= threshold);
+      return i === -1 ? rows.length : i + 1;
+    };
+    const limit = Math.min(
+      Math.max(
+        chosen.schedule.length,
+        minOnly.neverPaysOff ? 0 : meaningfulLength(minOnly.schedule),
+      ),
+      120,
+    );
+
+    const points = [
+      {
+        name: "Başlangıç",
+        "Sizin Planınız": Math.round(state.balance),
+        "Sadece Asgari": Math.round(state.balance),
+      },
+    ];
+    for (let i = 0; i < limit; i++) {
+      points.push({
+        name: `${i + 1}. ay`,
+        "Sizin Planınız": Math.round(chosen.schedule[i]?.balance ?? 0),
+        "Sadece Asgari": Math.round(minOnly.schedule[i]?.balance ?? 0),
+      });
+    }
+    return points;
+  }, [chosen, minOnly, state.balance]);
+
+  const printRows = [
+    { label: "Kart borcu", value: formatTRY(state.balance) },
+    { label: "Aylık akdi faiz", value: formatPercent(state.rate, 2) },
+    {
+      label: "Ödeme şekli",
+      value:
+        state.mode === "fixed"
+          ? `Sabit ${formatTRY(state.fixedPayment)}/ay`
+          : `Bakiyenin ${formatPercent(state.minPercent, 0)}'i`,
+    },
+    { label: "Kapanma süresi", value: formatDuration(chosen.months) },
+    { label: "Toplam ödeme", value: formatTRY(chosen.totalPaid) },
+    { label: "Toplam faiz", value: formatTRY(chosen.totalInterest) },
+  ];
+
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
-      <div className="min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
+    <div className="print-flow grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
+      <MobileSummary
+        label={chosen.neverPaysOff ? "Borç kapanmıyor" : "Borcunuz kapanır"}
+        value={
+          chosen.neverPaysOff
+            ? "Ödeme faizi karşılamıyor"
+            : formatDuration(chosen.months)
+        }
+        tone={chosen.neverPaysOff ? "accent" : "positive"}
+        sub={
+          chosen.neverPaysOff
+            ? undefined
+            : `Toplam faiz ${formatTRY(chosen.totalInterest)}`
+        }
+      />
+
+      <PrintHeader
+        title="Kredi Kartı Borcu Kapama Planı"
+        subtitle={`${formatTRY(state.balance)} borç · ${formatPercent(
+          state.rate,
+          2,
+        )} aylık faiz`}
+      />
+      <PrintParams rows={printRows} />
+
+      <div className="no-print min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
         <Panel title="Borç ve Faiz">
           <div className="space-y-5">
             <AmountField
@@ -172,9 +267,68 @@ export function CreditCardPayoffCalculator() {
           />
         </div>
 
+        {chartData.length > 1 ? (
+          <Panel className="print-block" title="Borcunuz nasıl eriyor?">
+            <div className="h-72 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart
+                  data={chartData}
+                  margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
+                >
+                  <CartesianGrid stroke="#eef0f3" vertical={false} />
+                  <XAxis
+                    dataKey="name"
+                    tick={{ fontSize: 11, fill: "#5b6472" }}
+                    tickLine={false}
+                    axisLine={{ stroke: "#e5e7eb" }}
+                    minTickGap={24}
+                  />
+                  <YAxis
+                    tickFormatter={formatCompact}
+                    tick={{ fontSize: 11, fill: "#5b6472" }}
+                    tickLine={false}
+                    axisLine={false}
+                    width={54}
+                  />
+                  <Tooltip
+                    formatter={(v) => formatTRY(Number(v))}
+                    contentStyle={{
+                      borderRadius: 8,
+                      border: "1px solid #e5e7eb",
+                      fontSize: 12,
+                    }}
+                  />
+                  <Legend wrapperStyle={{ fontSize: 12 }} />
+                  <Line
+                    type="monotone"
+                    dataKey="Sizin Planınız"
+                    stroke="#047857"
+                    strokeWidth={2.5}
+                    dot={false}
+                    isAnimationActive={false}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="Sadece Asgari"
+                    stroke="#b91c1c"
+                    strokeWidth={2.5}
+                    dot={false}
+                    isAnimationActive={false}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </Panel>
+        ) : null}
+
         <Panel
           title="Sadece asgari ödeme yaparsanız ne olur?"
-          action={<ShareButton text="Kredi kartı borç kapama planım" />}
+          action={
+            <div className="flex gap-2">
+              <ShareButton text="Kredi kartı borç kapama planım" />
+              <PrintButton fileName="kredio-kart-borc-plani" />
+            </div>
+          }
         >
           {minOnly.neverPaysOff ? (
             <p className="text-sm leading-relaxed text-negative">
@@ -220,6 +374,10 @@ export function CreditCardPayoffCalculator() {
             esas alır.
           </p>
         </Panel>
+
+        <PrintFooter />
+
+        <MobileSummarySpacer />
       </div>
     </div>
   );

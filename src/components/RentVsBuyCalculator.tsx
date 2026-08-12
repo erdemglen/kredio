@@ -499,7 +499,11 @@ export function RentVsBuyCalculator() {
                   }}
                 />
                 <ReferenceLine y={0} stroke="#9ca3af" />
-                <Bar dataKey="Fark" radius={[3, 3, 0, 0]}>
+                <Bar
+                  dataKey="Fark"
+                  radius={[3, 3, 0, 0]}
+                  isAnimationActive={false}
+                >
                   {chartData.map((d) => (
                     <Cell
                       key={d.year}
@@ -567,6 +571,7 @@ export function RentVsBuyCalculator() {
                   stroke="#047857"
                   strokeWidth={2.5}
                   dot={false}
+                  isAnimationActive={false}
                 />
                 <Line
                   type="monotone"
@@ -574,6 +579,7 @@ export function RentVsBuyCalculator() {
                   stroke="#1d4ed8"
                   strokeWidth={2.5}
                   dot={false}
+                  isAnimationActive={false}
                 />
               </LineChart>
             </ResponsiveContainer>

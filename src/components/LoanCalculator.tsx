@@ -107,6 +107,20 @@ const RANGES: Record<LoanType, { maxAmount: number; maxTerm: number; presets: nu
   },
 };
 
+/**
+ * Her kredi türünün kendi gerçekçi açılış senaryosu.
+ *
+ * Konut varsayılanlarını taşıt/ihtiyaç sayfasına taşımak yanıltıcıydı:
+ * 1.500.000 TL'yi 120 ay vadeyle taşıt kredisi olarak göstermek hem
+ * piyasada olmayan bir vade hem de anaparanın katı büyüklükte bir faiz
+ * tutarı demek.
+ */
+const TYPE_DEFAULTS: Record<LoanType, { principal: number; term: number }> = {
+  konut: { principal: 1_500_000, term: 120 },
+  ihtiyac: { principal: 100_000, term: 36 },
+  tasit: { principal: 600_000, term: 36 },
+};
+
 /** Açılış sayfalarının senaryoyu önceden doldurabilmesi için. */
 export type LoanPreset = Partial<State>;
 
@@ -117,8 +131,13 @@ export function LoanCalculator({
   initialType?: LoanType;
   preset?: LoanPreset;
 }) {
-  const { state, update } = useUrlState<State>(
-    { ...DEFAULTS, type: initialType, ...preset },
+  const { state, setState, update } = useUrlState<State>(
+    {
+      ...DEFAULTS,
+      type: initialType,
+      ...TYPE_DEFAULTS[initialType],
+      ...preset,
+    },
     encode,
     decode,
   );
@@ -249,11 +268,18 @@ export function LoanCalculator({
               label="Kredi Türü"
               value={state.type}
               onChange={(v) => {
-                update("type", v);
+                // Tür değişince tutar/vade yeni türün sınırları dışında
+                // kalabilir (ör. konuttan taşıta geçerken 120 ay vade).
+                // Aşan değerleri o türün gerçekçi varsayılanına çekiyoruz.
                 const r = RANGES[v];
-                if (state.principal > r.maxAmount)
-                  update("principal", r.presets[1]);
-                if (state.term > r.maxTerm) update("term", r.termPresets[1]);
+                const d = TYPE_DEFAULTS[v];
+                setState((prev) => ({
+                  ...prev,
+                  type: v,
+                  principal:
+                    prev.principal > r.maxAmount ? d.principal : prev.principal,
+                  term: prev.term > r.maxTerm ? d.term : prev.term,
+                }));
               }}
               options={LOAN_TYPES.map((t) => ({
                 value: t,
@@ -498,6 +524,7 @@ export function LoanCalculator({
                   stroke="#1d4ed8"
                   strokeWidth={2}
                   fill="url(#gBalance)"
+                  isAnimationActive={false}
                 />
                 <Area
                   type="monotone"
@@ -505,6 +532,7 @@ export function LoanCalculator({
                   stroke="#b91c1c"
                   strokeWidth={2}
                   fill="url(#gInterest)"
+                  isAnimationActive={false}
                 />
               </AreaChart>
             </ResponsiveContainer>

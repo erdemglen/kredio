@@ -5,6 +5,9 @@ import { useMemo } from "react";
 import { AmountField } from "./Fields";
 import { Panel, Stat } from "./Shell";
 import { ShareButton } from "./ShareButton";
+import { PrintButton } from "./PrintButton";
+import { PrintFooter, PrintHeader, PrintParams } from "./PrintSummary";
+import { MobileSummary, MobileSummarySpacer } from "./MobileSummary";
 import { calculateRentIncrease, projectRent } from "@/lib/rent";
 import { formatPercent, formatTRY } from "@/lib/format";
 import { num, useUrlState } from "@/lib/useUrlState";
@@ -48,8 +51,30 @@ export function RentIncreaseCalculator() {
   );
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
-      <div className="min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
+    <div className="print-flow grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
+      <MobileSummary
+        label="Yasal üst sınırla yeni kira"
+        value={formatTRY(result.newRent)}
+        sub={`+${formatTRY(result.increaseAmount)}`}
+      />
+
+      <PrintHeader
+        title="Kira Artış Hesaplaması"
+        subtitle={`${formatTRY(state.rent)} mevcut kira · TÜFE ${formatPercent(
+          state.tufe,
+          1,
+        )}`}
+      />
+      <PrintParams
+        rows={[
+          { label: "Mevcut aylık kira", value: formatTRY(state.rent) },
+          { label: "TÜFE 12 aylık ortalama", value: formatPercent(state.tufe, 1) },
+          { label: "Artış tutarı", value: formatTRY(result.increaseAmount) },
+          { label: "Yeni kira", value: formatTRY(result.newRent) },
+        ]}
+      />
+
+      <div className="no-print min-w-0 space-y-4 lg:sticky lg:top-20 lg:self-start">
         <Panel title="Mevcut Kira ve Oran">
           <div className="space-y-5">
             <AmountField
@@ -109,7 +134,12 @@ export function RentIncreaseCalculator() {
 
         <Panel
           title={`${Math.round(state.years)} yıllık projeksiyon`}
-          action={<ShareButton text="Kira artış hesaplamam" />}
+          action={
+            <div className="flex gap-2">
+              <ShareButton text="Kira artış hesaplamam" />
+              <PrintButton fileName="kredio-kira-artisi" />
+            </div>
+          }
         >
           <div className="scroll-thin -mx-4 overflow-x-auto px-4">
             <table className="tabular w-full min-w-[360px] text-right text-sm">
@@ -141,6 +171,10 @@ export function RentIncreaseCalculator() {
             fikir vermek içindir.
           </p>
         </Panel>
+
+        <PrintFooter />
+
+        <MobileSummarySpacer />
       </div>
     </div>
   );
