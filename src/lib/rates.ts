@@ -41,6 +41,16 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit, Ağustos'ta PPK toplantısı yok. Konut kredisinde en uygun teklif Vakıf Katılım'dan Kuveyt Türk'e geçti. Ağustos 2026 kira artış tavanı (TÜFE 12 aylık ortalama) %31,90 olarak açıklandı.",
   },
+  {
+    date: "2026-08-17",
+    policyRate: 37,
+    konut: { min: 2.87, avg: 3.7, source: "Kuveyt Türk (en uygun), Emlak Kulisi piyasa karşılaştırması" },
+    ihtiyac: { min: 1.99, avg: 3.7, source: "Kuveyt Türk (en uygun, 100.000 TL), Hesapkurdu.com piyasa ortalaması" },
+    tasit: { min: 3.14, avg: 3.7, source: "Vakıf Katılım (en uygun, 200.000 TL), Hesapkurdu.com piyasa ortalaması" },
+    nextPpkDate: "2026-09-10",
+    note:
+      "TCMB politika faizi %37'de sabit; Ağustos'ta PPK toplantısı yok, gözler 10 Eylül'deki toplantıda. BDDK, bankaların kart limitlerini 1 Ocak 2027'ye kadar müşteri gelirine göre yeniden ayarlamasını zorunlu kıldı — yüksek limiti olup az kullanan kart sahiplerinin limiti kısmen düşebilir.",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

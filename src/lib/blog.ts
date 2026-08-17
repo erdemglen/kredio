@@ -20,6 +20,24 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tcmb-10-eylul-toplantisi-ne-bekleniyor",
+    title: "TCMB 10 Eylül'de ne yapar? Kredi faizine olası etkisi",
+    description:
+      "Merkez Bankası Ağustos'ta toplantı yapmadı, gözler 10 Eylül'deki PPK kararında. Faiz sabit kalırsa, indirilirse ya da artırılırsa konut/ihtiyaç/taşıt kredisi faizlerinde ne değişir?",
+    date: "2026-08-17",
+    readingMinutes: 5,
+    category: "Kredi",
+  },
+  {
+    slug: "bddk-kredi-karti-limit-guncellemesi",
+    title: "BDDK'nın yeni kuralı: kredi kartı limitiniz neden düşebilir?",
+    description:
+      "Bankalar, tüm kart hamillerinin limitlerini 1 Ocak 2027'ye kadar gelirleriyle uyumlu hale getirecek. 400.000 TL üzeri toplam limiti olup az kullananları neler bekliyor?",
+    date: "2026-08-17",
+    readingMinutes: 5,
+    category: "Bütçe",
+  },
+  {
     slug: "kira-artis-orani-agustos-2026",
     title: "Ağustos 2026 kira artış oranı %31,90: nasıl hesaplanır?",
     description:
