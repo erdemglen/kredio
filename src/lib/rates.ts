@@ -51,6 +51,16 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; Ağustos'ta PPK toplantısı yok, gözler 10 Eylül'deki toplantıda. BDDK, bankaların kart limitlerini 1 Ocak 2027'ye kadar müşteri gelirine göre yeniden ayarlamasını zorunlu kıldı — yüksek limiti olup az kullanan kart sahiplerinin limiti kısmen düşebilir.",
   },
+  {
+    date: "2026-08-24",
+    policyRate: 37,
+    konut: { min: 2.65, avg: 3.62, source: "İş Bankası (en uygun), Emlak Kulisi / Taşınmaz Haber piyasa karşılaştırması" },
+    ihtiyac: { min: 1.99, avg: 3.73, source: "Kuveyt Türk (en uygun, 100.000 TL), Hesapkurdu.com piyasa ortalaması (21 Ağustos)" },
+    tasit: { min: 3.14, avg: 3.73, source: "Vakıf Katılım (en uygun, 200.000 TL), Hesapkurdu.com piyasa ortalaması (21 Ağustos)" },
+    nextPpkDate: "2026-09-10",
+    note:
+      "TCMB politika faizi %37'de sabit; 10 Eylül'deki PPK toplantısına 2 hafta kaldı. Konut kredisinde liderlik katılım bankalarından İş Bankası'na geçti (%2,65) — bankalar arası rekabet piyasa ortalamasını da hafif aşağı çekti. BDDK'nın 30 Temmuz'daki kararı yalnızca kalkınma/yatırım bankalarının risk grubu kredi sınırlarını ilgilendiriyor, tüketici kredisi faizine doğrudan etkisi yok.",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

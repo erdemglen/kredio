@@ -20,6 +20,24 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "konut-kredisinde-en-dusuk-faiz-agustos-sonu-2026",
+    title: "Konut kredisinde liderlik değişti: en düşük faiz %2,65'e indi",
+    description:
+      "Ağustos ayı boyunca konut kredisinde en uygun teklif katılım bankalarındaydı. Şimdi İş Bankası %2,65 ile öne geçti. Bu değişim ne anlama geliyor, hangi bankalar hâlâ yakın takipte?",
+    date: "2026-08-24",
+    readingMinutes: 5,
+    category: "Konut",
+  },
+  {
+    slug: "kredi-karti-borcu-taksit-mi-tek-cekim-mi",
+    title: "Kredi kartı borcunu kapatırken taksit mi, tek çekim mi mantıklı?",
+    description:
+      "Elinize toplu para geçtiğinde kredi kartı borcunu tek seferde mi kapatmalı, yoksa asgari ödeyip elinizde nakit mi tutmalısınız? Asgari ödemenin gerçek maliyetini ve doğru kararın nasıl verileceğini anlatıyoruz.",
+    date: "2026-08-24",
+    readingMinutes: 6,
+    category: "Bütçe",
+  },
+  {
     slug: "tcmb-10-eylul-toplantisi-ne-bekleniyor",
     title: "TCMB 10 Eylül'de ne yapar? Kredi faizine olası etkisi",
     description:
