@@ -20,6 +20,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ilk-evim-1-20-faizli-konut-kredisi-son-durum",
+    title: "İlk Evim %1,20 faizli konut kredisi çıktı mı? Son durum ve beklenen şartlar",
+    description:
+      "Devlet destekli %1,20 faizli konut kredisi henüz başvuruya açılmadı. Beklenen faiz, vade, limit ve şartların ne olduğunu, açıklanan ile kesinleşen arasındaki farkı net biçimde ayırıyoruz.",
+    date: "2026-08-26",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
     slug: "konut-kredisinde-en-dusuk-faiz-agustos-sonu-2026",
     title: "Konut kredisinde liderlik değişti: en düşük faiz %2,65'e indi",
     description:
