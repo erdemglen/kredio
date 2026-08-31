@@ -61,6 +61,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; 10 Eylül'deki PPK toplantısına 2 hafta kaldı. Konut kredisinde liderlik katılım bankalarından İş Bankası'na geçti (%2,65) — bankalar arası rekabet piyasa ortalamasını da hafif aşağı çekti. BDDK'nın 30 Temmuz'daki kararı yalnızca kalkınma/yatırım bankalarının risk grubu kredi sınırlarını ilgilendiriyor, tüketici kredisi faizine doğrudan etkisi yok.",
   },
+  {
+    date: "2026-08-31",
+    policyRate: 37,
+    konut: {
+      min: 2.65,
+      avg: 3.6,
+      source:
+        "İş Bankası (en uygun), Hesapkurdu.com / Taşınmaz Haber piyasa karşılaştırması",
+    },
+    ihtiyac: {
+      min: 1.99,
+      avg: 3.73,
+      source:
+        "Kuveyt Türk (en uygun, 100.000 TL), Hesapkurdu.com piyasa ortalaması (21 Ağustos)",
+    },
+    tasit: {
+      min: 2.69,
+      avg: 3.73,
+      source:
+        "Ziraat Bankası (en uygun, 28 Ağustos karşılaştırması), Hesapkurdu.com piyasa ortalaması (21 Ağustos)",
+    },
+    nextPpkDate: "2026-09-10",
+    note:
+      "TCMB politika faizi %37'de sabit; 10 Eylül PPK toplantısına bir hafta kaldı — anket yapılan 20 ekonomistin 18'i faizin sabit kalacağını öngörüyor. Konut kredisinde İş Bankası %2,65 ile liderliğini sürdürüyor. Taşıt kredisinde Ziraat Bankası %2,69-2,99 bandıyla öne çıktı. Eylül ayı kira artış tavanı için TÜİK Ağustos enflasyonunu 3 Eylül'de açıklayacak; piyasa beklentisi %30,98 civarında.",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

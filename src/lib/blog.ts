@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "eylul-2026-kira-artis-orani-ne-olacak",
+    title:
+      "Eylül 2026 kira artış oranı ne olacak? TÜİK'in açıklayacağı tarih ve tahmin",
+    description:
+      "Eylül'de sözleşmesi yenilenecek kiralar için yasal artış tavanı, TÜİK'in 3 Eylül'de açıklayacağı Ağustos enflasyonuna bağlı. Şimdiki tahmin %30,98 — resmileşince ne değişir?",
+    date: "2026-08-31",
+    readingMinutes: 5,
+    category: "Konut",
+  },
+  {
+    slug: "ihtiyac-kredisi-faiz-oranlari-agustos-sonu-2026",
+    title:
+      "İhtiyaç kredisi faiz oranları Ağustos sonu 2026: en uygun teklif %1,99",
+    description:
+      "Ağustos 2026'nın son haftasında ihtiyaç kredisinde en uygun teklif %1,99 ile Kuveyt Türk'te. Piyasa ortalaması, KKDF/BSMV'nin gerçek maliyete etkisi ve bankalar arası fark.",
+    date: "2026-08-31",
+    readingMinutes: 5,
+    category: "Kredi",
+  },
+  {
     slug: "ilk-evim-1-20-faizli-konut-kredisi-son-durum",
     title: "İlk Evim %1,20 faizli konut kredisi çıktı mı? Son durum ve beklenen şartlar",
     description:
