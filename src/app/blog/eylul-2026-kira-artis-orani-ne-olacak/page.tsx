@@ -25,6 +25,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (3 Eylül 2026):</strong> TÜİK verisi açıklandı;
+        Eylül 2026 kira artış tavanı <strong>%31,79</strong> oldu — aşağıdaki
+        %30,98 tahmininin üzerinde. Kesinleşen rakam, tahminle farkının nedeni
+        ve güncel örnek hesap için{" "}
+        <a href="/blog/eylul-2026-kira-artis-orani-aciklandi">
+          Eylül 2026 kira artış oranı %31,79 açıklandı
+        </a>{" "}
+        yazımıza bakın. Aşağıdaki metin, açıklama öncesi yazıldığı hâliyle
+        korunuyor.
+      </p>
+
+      <p>
         Eylül&apos;de kira sözleşmesi yenilenecek kiracı ve ev sahipleri için
         gözler <strong>3 Eylül Perşembe, saat 10:00</strong>&apos;da. TÜİK o
         gün Ağustos ayı enflasyon verilerini açıklayacak ve bu veri,

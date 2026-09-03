@@ -20,6 +20,16 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "eylul-2026-kira-artis-orani-aciklandi",
+    title:
+      "Eylül 2026 kira artış oranı %31,79 açıklandı: tahminden neden yüksek geldi?",
+    description:
+      "TÜİK'in 3 Eylül'de açıkladığı Ağustos enflasyonuyla Eylül'de yenilenen kira sözleşmelerinin yasal tavanı %31,79 oldu. Beklenti %30,98'di; farkın nedeni, Ağustos'a göre değişim ve örnek hesap.",
+    date: "2026-09-03",
+    readingMinutes: 5,
+    category: "Konut",
+  },
+  {
     slug: "eylul-2026-kira-artis-orani-ne-olacak",
     title:
       "Eylül 2026 kira artış oranı ne olacak? TÜİK'in açıklayacağı tarih ve tahmin",

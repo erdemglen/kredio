@@ -84,7 +84,7 @@ export const RATE_HISTORY: RateSnapshot[] = [
     },
     nextPpkDate: "2026-09-10",
     note:
-      "TCMB politika faizi %37'de sabit; 10 Eylül PPK toplantısına bir hafta kaldı — anket yapılan 20 ekonomistin 18'i faizin sabit kalacağını öngörüyor. Konut kredisinde İş Bankası %2,65 ile liderliğini sürdürüyor. Taşıt kredisinde Ziraat Bankası %2,69-2,99 bandıyla öne çıktı. Eylül ayı kira artış tavanı için TÜİK Ağustos enflasyonunu 3 Eylül'de açıklayacak; piyasa beklentisi %30,98 civarında.",
+      "TCMB politika faizi %37'de sabit; 10 Eylül PPK toplantısına bir hafta kaldı — anket yapılan 20 ekonomistin 18'i faizin sabit kalacağını öngörüyor. Konut kredisinde İş Bankası %2,65 ile liderliğini sürdürüyor. Taşıt kredisinde Ziraat Bankası %2,69-2,99 bandıyla öne çıktı. Eylül ayı kira artış tavanı 3 Eylül'de açıklanan TÜİK verisiyle %31,79 oldu (Ağustos: %31,90; piyasa beklentisi %30,98 idi).",
   },
 ];
 
