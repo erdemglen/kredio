@@ -86,6 +86,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; 10 Eylül PPK toplantısına bir hafta kaldı — anket yapılan 20 ekonomistin 18'i faizin sabit kalacağını öngörüyor. Konut kredisinde İş Bankası %2,65 ile liderliğini sürdürüyor. Taşıt kredisinde Ziraat Bankası %2,69-2,99 bandıyla öne çıktı. Eylül ayı kira artış tavanı 3 Eylül'de açıklanan TÜİK verisiyle %31,79 oldu (Ağustos: %31,90; piyasa beklentisi %30,98 idi).",
   },
+  {
+    date: "2026-09-07",
+    policyRate: 37,
+    konut: {
+      min: 2.87,
+      avg: 3.7,
+      source:
+        "Kuveyt Türk (en uygun, 1.000.000 TL / 120 ay, 6 Eylül), Hesapkurdu.com piyasa ortalaması (4 Eylül)",
+    },
+    ihtiyac: {
+      min: 1.99,
+      avg: 3.7,
+      source:
+        "Kuveyt Türk (en uygun, 100.000 TL / 12 ay, 6 Eylül), Hesapkurdu.com piyasa ortalaması (4 Eylül)",
+    },
+    tasit: {
+      min: 3.14,
+      avg: 3.7,
+      source:
+        "Vakıf Katılım (en uygun, 200.000 TL / 48 ay, 7 Eylül), Hesapkurdu.com piyasa ortalaması (4 Eylül)",
+    },
+    nextPpkDate: "2026-09-10",
+    note:
+      "TCMB politika faizi %37'de sabit; PPK kararı 10 Eylül Perşembe 14:00'te açıklanacak — Matriks anketinde 27 ekonomistin 21'i faizin sabit kalmasını, 6'sı indirim bekliyor; ilk indirim için medyan beklenti Ekim (%36), yıl sonu %35. 6 Eylül'de açıklanan yeni OVP (2027-2029), 2026 yıl sonu enflasyon tahminini %16'dan %28,4'e çıkardı. Konut kredisinde İş Bankası'nın %2,65'lik teklifi karşılaştırma listelerinden çıktı (banka %3,10'da); en uygun oran %2,87 ile yeniden Kuveyt Türk'te, Ziraat %2,89 ile ikinci. TCMB haftalık verisine göre 28 Ağustos haftasında konut kredisi ortalama faizi yıllık %41,89'a geriledi.",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

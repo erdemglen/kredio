@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ovp-2027-2029-enflasyon-tahmini-kredi-faizi-kira-artisi",
+    title:
+      "Yeni OVP açıklandı: 2026 enflasyon tahmini %28,4 — kredi faizi ve kira artışı için ne anlama geliyor?",
+    description:
+      "6 Eylül'de açıklanan 2027-2029 Orta Vadeli Programı, yıl sonu enflasyon tahminini %16'dan %28,4'e çıkardı; tek haneli hedef 2029'a kaldı. Bu patikanın TCMB faizi, kredi taksitleri ve kira artış tavanı için anlamını rakamlarla anlatıyoruz.",
+    date: "2026-09-07",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
+    slug: "konut-kredisi-faiz-oranlari-eylul-2026",
+    title:
+      "Konut kredisi faiz oranları Eylül 2026: %2,65'lik teklif listeden çıktı, en düşük oran %2,87",
+    description:
+      "Ağustos'u %2,65 ile lider bitiren İş Bankası karşılaştırma listelerinde %3,10'a döndü; 6 Eylül itibarıyla en uygun konut kredisi %2,87 ile Kuveyt Türk'te, Ziraat %2,89 ile hemen arkasında. 0,22 puanın taksite etkisi, banka banka tablo ve 10 Eylül PPK öncesi beklentiler.",
+    date: "2026-09-07",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
     slug: "eylul-2026-kira-artis-orani-aciklandi",
     title:
       "Eylül 2026 kira artış oranı %31,79 açıklandı: tahminden neden yüksek geldi?",
