@@ -51,7 +51,7 @@ export default function Page() {
       <h2>İlan edilen faiz ile gerçek maliyet neden farklı</h2>
       <p>
         İhtiyaç kredisi, konut kredisinin aksine <strong>KKDF (%15) ve BSMV
-        (%10)</strong> vergilerinden istisna değil. Yani ilan edilen
+        (%15)</strong> vergilerinden istisna değil. Yani ilan edilen
         %1,99&apos;luk oran, efektif maliyeti tam yansıtmıyor — bu iki vergi
         eklendiğinde gerçek maliyet belirgin şekilde yükselir. Bu hesaplamanın
         nasıl yapıldığını{" "}

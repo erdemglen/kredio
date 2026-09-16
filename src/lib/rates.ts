@@ -111,6 +111,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; PPK kararı 10 Eylül Perşembe 14:00'te açıklanacak — Matriks anketinde 27 ekonomistin 21'i faizin sabit kalmasını, 6'sı indirim bekliyor; ilk indirim için medyan beklenti Ekim (%36), yıl sonu %35. 6 Eylül'de açıklanan yeni OVP (2027-2029), 2026 yıl sonu enflasyon tahminini %16'dan %28,4'e çıkardı. Konut kredisinde İş Bankası'nın %2,65'lik teklifi karşılaştırma listelerinden çıktı (banka %3,10'da); en uygun oran %2,87 ile yeniden Kuveyt Türk'te, Ziraat %2,89 ile ikinci. TCMB haftalık verisine göre 28 Ağustos haftasında konut kredisi ortalama faizi yıllık %41,89'a geriledi.",
   },
+  {
+    date: "2026-09-16",
+    policyRate: 37,
+    konut: {
+      min: 2.87,
+      avg: 3.68,
+      source:
+        "Kuveyt Türk (en uygun, 1.000.000 TL / 120 ay, 16 Eylül), Hesapkurdu.com piyasa ortalaması (11 Eylül)",
+    },
+    ihtiyac: {
+      min: 1.99,
+      avg: 3.68,
+      source:
+        "Kuveyt Türk (en uygun, 100.000 TL / 12 ay, 15 Eylül), Hesapkurdu.com piyasa ortalaması (11 Eylül)",
+    },
+    tasit: {
+      min: 3.14,
+      avg: 3.68,
+      source:
+        "Vakıf Katılım (en uygun, 200.000 TL / 48 ay, 16 Eylül), Hesapkurdu.com piyasa ortalaması (11 Eylül)",
+    },
+    nextPpkDate: "2026-10-22",
+    note:
+      "TCMB, 10 Eylül'de politika faizini beklentilere paralel %37'de sabit tuttu (gecelik borç verme %40, borçlanma %35,5); karar metni enflasyonun ana eğiliminin gerilediğini ve iç talebin zayıf seyrettiğini not ederken enerji fiyatlarını yukarı yönlü risk olarak korudu. Bir sonraki PPK 22 Ekim; ekonomistler ilk indirim için Ekim'i işaret ediyor, yıl sonu politika faizi beklentisi %35. TCMB'nin Eylül Piyasa Katılımcıları Anketi'nde yıl sonu enflasyon beklentisi %29,61'e yükseldi. Karar sonrası vitrin oranları değişmedi: konutta Kuveyt Türk %2,87, Ziraat %2,89; Akbank %3,25'ten %3,15'e indi. TCMB haftalık verisine göre 4 Eylül haftasında konut kredisi ortalama faizi yıllık %41,94, ihtiyaç kredisi %62,95. Kredi kartı azami faizleri Eylül'de de değişmedi (%3,25-%4,25).",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

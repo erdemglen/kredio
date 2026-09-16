@@ -22,7 +22,7 @@ const FAQ = [
   {
     question: "Taşıt kredisinde de KKDF ve BSMV var mı?",
     answer:
-      "Evet. Taşıt kredisi, ihtiyaç kredisiyle aynı şekilde KKDF (%15) ve BSMV (%10) vergilerine tabidir; bu iki vergi faiz tutarını efektif olarak %25 artırır. Sadece konut kredileri bu vergilerden istisnadır.",
+      "Evet. Taşıt kredisi, ihtiyaç kredisiyle aynı şekilde KKDF (%15) ve BSMV (%15) vergilerine tabidir; bu iki vergi faiz tutarını efektif olarak %30 artırır. Sadece konut kredileri bu vergilerden istisnadır.",
   },
   {
     question: "Taşıt kredisinde vade genelde ne kadar olur?",

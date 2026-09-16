@@ -22,11 +22,13 @@ export interface TaxRates {
 /**
  * Mevzuat oranları. Değiştiğinde tek yerden güncellenir.
  * Konut kredisi KKDF ve BSMV'den istisnadır.
+ * BSMV: 7345 sayılı Cumhurbaşkanı Kararı (RG 07.07.2023, S. 32241) ile
+ * tüketici kredilerinde %10'dan %15'e çıkarıldı.
  */
 export const TAX_RATES: Record<LoanType, TaxRates> = {
   konut: { kkdf: 0, bsmv: 0 },
-  ihtiyac: { kkdf: 0.15, bsmv: 0.1 },
-  tasit: { kkdf: 0.15, bsmv: 0.1 },
+  ihtiyac: { kkdf: 0.15, bsmv: 0.15 },
+  tasit: { kkdf: 0.15, bsmv: 0.15 },
 };
 
 export const LOAN_LABELS: Record<LoanType, string> = {

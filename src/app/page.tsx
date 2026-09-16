@@ -122,7 +122,7 @@ export default function Home() {
 
         <h2>Türkiye&apos;ye özel doğru matematik</h2>
         <p>
-          İhtiyaç ve taşıt kredilerinde faiz üzerinden alınan %15 KKDF ve %10
+          İhtiyaç ve taşıt kredilerinde faiz üzerinden alınan %15 KKDF ve %15
           BSMV, konut kredisinin bu vergilerden istisna olması, erken ödeme
           tazminatının yasal tavanı — hepsi hesaba dahil. İlan edilen faiz
           oranıyla gerçekte ödeyeceğiniz tutar arasındaki farkı net olarak

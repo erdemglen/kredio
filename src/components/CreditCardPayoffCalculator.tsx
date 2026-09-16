@@ -39,7 +39,8 @@ interface State {
 
 const DEFAULTS: State = {
   balance: 30_000,
-  rate: 4.25,
+  // TCMB azami akdi faiz, dönem borcu 30.000-180.000 TL kademesi (Eylül 2026)
+  rate: 3.75,
   mode: "fixed",
   fixedPayment: 3_000,
   minPercent: 20,
@@ -191,6 +192,12 @@ export function CreditCardPayoffCalculator() {
               decimals
               hint="Kart ekstrenizde yazan aylık oran"
             />
+            <p className="text-xs leading-relaxed text-muted">
+              TCMB azami akdi faiz (Eylül 2026): dönem borcu 30 bin TL altı
+              %3,25, 30-180 bin TL %3,75, üzeri %4,25; nakit avans ve KMH
+              %4,25. Faize ayrıca %15 KKDF ve %15 BSMV eklenir; vergiler dahil
+              sonuç için oranı 1,30 ile çarpın.
+            </p>
           </div>
         </Panel>
 

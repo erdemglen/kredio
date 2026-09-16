@@ -22,7 +22,7 @@ const FAQ = [
   {
     question: "KKDF ve BSMV nedir, taksitimi nasıl etkiler?",
     answer:
-      "KKDF (Kaynak Kullanımını Destekleme Fonu) ve BSMV (Banka ve Sigorta Muameleleri Vergisi), kredinin faiz tutarı üzerinden alınan vergilerdir. İhtiyaç ve taşıt kredilerinde faizin %15'i KKDF, %10'u BSMV olarak eklenir; yani ilan edilen faiz oranı efektif olarak %25 daha yüksek bir maliyete dönüşür. Konut kredileri bu iki vergiden istisnadır, bu yüzden aynı faiz oranında konut kredisi belirgin biçimde ucuzdur.",
+      "KKDF (Kaynak Kullanımını Destekleme Fonu) ve BSMV (Banka ve Sigorta Muameleleri Vergisi), kredinin faiz tutarı üzerinden alınan vergilerdir. İhtiyaç ve taşıt kredilerinde faizin %15'i KKDF, %15'i BSMV olarak eklenir; yani ilan edilen faiz oranı efektif olarak %30 daha yüksek bir maliyete dönüşür. Konut kredileri bu iki vergiden istisnadır, bu yüzden aynı faiz oranında konut kredisi belirgin biçimde ucuzdur.",
   },
   {
     question: "Ara ödeme vadeyi mi kısaltmalı, taksiti mi düşürmeli?",

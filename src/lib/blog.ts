@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tcmb-10-eylul-karari-faiz-sabit-ilk-indirim-ne-zaman",
+    title:
+      "TCMB 10 Eylül'de faizi %37'de sabit tuttu: karar metninde ne değişti, ilk indirim 22 Ekim'de mi?",
+    description:
+      "Merkez Bankası beklentilere paralel politika faizini %37'de bıraktı; metinde 'ana eğilim geriliyor, iç talep zayıf' vurgusu yeni. Ekonomistler ilk indirim için 22 Ekim'i işaret ediyor, yıl sonu beklentisi %35. Kararın konut, ihtiyaç ve taşıt kredisi taksitlerine etkisini ve beklemenin maliyetini rakamlarla hesapladık.",
+    date: "2026-09-16",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
+    slug: "kredi-karti-faiz-oranlari-eylul-2026",
+    title:
+      "Kredi kartı faiz oranları Eylül 2026: %3,25-%4,25 kademeleri ve asgari ödemenin gerçek maliyeti",
+    description:
+      "TCMB'nin Eylül tarifesinde kredi kartı azami faizi değişmedi: dönem borcuna göre aylık %3,25, %3,75 ve %4,25; nakit avansta %4,25. Faize eklenen KKDF ve BSMV ile gerçek maliyeti, sadece asgari ödeyenin borcunu kaç ayda kapattığını ve ihtiyaç kredisiyle kapatmanın ne zaman mantıklı olduğunu hesapladık.",
+    date: "2026-09-16",
+    readingMinutes: 6,
+    category: "Bütçe",
+  },
+  {
     slug: "ovp-2027-2029-enflasyon-tahmini-kredi-faizi-kira-artisi",
     title:
       "Yeni OVP açıklandı: 2026 enflasyon tahmini %28,4 — kredi faizi ve kira artışı için ne anlama geliyor?",

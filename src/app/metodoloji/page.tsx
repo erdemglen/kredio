@@ -26,7 +26,7 @@ export default function Page() {
         <p>
           Kredi hesaplayıcı, Türk bankalarının kullandığı eşit taksitli
           (annüite) yöntemi uygular. Taksit, ilan edilen aylık faiz oranının
-          KKDF (%15) ve BSMV (%10) ile çarpılmış &quot;efektif&quot; oranı
+          KKDF (%15) ve BSMV (%15) ile çarpılmış &quot;efektif&quot; oranı
           üzerinden hesaplanır; konut kredileri bu iki vergiden istisnadır.
           Erken kapama tazminatı, Tüketicinin Korunması Hakkında Kanun&apos;un
           31. maddesindeki yasal tavan (kalan vade 36 aydan fazlaysa %2,

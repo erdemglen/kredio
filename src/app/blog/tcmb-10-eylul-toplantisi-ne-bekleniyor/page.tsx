@@ -24,6 +24,16 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (10 Eylül 2026):</strong> TCMB politika faizini
+        beklentilere paralel %37&apos;de sabit tuttu. Karar metnindeki yeni
+        sinyalleri, ekonomistlerin 22 Ekim beklentisini ve kredi taksitlerine
+        etkisini{" "}
+        <a href="/blog/tcmb-10-eylul-karari-faiz-sabit-ilk-indirim-ne-zaman">
+          TCMB 10 Eylül&apos;de faizi %37&apos;de sabit tuttu
+        </a>{" "}
+        yazımızda ele aldık. Aşağıdaki metin toplantı öncesi yazılmıştır.
+      </p>
+      <p>
         Merkez Bankası, Ağustos ayında Para Politikası Kurulu (PPK)
         toplantısı yapmadı. Son karar 23 Temmuz&apos;da alınmıştı ve politika
         faizi <strong>%37&apos;de sabit</strong> tutulmuştu. Piyasanın gözü

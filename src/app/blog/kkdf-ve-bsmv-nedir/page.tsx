@@ -5,14 +5,26 @@ import { getPost, postMetadata } from "@/lib/blog";
 const SLUG = "kkdf-ve-bsmv-nedir";
 export const metadata: Metadata = postMetadata(SLUG);
 
+const SOURCES = [
+  {
+    label:
+      "7345 sayılı Cumhurbaşkanı Kararı: tüketici kredilerinde BSMV oranı %15 — Resmî Gazete, 7 Temmuz 2023, Sayı 32241",
+    url: "https://www.resmigazete.gov.tr/eskiler/2023/07/20230707-10.pdf",
+  },
+  {
+    label: "Tüketici kredilerinde BSMV oranı %15'e çıkarıldı — Consulta sirküleri",
+    url: "https://www.consulta.com.tr/sirkuler/tuketici-kredilerinde-bsmv-orani-15e-cikarildi/",
+  },
+];
+
 export default function Page() {
   return (
-    <PostLayout post={getPost(SLUG)}>
+    <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
         Bankanın ilan ettiği faiz oranıyla ödeme planındaki rakamlar bir türlü
         tutmuyorsa sebebi büyük ihtimalle bu iki kısaltma: KKDF ve BSMV. İhtiyaç
         kredilerinde bu vergiler, kredinin gerçek maliyetini ilan edilen orandan
-        yaklaşık dörtte bir oranında yukarı çeker.
+        yaklaşık üçte bir oranında yukarı çeker.
       </p>
 
       <h2>Bu vergiler nedir?</h2>
@@ -23,12 +35,14 @@ export default function Page() {
         </li>
         <li>
           <strong>BSMV — Banka ve Sigorta Muameleleri Vergisi:</strong> Yine faiz
-          tutarı üzerinden alınan %10&apos;luk vergi.
+          tutarı üzerinden alınan %15&apos;lik vergi (7 Temmuz 2023&apos;te
+          yürürlüğe giren 7345 sayılı Cumhurbaşkanı Kararı ile %10&apos;dan
+          %15&apos;e çıkarıldı).
         </li>
       </ul>
       <p>
         Kritik ayrıntı şu: bu oranlar <em>anapara</em> üzerinden değil,{" "}
-        <em>faiz tutarı</em> üzerinden hesaplanır. Yani %15 + %10 = %25, faizin
+        <em>faiz tutarı</em> üzerinden hesaplanır. Yani %15 + %15 = %30, faizin
         üzerine binen bir çarpandır.
       </p>
 
@@ -38,8 +52,8 @@ export default function Page() {
         head={["Kredi türü", "KKDF", "BSMV", "Faiz çarpanı"]}
         rows={[
           ["Konut kredisi", "%0", "%0", "1,00"],
-          ["İhtiyaç kredisi", "%15", "%10", "1,25"],
-          ["Taşıt kredisi", "%15", "%10", "1,25"],
+          ["İhtiyaç kredisi", "%15", "%15", "1,30"],
+          ["Taşıt kredisi", "%15", "%15", "1,30"],
         ]}
         note="Konut kredileri bu iki vergiden istisnadır; bu, konut kredisini aynı faiz oranındaki ihtiyaç kredisinden belirgin biçimde ucuz kılar."
       />
@@ -56,7 +70,7 @@ export default function Page() {
       </p>
       <p>
         Örneğin aylık %3,59 faizli bir ihtiyaç kredisinde efektif oran %3,59 ×
-        1,25 = <strong>%4,4875</strong> olur. Taksitiniz bu oran üzerinden
+        1,30 = <strong>%4,667</strong> olur. Taksitiniz bu oran üzerinden
         hesaplanır. Ödeme planındaki her ayın faiz satırı da aynı mantıkla saf
         faiz, KKDF ve BSMV olarak ayrışır.
       </p>
@@ -70,16 +84,17 @@ export default function Page() {
       <PostTable
         head={["", "Vergisiz (konut gibi)", "Vergili (ihtiyaç)"]}
         rows={[
-          ["Aylık taksit", "4.992 TL", "5.651 TL"],
-          ["Toplam geri ödeme", "179.726 TL", "203.441 TL"],
-          ["Yıllık maliyet oranı", "%52,69", "%69,34"],
+          ["Aylık taksit", "4.992 TL", "5.787 TL"],
+          ["Toplam geri ödeme", "179.726 TL", "208.342 TL"],
+          ["Yıllık maliyet oranı", "%52,69", "%72,87"],
         ]}
       />
 
       <p>
         Aynı anapara, aynı ilan edilen faiz, aynı vade — ama toplam geri ödeme
-        arasında <strong>23.715 TL fark</strong> var. Bunun 12.413 TL&apos;si
-        KKDF, 8.275 TL&apos;si BSMV. Aylık taksitte fark 659 TL.
+        arasında <strong>28.616 TL fark</strong> var. Bunun 12.501 TL&apos;si
+        KKDF, 12.501 TL&apos;si BSMV; kalan 3.614 TL ise vergilerin anapara
+        ödemesini yavaşlatmasından doğan ek faiz. Aylık taksitte fark 795 TL.
       </p>
 
       <ToolCallout
@@ -93,7 +108,7 @@ export default function Page() {
         <li>
           <strong>Kredi türlerini ilan edilen faizle karşılaştırmayın.</strong>{" "}
           %2,89 konut kredisi ile %2,89 ihtiyaç kredisi aynı şey değildir;
-          ikincisi efektif olarak %3,61&apos;e denk gelir. Karşılaştırma yaparken
+          ikincisi efektif olarak %3,76&apos;ya denk gelir. Karşılaştırma yaparken
           yıllık maliyet oranına bakın.
         </li>
         <li>
