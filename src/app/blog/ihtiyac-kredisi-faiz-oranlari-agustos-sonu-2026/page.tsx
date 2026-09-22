@@ -24,6 +24,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (22 Eylül 2026):</strong> Aşağıda anlatılan
+        %1,99&apos;luk Kuveyt Türk teklifi 20 Eylül itibarıyla yalnızca 50.000
+        TL&apos;ye kadar geçerli; 100.000 TL / 12 ay için en uygun oran %2,79
+        ile Alternatif Bank. Güncel liste, taksit farkı ve krediyi iki
+        bankaya bölme hesabı için{" "}
+        <a href="/blog/ihtiyac-kredisi-faiz-oranlari-eylul-sonu-2026">
+          Eylül sonu ihtiyaç kredisi faiz oranları
+        </a>{" "}
+        yazımıza bakın. Aşağıdaki metin, yazıldığı tarihteki hâliyle
+        korunuyor.
+      </p>
+      <p>
         İhtiyaç kredisi almayı düşünüyorsanız, bankadan bankaya faiz farkının
         taksitinizde binlerce lira fark yaratabildiğini biliyor musunuz?
         Ağustos 2026&apos;nın son haftasında piyasadaki tablo şöyle.

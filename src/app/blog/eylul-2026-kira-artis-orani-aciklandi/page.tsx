@@ -118,9 +118,14 @@ export default function Page() {
         </li>
         <li>
           <strong>Ekim&apos;de yenilenecek sözleşmeler</strong> için oran,
-          TÜİK&apos;in Eylül enflasyonunu açıklamasıyla (Ekim&apos;in ilk iş
-          günlerinde) belirlenecek; o zamana kadar konuşulan rakamlar yine
-          tahmin.
+          TÜİK&apos;in Eylül enflasyonunu açıklamasıyla (5 Ekim Pazartesi)
+          belirlenecek; o zamana kadar konuşulan rakamlar yine tahmin. TÜFE
+          endeksinden kendi hesabımızla yaptığımız tahmini ve senaryo
+          tablosunu{" "}
+          <a href="/blog/ekim-2026-kira-artis-orani-ne-olacak">
+            Ekim 2026 kira artış oranı ne olacak?
+          </a>{" "}
+          yazımızda bulabilirsiniz.
         </li>
         <li>
           <strong>Kira mı, ev mi</strong> hesabı yapıyorsanız, %30&apos;lar

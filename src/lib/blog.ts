@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ekim-2026-kira-artis-orani-ne-olacak",
+    title:
+      "Ekim 2026 kira artış oranı ne olacak? Tahmin %31,5 — 5 Ekim'de kesinleşecek",
+    description:
+      "Ekim'de yenilenecek kira sözleşmelerinin yasal tavanı, TÜİK'in 5 Ekim Pazartesi açıklayacağı Eylül enflasyonuyla belli olacak. TÜFE endeksinden kendi hesabımızla yaptığımız tahmin %31,5; Eylül aylık enflasyonu %1 ile %3 arasında nereye gelirse gelsin tavan %31,4-31,6 bandında kalıyor. Neden bu kadar az oynadığını, Kasım ve Aralık için ilk tahminleri ve 25.000 TL'lik kira için örnek hesabı anlatıyoruz.",
+    date: "2026-09-22",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
+    slug: "ihtiyac-kredisi-faiz-oranlari-eylul-sonu-2026",
+    title:
+      "İhtiyaç kredisi faiz oranları Eylül sonu 2026: %1,99 artık 50.000 TL'ye kadar, 100.000 TL'de en uygun teklif %2,79",
+    description:
+      "Ağustos'tan beri listenin başındaki Kuveyt Türk'ün %1,99'luk teklifi 20 Eylül itibarıyla yalnızca 50.000 TL'ye kadar geçerli; 100.000 TL / 12 ay için en uygun oran %2,79 ile Alternatif Bank, QNB %2,84 ile ikinci. Değişimin taksite etkisi, krediyi iki bankaya bölme hesabı, kamu bankalarının ihtiyaç kredisinde neden pahalı olduğu ve TCMB'nin %64'e çıkan gerçekleşen ortalaması.",
+    date: "2026-09-22",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
     slug: "tcmb-10-eylul-karari-faiz-sabit-ilk-indirim-ne-zaman",
     title:
       "TCMB 10 Eylül'de faizi %37'de sabit tuttu: karar metninde ne değişti, ilk indirim 22 Ekim'de mi?",

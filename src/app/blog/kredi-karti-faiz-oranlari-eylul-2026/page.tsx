@@ -136,7 +136,13 @@ export default function Page() {
       <p>
         Karşılaştırma için: bu hafta ihtiyaç kredisinde en uygun teklif olan
         %1,99&apos;un yıllık maliyeti vergiler dahil %36, piyasa ortalaması
-        %3,68&apos;in ise %75. Yani ortalama bir ihtiyaç kredisi bile orta
+        %3,68&apos;in ise %75. (Güncelleme, 22 Eylül: %1,99 teklifi artık
+        50.000 TL&apos;ye kadar geçerli; 100.000 TL için en uygun oran %2,79,
+        yıllık maliyeti %53 — ayrıntısı{" "}
+        <a href="/blog/ihtiyac-kredisi-faiz-oranlari-eylul-sonu-2026">
+          Eylül sonu ihtiyaç kredisi
+        </a>{" "}
+        yazımızda.) Yani ortalama bir ihtiyaç kredisi bile orta
         kademe kart faizinden ucuz değil; fark yalnızca en uygun tekliflerde
         açılıyor. Buna aşağıda döneceğiz.
       </p>

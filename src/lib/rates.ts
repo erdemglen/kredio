@@ -136,6 +136,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB, 10 Eylül'de politika faizini beklentilere paralel %37'de sabit tuttu (gecelik borç verme %40, borçlanma %35,5); karar metni enflasyonun ana eğiliminin gerilediğini ve iç talebin zayıf seyrettiğini not ederken enerji fiyatlarını yukarı yönlü risk olarak korudu. Bir sonraki PPK 22 Ekim; ekonomistler ilk indirim için Ekim'i işaret ediyor, yıl sonu politika faizi beklentisi %35. TCMB'nin Eylül Piyasa Katılımcıları Anketi'nde yıl sonu enflasyon beklentisi %29,61'e yükseldi. Karar sonrası vitrin oranları değişmedi: konutta Kuveyt Türk %2,87, Ziraat %2,89; Akbank %3,25'ten %3,15'e indi. TCMB haftalık verisine göre 4 Eylül haftasında konut kredisi ortalama faizi yıllık %41,94, ihtiyaç kredisi %62,95. Kredi kartı azami faizleri Eylül'de de değişmedi (%3,25-%4,25).",
   },
+  {
+    date: "2026-09-22",
+    policyRate: 37,
+    konut: {
+      min: 2.89,
+      avg: 3.68,
+      source:
+        "Ziraat Bankası (en uygun, 1.000.000 TL / 120 ay, 21 Eylül), Hesapkurdu.com piyasa ortalaması (18 Eylül)",
+    },
+    ihtiyac: {
+      min: 2.79,
+      avg: 3.68,
+      source:
+        "Alternatif Bank (en uygun, 100.000 TL / 12 ay, 22 Eylül), Hesapkurdu.com piyasa ortalaması (18 Eylül)",
+    },
+    tasit: {
+      min: 3.14,
+      avg: 3.68,
+      source:
+        "Vakıf Katılım (en uygun, 200.000 TL / 48 ay, 21 Eylül), Hesapkurdu.com piyasa ortalaması (18 Eylül)",
+    },
+    nextPpkDate: "2026-10-22",
+    note:
+      "TCMB politika faizi %37'de sabit; bir sonraki PPK 22 Ekim. 17 Eylül'de yayımlanan toplantı özeti Eylül enflasyonunda eğitim kaynaklı mekanik bir düşüş beklendiğini not ederken Brent petrolün Eylül'ün ilk 10 gününde ortalama 103 dolara çıkmasını yukarı yönlü risk olarak vurguladı. Aynı hafta SPK'nın 7 portföy şirketine ait 130 fonu tasfiyeye alması (yaklaşık 809 milyar TL, 517 bin yatırımcı) sonrası TCMB haftalık repo fonlamasını artıracağını ve teminat iskontolarını düşüreceğini açıkladı; ekonomistler bu şokun 22 Ekim'de indirim olasılığını artırdığı görüşünde. Fed 16 Eylül'de 2023'ten bu yana ilk kez faiz artırdı (%3,75-4,00). Vitrinde iki değişiklik: ihtiyaç kredisinde Kuveyt Türk'ün %1,99 teklifi artık yalnızca 50.000 TL'ye kadar geçerli, 100.000 TL'de en uygun oran %2,79 ile Alternatif Bank (QNB %2,84); konutta Kuveyt Türk'ün %2,87'lik teklifi listeden çıktı, Ziraat %2,89 ile lider. TCMB haftalık verisine göre 11 Eylül haftasında konut kredisi ortalama faizi yıllık %41,93, ihtiyaç kredisi %64,14, taşıt %40,53; TL mevduat faizi %43,90'a geriledi.",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

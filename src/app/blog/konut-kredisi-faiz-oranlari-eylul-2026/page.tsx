@@ -37,6 +37,15 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (22 Eylül 2026):</strong> Kuveyt Türk&apos;ün
+        aşağıda anlatılan %2,87&apos;lik teklifi 20 Eylül itibarıyla
+        karşılaştırma listelerinde yer almıyor; 1.000.000 TL / 120 ay için en
+        uygun oran %2,89 ile Ziraat Bankası, ardından Vakıf Katılım %2,94, QNB
+        ve Halkbank %2,99. Haftalık güncel tablo{" "}
+        <a href="/faiz-oranlari">faiz oranları sayfamızda</a>. Aşağıdaki
+        metin, yazıldığı tarihteki hâliyle korunuyor.
+      </p>
+      <p>
         Ağustos&apos;un son haftasında konut kredisinde liderlik İş
         Bankası&apos;ndaydı: %2,65 ile katılım bankalarının önüne geçmişti.
         Eylül&apos;ün ilk haftasında tablo değişti. Karşılaştırma sitelerinde
