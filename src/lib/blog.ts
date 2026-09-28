@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tasit-kredisi-faiz-oranlari-eylul-sonu-2026",
+    title:
+      "Taşıt kredisi faiz oranları Eylül sonu 2026: vitrinde %2,99 dururken TCMB verisinde gerçekleşen ortalama neden %45,54'e sıçradı?",
+    description:
+      "Karşılaştırma sitelerinde taşıt kredisi en uygun teklifi %2,99 ile Dünya Katılım'da ve piyasa ortalaması haftalardır %3,6 civarında sakin. Ama TCMB'nin haftalık bankacılık verisine göre taşıt kredisinde gerçekten kullandırılan kredilerin ağırlıklı ortalama faizi tek haftada 501 baz puan birden artarak %45,54'e çıktı. İki rakamın neden bu kadar farklı olduğunu, vitrin ile gerçekleşen oran arasındaki farkı ve 300.000 TL'lik örnek kredide banka seçiminin maliyetini anlatıyoruz.",
+    date: "2026-09-28",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
+    slug: "tcmb-repo-faizi-nedir-kredi-faizine-etkisi",
+    title:
+      "TCMB repo faizi nedir, kredi faizinizi nasıl etkiler? PPK toplantısı olmadan süren 'örtülü' gevşemenin perde arkası",
+    description:
+      "Merkez Bankası'nın ilan ettiği politika faizi 23 Temmuz'dan beri %37'de sabit. Ama 23 Ağustos'ta haftalık repo ihalelerine dönüşü ve 17 Eylül'de aldığı ek likidite tedbirleri, PPK kararı olmadan bankaların fonlama maliyetini kademeli düşürüyor. Repo faizinin ne olduğunu, faiz koridorunu ve bu 'gizli' gevşemenin kredi faizlerine neden 22 Ekim'i beklemeden yansıyabileceğini anlatıyoruz.",
+    date: "2026-09-28",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
     slug: "ekim-2026-kira-artis-orani-ne-olacak",
     title:
       "Ekim 2026 kira artış oranı ne olacak? Tahmin %31,5 — 5 Ekim'de kesinleşecek",

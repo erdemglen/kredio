@@ -161,6 +161,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; bir sonraki PPK 22 Ekim. 17 Eylül'de yayımlanan toplantı özeti Eylül enflasyonunda eğitim kaynaklı mekanik bir düşüş beklendiğini not ederken Brent petrolün Eylül'ün ilk 10 gününde ortalama 103 dolara çıkmasını yukarı yönlü risk olarak vurguladı. Aynı hafta SPK'nın 7 portföy şirketine ait 130 fonu tasfiyeye alması (yaklaşık 809 milyar TL, 517 bin yatırımcı) sonrası TCMB haftalık repo fonlamasını artıracağını ve teminat iskontolarını düşüreceğini açıkladı; ekonomistler bu şokun 22 Ekim'de indirim olasılığını artırdığı görüşünde. Fed 16 Eylül'de 2023'ten bu yana ilk kez faiz artırdı (%3,75-4,00). Vitrinde iki değişiklik: ihtiyaç kredisinde Kuveyt Türk'ün %1,99 teklifi artık yalnızca 50.000 TL'ye kadar geçerli, 100.000 TL'de en uygun oran %2,79 ile Alternatif Bank (QNB %2,84); konutta Kuveyt Türk'ün %2,87'lik teklifi listeden çıktı, Ziraat %2,89 ile lider. TCMB haftalık verisine göre 11 Eylül haftasında konut kredisi ortalama faizi yıllık %41,93, ihtiyaç kredisi %64,14, taşıt %40,53; TL mevduat faizi %43,90'a geriledi.",
   },
+  {
+    date: "2026-09-28",
+    policyRate: 37,
+    konut: {
+      min: 2.89,
+      avg: 3.66,
+      source:
+        "Ziraat Bankası / Ziraat Katılım (en uygun, 1.000.000 TL / 120 ay, 25-28 Eylül), Hesapkurdu.com piyasa ortalaması (25 Eylül)",
+    },
+    ihtiyac: {
+      min: 2.84,
+      avg: 3.66,
+      source:
+        "QNB (en uygun, 100.000 TL / 12 ay, 27 Eylül), Hesapkurdu.com piyasa ortalaması (25 Eylül)",
+    },
+    tasit: {
+      min: 2.99,
+      avg: 3.66,
+      source:
+        "Dünya Katılım (en uygun, 200.000 TL / 48 ay, 27 Eylül), Hesapkurdu.com piyasa ortalaması (25 Eylül)",
+    },
+    nextPpkDate: "2026-10-22",
+    note:
+      "TCMB politika faizi %37'de sabit; bir sonraki PPK 22 Ekim. TCMB'nin 23 Ağustos'ta başlattığı haftalık repo ihaleleri ve 17 Eylül'deki ek likidite adımlarıyla (repo fonlamasını artırma, teminat iskontolarını düşürme) fiili fonlama maliyeti kademeli geriliyor; bazı kurumlar Ekim PPK'sında 100 baz puanlık indirim, yıl sonu için %34-36 bandında politika faizi bekliyor. Vitrinde üç değişiklik: konutta Ziraat Bankası ve Ziraat Katılım %2,89 ile lider (Kuveyt Türk'ün %2,87'lik teklifi listeden çıktı); ihtiyaç kredisinde QNB %2,84 ile öne geçti, geçen haftanın lideri Alternatif Bank %2,99'a yükseldi; taşıtta Dünya Katılım %2,99 ile ilk sırada. TCMB'nin haftalık banka verisine göre 18 Eylül haftasında konut kredisi gerçekleşen ortalama faizi %41,96'ya (+3 baz puan) çıkarken taşıt kredisinde %45,54'e (+501 baz puan, sert sıçrama) yükseldi, ihtiyaç kredisinde %63,03'e (-111 baz puan) geriledi; ticari kredi faizi %52,85 (-79 baz puan).",
+  },
 ];
 
 export function latestRates(): RateSnapshot {
