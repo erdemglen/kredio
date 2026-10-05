@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ekim-2026-kira-artis-orani-aciklandi",
+    title:
+      "Ekim 2026 kira artış oranı %31,49 açıklandı: tahminimiz %31,5 idi, yıllık enflasyon %30'un altına indi",
+    description:
+      "TÜİK Eylül enflasyonunu açıkladı: aylık %1,84 (beklenti %2,18), yıllık %29,73, 12 aylık ortalama %31,49. Ekim'de yenilenen kira sözleşmelerinin yasal tavanı Eylül'deki %31,79'dan 0,30 puan geriledi. Tahmin neden bu kez tuttu, manşet enflasyonla kira tavanı arasındaki makas neden 1,76 puana açıldı, 20.000-40.000 TL kiralar için yeni tutarlar ve Kasım-Aralık için güncellenmiş tahmin.",
+    date: "2026-10-05",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
+    slug: "bddk-kredi-karti-asgari-odeme-esigi-100-bin-tl",
+    title:
+      "BDDK kart asgari ödeme eşiğini 100.000 TL'ye çıkardı: limiti 50-100 bin TL arası kartlarda %40 yerine %20 — 80.000 TL borçta faiz 11.103 TL'den 25.785 TL'ye çıkıyor",
+    description:
+      "BDDK'nın 1 Ekim tarihli 11582 sayılı kararıyla limiti 50.000-100.000 TL arasındaki kartlarda asgari ödeme oranı dönem borcunun %40'ından %20'sine iniyor. Aylık yük yarıya düşüyor ama sadece asgariyi ödeyenin borcu 28 ay yerine 74 ayda kapanıyor ve vergiler dahil faiz 2,3 katına çıkıyor. Üç kart borcu için hesap, sabit ödeme ve ihtiyaç kredisiyle karşılaştırma, ayrıca cep telefonu kredisi vade sınırları.",
+    date: "2026-10-05",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
     slug: "tasit-kredisi-faiz-oranlari-eylul-sonu-2026",
     title:
       "Taşıt kredisi faiz oranları Eylül sonu 2026: vitrinde %2,99 dururken TCMB verisinde gerçekleşen ortalama neden %45,54'e sıçradı?",

@@ -41,6 +41,19 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (5 Ekim 2026):</strong>{" "}TÜİK verisi açıklandı;
+        Ekim 2026 kira artış tavanı <strong>%31,49</strong> oldu — aşağıdaki
+        %31,5 tahminiyle 0,01 puan fark. Kesinleşen rakam, manşet enflasyonla
+        kira tavanı arasındaki makasın neden açıldığı ve güncel örnek hesap
+        için{" "}
+        <a href="/blog/ekim-2026-kira-artis-orani-aciklandi">
+          Ekim 2026 kira artış oranı %31,49 açıklandı
+        </a>{" "}
+        yazımıza bakın. Aşağıdaki metin, açıklama öncesi yazıldığı hâliyle
+        korunuyor.
+      </p>
+
+      <p>
         Ekim&apos;de kira sözleşmesi yenilenecek kiracı ve ev sahipleri için
         tarih <strong>5 Ekim Pazartesi, saat 10:00</strong>. TÜİK Eylül ayı
         enflasyonunu normalde ayın 3&apos;ünde açıklar; 3 Ekim bu yıl

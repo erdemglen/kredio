@@ -186,6 +186,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; bir sonraki PPK 22 Ekim. TCMB'nin 23 Ağustos'ta başlattığı haftalık repo ihaleleri ve 17 Eylül'deki ek likidite adımlarıyla (repo fonlamasını artırma, teminat iskontolarını düşürme) fiili fonlama maliyeti kademeli geriliyor; bazı kurumlar Ekim PPK'sında 100 baz puanlık indirim, yıl sonu için %34-36 bandında politika faizi bekliyor. Vitrinde üç değişiklik: konutta Ziraat Bankası ve Ziraat Katılım %2,89 ile lider (Kuveyt Türk'ün %2,87'lik teklifi listeden çıktı); ihtiyaç kredisinde QNB %2,84 ile öne geçti, geçen haftanın lideri Alternatif Bank %2,99'a yükseldi; taşıtta Dünya Katılım %2,99 ile ilk sırada. TCMB'nin haftalık banka verisine göre 18 Eylül haftasında konut kredisi gerçekleşen ortalama faizi %41,96'ya (+3 baz puan) çıkarken taşıt kredisinde %45,54'e (+501 baz puan, sert sıçrama) yükseldi, ihtiyaç kredisinde %63,03'e (-111 baz puan) geriledi; ticari kredi faizi %52,85 (-79 baz puan).",
   },
+  {
+    date: "2026-10-05",
+    policyRate: 37,
+    konut: {
+      min: 2.87,
+      avg: 3.61,
+      source:
+        "Kuveyt Türk (en uygun, 1.000.000 TL / 120 ay, 5 Ekim), Hesapkurdu.com piyasa ortalaması (5 Ekim)",
+    },
+    ihtiyac: {
+      min: 2.77,
+      avg: 3.61,
+      source:
+        "Kuveyt Türk (en uygun, 100.000 TL / 12 ay, 5 Ekim), Hesapkurdu.com piyasa ortalaması (2 Ekim)",
+    },
+    tasit: {
+      min: 2.99,
+      avg: 3.61,
+      source:
+        "Dünya Katılım (en uygun, 200.000 TL / 48 ay, 5 Ekim), Hesapkurdu.com piyasa ortalaması (2 Ekim)",
+    },
+    nextPpkDate: "2026-10-22",
+    note:
+      "TCMB politika faizi %37'de sabit; bir sonraki PPK 22 Ekim. Ekonomistler ağırlıklı olarak Ekim ve Aralık'ta 100'er baz puanlık indirim, yıl sonunda %35 bekliyor. TÜİK 5 Ekim'de Eylül enflasyonunu açıkladı: aylık %1,84 (AA Finans anketi beklentisi %2,18), yıllık %29,73, TÜFE 12 aylık ortalaması %31,49; Ekim ayında yenilenen kira sözleşmeleri için yasal tavan %31,49 oldu (Eylül: %31,79). BDDK 1 Ekim tarihli 11582 sayılı kararla kredi kartı asgari ödeme eşiğini 50.000 TL'den 100.000 TL'ye çıkardı: limiti 50.000-100.000 TL arasındaki kartlarda asgari oran %40'tan %20'ye iniyor; 11581 sayılı kararla da cep telefonu tüketici kredilerinde vade, fiyatı 40.000 TL'ye kadar olan telefonlarda 12 ay, üstünde 3 ay ile sınırlandı. Kart azami faiz oranları Ekim'de değişmedi (%3,25 / %3,75 / %4,25). Vitrinde üç değişiklik: konutta Kuveyt Türk'ün %2,87'lik teklifi listeye geri döndü ve Ziraat Bankası ile Ziraat Katılım'ın %2,89'unu geçti; ihtiyaç kredisinde Kuveyt Türk 100.000 TL / 12 ay için %2,77 ile lider (QNB %2,84, Odeabank %3,19); taşıtta Dünya Katılım %2,99 ile ilk sırada, Vakıf Katılım %3,14. TCMB'nin haftalık banka verisine göre 25 Eylül haftasında konut kredisi gerçekleşen ortalama faizi %41,82'ye (-14 baz puan) geriledi, taşıt kredisi %47,71'e (+217 baz puan) yükseldi, ihtiyaç kredisi %62,73'e (-30 baz puan) indi; TL ticari kredi %52,28 (-57 baz puan), TL mevduat %43,35 (-21 baz puan).",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

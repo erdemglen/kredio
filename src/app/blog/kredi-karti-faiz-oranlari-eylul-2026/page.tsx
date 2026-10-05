@@ -46,6 +46,21 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (5 Ekim 2026):</strong>{" "}BDDK, 1 Ekim tarihli ve
+        11582 sayılı kararıyla asgari ödeme oranını belirleyen kart limiti
+        eşiğini 50.000 TL&apos;den 100.000 TL&apos;ye çıkardı: limiti
+        50.000-100.000 TL arasındaki kartlarda asgari oran %40&apos;tan
+        %20&apos;ye iniyor. Aşağıdaki &quot;50.000 TL üzeri %40&quot;
+        ifadesi ve asgari ödeme tablosu bu karardan önceki kurala göre
+        yazıldı; yeni kuralın etkisini 60.000-95.000 TL borç için{" "}
+        <a href="/blog/bddk-kredi-karti-asgari-odeme-esigi-100-bin-tl">
+          BDDK kart asgari ödeme eşiğini 100.000 TL&apos;ye çıkardı
+        </a>{" "}
+        yazımızda hesapladık. Kart azami faiz oranları ise Ekim&apos;de de
+        değişmedi (%3,25 / %3,75 / %4,25).
+      </p>
+
+      <p>
         Merkez Bankası&apos;nın 1 Eylül&apos;de yayımladığı tabloya göre kredi
         kartı işlemlerinde uygulanabilecek azami faiz oranları Eylül&apos;de de
         değişmedi. Tarife 1 Ocak 2026&apos;dan beri aynı: Ocak&apos;ta hem borç
