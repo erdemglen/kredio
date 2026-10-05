@@ -21,7 +21,7 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Kredinizin yıllık maliyet oranı</strong> — vergiler dahil,
+          <strong>Kredinizin yıllık maliyet oranı</strong>{" "}— vergiler dahil,
           bileşik hesaplanmış gerçek maliyet
         </li>
         <li>
@@ -29,7 +29,7 @@ export default function Page() {
         </li>
       </ul>
       <p>
-        Yatırım getiriniz kredi maliyetini <em>net olarak</em> geçiyorsa parayı
+        Yatırım getiriniz kredi maliyetini <em>net olarak</em>{" "}geçiyorsa parayı
         yatırımda tutun. Geçmiyorsa ara ödeme yapın. Bu kadar basit — ama
         rakamları doğru seçmek şart.
       </p>
@@ -48,7 +48,7 @@ export default function Page() {
       <p>
         İhtiyaç kredisinde fark daha da çarpıcı. Aylık %3,59 ilan edilen bir
         ihtiyaç kredisinde KKDF ve BSMV ile efektif oran %4,4875&apos;e çıkar ve
-        yıllık maliyet <strong>%69,34</strong> olur. Böyle bir krediyi kapatmak,
+        yıllık maliyet <strong>%69,34</strong>{" "}olur. Böyle bir krediyi kapatmak,
         neredeyse her yatırımı yener.
       </p>
 
@@ -62,7 +62,7 @@ export default function Page() {
       <p>
         Mevduatın brüt faizi ile kredi maliyetini karşılaştırmak sık yapılan
         ikinci hatadır. Mevduat getirisinden stopaj kesilir; karşılaştırmaya
-        <strong> vergi sonrası</strong> rakamı koymalısınız. Fon ve diğer
+        <strong> vergi sonrası</strong>{" "}rakamı koymalısınız. Fon ve diğer
         araçlarda da vergilendirme ve varsa komisyonlar düşülmeli.
       </p>
       <p>
@@ -89,7 +89,7 @@ export default function Page() {
       />
 
       <p>
-        Ödediğiniz her 1 TL, <strong>7,64 TL</strong> faiz tasarrufu sağlıyor.
+        Ödediğiniz her 1 TL, <strong>7,64 TL</strong>{" "}faiz tasarrufu sağlıyor.
         Aynı 300.000 TL&apos;nin bu kadar süre içinde yatırımda bu performansı
         garantili olarak vermesi çok zor.
       </p>
@@ -97,17 +97,17 @@ export default function Page() {
       <h2>Ara ödeme yapmadan önce üç kontrol</h2>
       <ol>
         <li>
-          <strong>Acil durum fonunuz duruyor mu?</strong> Krediyi kapatıp
+          <strong>Acil durum fonunuz duruyor mu?</strong>{" "}Krediyi kapatıp
           nakitsiz kalmak, ilk aksilikte %4-5 aylık faizli ihtiyaç kredisine
           mecbur bırakır. Bu, kazandığınız tasarrufu hızla siler.
         </li>
         <li>
-          <strong>Daha pahalı bir borcunuz var mı?</strong> Kredi kartı borcu
+          <strong>Daha pahalı bir borcunuz var mı?</strong>{" "}Kredi kartı borcu
           veya ihtiyaç kredisi varken konut kredisine ara ödeme yapmak yanlış
           sıralamadır. Her zaman en yüksek maliyetli borçtan başlayın.
         </li>
         <li>
-          <strong>Tazminat ne kadar?</strong> Erken ödeme tazminatı, kalan vadesi
+          <strong>Tazminat ne kadar?</strong>{" "}Erken ödeme tazminatı, kalan vadesi
           36 aydan fazlaysa kalan anaparanın en fazla %2&apos;sidir. Hesaba dahil
           edin — ama yukarıdaki tasarrufun yanında genellikle küçük kalır.
         </li>
@@ -117,7 +117,7 @@ export default function Page() {
       <p>
         Ara ödeme yaptığınızda bu seçim size aittir ve sonucu ciddi biçimde
         değiştirir. Bütçeniz mevcut taksiti kaldırıyorsa{" "}
-        <strong>vadeyi kısaltın</strong> — faiz tasarrufu en yüksek bu şekilde
+        <strong>vadeyi kısaltın</strong>{" "}— faiz tasarrufu en yüksek bu şekilde
         olur. Nakit akışınız zorlanıyorsa taksiti düşürmek daha az kazandırır
         ama sizi rahatlatır.
       </p>

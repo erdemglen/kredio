@@ -56,11 +56,11 @@ export default function Page() {
       <h2>Birden fazla kartta borç varsa hangisi önce?</h2>
       <ul>
         <li>
-          <strong>En yüksek faizli kart önce:</strong> Toplam maliyeti en
+          <strong>En yüksek faizli kart önce:</strong>{" "}Toplam maliyeti en
           hızlı düşüren yöntem budur — &quot;çığ&quot; (avalanche) yöntemi.
         </li>
         <li>
-          <strong>En küçük bakiyeli kart önce:</strong> Matematiksel olarak
+          <strong>En küçük bakiyeli kart önce:</strong>{" "}Matematiksel olarak
           daha az tasarruf ettirir ama bir kartı tamamen kapatmanın verdiği
           motivasyon bazı kişiler için sürdürülebilirliği artırır —
           &quot;kartopu&quot; (snowball) yöntemi.

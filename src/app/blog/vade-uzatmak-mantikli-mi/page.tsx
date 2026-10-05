@@ -38,12 +38,12 @@ export default function Page() {
         Vadeyi 60 aydan 120 aya çıkardığınızda taksit 8.111 TL düşüyor — ciddi
         bir rahatlama. Ama 120 aydan 180 aya çıkardığınızda düşüş sadece{" "}
         <strong>1.210 TL</strong>. 180&apos;den 240 aya geçtiğinizde ise taksit
-        yalnızca <strong>211 TL</strong> azalıyor.
+        yalnızca <strong>211 TL</strong>{" "}azalıyor.
       </p>
       <p>
         Buna karşılık toplam faiz her adımda milyonlarca lira artıyor. 180 aydan
         240 aya geçmek, aylık 211 TL rahatlama karşılığında{" "}
-        <strong>2.565.647 TL</strong> ek maliyet demek. Bu, kötü bir takas.
+        <strong>2.565.647 TL</strong>{" "}ek maliyet demek. Bu, kötü bir takas.
       </p>
       <p>
         Sebep matematiksel: vade uzadıkça taksit, faizin kendisine asimptotik
@@ -71,18 +71,18 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Nakit akışı güvenliği:</strong> Geliriniz düzensizse veya iş
+          <strong>Nakit akışı güvenliği:</strong>{" "}Geliriniz düzensizse veya iş
           güvenceniz zayıfsa, düşük taksit sizi temerrüt riskinden korur.
           Ödeyememe, faizden pahalıdır.
         </li>
         <li>
-          <strong>Ara ödeme yapma niyetiniz varsa:</strong> Uzun vade alıp
+          <strong>Ara ödeme yapma niyetiniz varsa:</strong>{" "}Uzun vade alıp
           düzenli ara ödeme yapmak, kısa vadeye mecbur kalmaktan esnektir.
           Zorunda kalmadığınız sürece fazla ödersiniz, sıkıştığınızda düşük
           taksite dönersiniz.
         </li>
         <li>
-          <strong>Yüksek enflasyon ortamında:</strong> Sabit faizli bir kredide
+          <strong>Yüksek enflasyon ortamında:</strong>{" "}Sabit faizli bir kredide
           taksitiniz nominal olarak sabit kalırken geliriniz enflasyonla artarsa,
           taksitin gelirinize oranı zamanla düşer. Bu, uzun vadeyi bir miktar
           savunulabilir kılar.

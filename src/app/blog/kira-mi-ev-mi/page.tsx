@@ -47,11 +47,11 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Satın alan:</strong> Konutun güncel değeri − satış masrafları −
+          <strong>Satın alan:</strong>{" "}Konutun güncel değeri − satış masrafları −
           kalan kredi borcu
         </li>
         <li>
-          <strong>Kirada kalan:</strong> Yatırıma konan peşinat ve alım
+          <strong>Kirada kalan:</strong>{" "}Yatırıma konan peşinat ve alım
           masrafları + her ay biriken nakit farkı, getirisiyle birlikte
         </li>
       </ul>
@@ -68,17 +68,17 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Yıllık konut değer artışı</strong> — evinizin değerinin ne
+          <strong>Yıllık konut değer artışı</strong>{" "}— evinizin değerinin ne
           hızla artacağı
         </li>
         <li>
-          <strong>Alternatif yatırım getirisi</strong> — peşinatı başka bir yerde
+          <strong>Alternatif yatırım getirisi</strong>{" "}— peşinatı başka bir yerde
           değerlendirseniz ne kazanacağınız
         </li>
       </ol>
       <p>
         Kural sade: <strong>yatırım getiriniz konut değer artışını sürekli
-        aşarsa kirada kalmak, tersi olursa satın almak kazanır.</strong> Diğer
+        aşarsa kirada kalmak, tersi olursa satın almak kazanır.</strong>{" "}Diğer
         tüm kalemler bu dengeyi biraz öne veya arkaya kaydırır ama yönü
         değiştirmez.
       </p>
@@ -98,14 +98,14 @@ export default function Page() {
       </p>
       <p>
         Pratik kural: <strong>kesişim noktasından önce taşınmayı
-        düşünüyorsanız satın almak muhtemelen zarar ettirir.</strong> Kesişimin
+        düşünüyorsanız satın almak muhtemelen zarar ettirir.</strong>{" "}Kesişimin
         çok ötesinde kalacaksanız satın almak avantajlıdır.
       </p>
 
       <h2>Türkiye&apos;ye özgü iki uyarı</h2>
       <ul>
         <li>
-          <strong>Kira artışı ile piyasa kirası aynı şey değil.</strong> Mevcut
+          <strong>Kira artışı ile piyasa kirası aynı şey değil.</strong>{" "}Mevcut
           sözleşmenizdeki artış yasal sınırlara tabidir (bkz.{" "}
           <a href="/kira-artis-hesaplama">kira artış oranı hesaplayıcımız</a>
           ), ama taşınmak zorunda kaldığınızda kira bir anda piyasa
@@ -114,7 +114,7 @@ export default function Page() {
         </li>
         <li>
           <strong>Son yılların konut değer artışı büyük ölçüde
-          enflasyondur.</strong> Konut artışını %40 varsayıp yatırım getirisini
+          enflasyondur.</strong>{" "}Konut artışını %40 varsayıp yatırım getirisini
           %20 girerseniz karşılaştırma anlamını kaybeder. İkisini de aynı
           mantıkla, tercihen reel (enflasyondan arındırılmış) olarak seçin.
         </li>

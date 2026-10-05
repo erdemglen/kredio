@@ -25,8 +25,8 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
-        <strong>Güncelleme (3 Eylül 2026):</strong> TÜİK verisi açıklandı;
-        Eylül 2026 kira artış tavanı <strong>%31,79</strong> oldu — aşağıdaki
+        <strong>Güncelleme (3 Eylül 2026):</strong>{" "}TÜİK verisi açıklandı;
+        Eylül 2026 kira artış tavanı <strong>%31,79</strong>{" "}oldu — aşağıdaki
         %30,98 tahmininin üzerinde. Kesinleşen rakam, tahminle farkının nedeni
         ve güncel örnek hesap için{" "}
         <a href="/blog/eylul-2026-kira-artis-orani-aciklandi">
@@ -42,14 +42,14 @@ export default function Page() {
         gün Ağustos ayı enflasyon verilerini açıklayacak ve bu veri,
         Eylül&apos;de yenilenen kira sözleşmelerinde uygulanabilecek yasal
         artış tavanını belirleyecek. Resmî rakam henüz yok ama piyasa tahmini{" "}
-        <strong>%30,98</strong> civarında.
+        <strong>%30,98</strong>{" "}civarında.
       </p>
 
       <h2>Tahmin nereden geliyor</h2>
       <p>
         Türk Borçlar Kanunu&apos;nun 344. maddesine göre kira artış tavanı,
         TÜFE&apos;nin (Tüketici Fiyat Endeksi){" "}
-        <strong>12 aylık ortalamalara göre değişim oranını</strong> aşamaz.
+        <strong>12 aylık ortalamalara göre değişim oranını</strong>{" "}aşamaz.
         Ağustos ayı aylık enflasyonunun yaklaşık %1,44 gerçekleşmesi
         bekleniyor; bu varsayımla yapılan hesaplamalara göre 12 aylık
         ortalama TÜFE değişimi %30,98 seviyesine gelebilir. Temmuz 2026
@@ -57,7 +57,7 @@ export default function Page() {
         oran hafifçe gerileyecek.
       </p>
       <p>
-        <strong>Önemli:</strong> Bu, TÜİK açıklamasından önce paylaşılan bir{" "}
+        <strong>Önemli:</strong>{" "}Bu, TÜİK açıklamasından önce paylaşılan bir{" "}
         <strong>tahmin</strong>; resmî ve bağlayıcı değil. Kesin oran ancak
         Ağustos enflasyon verisi açıklandıktan sonra netleşir.
       </p>

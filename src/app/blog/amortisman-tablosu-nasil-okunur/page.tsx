@@ -17,23 +17,23 @@ export default function Page() {
       <h2>Sütunlar ne anlama geliyor?</h2>
       <ul>
         <li>
-          <strong>Taksit:</strong> O ay ödeyeceğiniz toplam tutar. Eşit taksitli
+          <strong>Taksit:</strong>{" "}O ay ödeyeceğiniz toplam tutar. Eşit taksitli
           kredilerde vade boyunca sabittir.
         </li>
         <li>
-          <strong>Anapara:</strong> Taksitin borcunuzu gerçekten azaltan kısmı.
+          <strong>Anapara:</strong>{" "}Taksitin borcunuzu gerçekten azaltan kısmı.
           Zamanla büyür.
         </li>
         <li>
-          <strong>Faiz:</strong> Bankaya kalan borcunuz karşılığında ödediğiniz
+          <strong>Faiz:</strong>{" "}Bankaya kalan borcunuz karşılığında ödediğiniz
           bedel. Zamanla küçülür.
         </li>
         <li>
-          <strong>KKDF ve BSMV:</strong> İhtiyaç ve taşıt kredilerinde faiz
+          <strong>KKDF ve BSMV:</strong>{" "}İhtiyaç ve taşıt kredilerinde faiz
           üzerinden alınan vergiler. Konut kredilerinde bu sütunlar boştur.
         </li>
         <li>
-          <strong>Kalan anapara:</strong> O taksiti ödedikten sonra bankaya olan
+          <strong>Kalan anapara:</strong>{" "}O taksiti ödedikten sonra bankaya olan
           borcunuz. Krediyi kapatmak isterseniz esas alınacak tutar budur.
         </li>
       </ul>
@@ -92,16 +92,16 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Sigorta primleri:</strong> Hayat sigortası ve konut sigortası
+          <strong>Sigorta primleri:</strong>{" "}Hayat sigortası ve konut sigortası
           taksite eklenmiş olabilir.
         </li>
         <li>
-          <strong>İlk taksit gecikmesi:</strong> Kredinin kullandırıldığı gün ile
+          <strong>İlk taksit gecikmesi:</strong>{" "}Kredinin kullandırıldığı gün ile
           ilk taksit tarihi arasında 30 günden fazla süre varsa, ek faiz
           tahakkuk eder ve ilk taksit diğerlerinden yüksek olur.
         </li>
         <li>
-          <strong>Yuvarlama:</strong> Bankalar kuruş farklarını genelde son
+          <strong>Yuvarlama:</strong>{" "}Bankalar kuruş farklarını genelde son
           taksitte düzeltir; bu yüzden son taksit birkaç lira farklı çıkabilir.
         </li>
       </ul>

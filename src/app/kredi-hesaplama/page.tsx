@@ -74,7 +74,7 @@ export default function Page() {
         </p>
         <p>
           Taksit tutarı şu formülle bulunur: aylık efektif faiz oranı{" "}
-          <em>i</em>, vade <em>n</em> ay ve anapara <em>A</em> olmak üzere
+          <em>i</em>, vade <em>n</em>{" "}ay ve anapara <em>A</em>{" "}olmak üzere
           taksit = A × i × (1+i)ⁿ / ((1+i)ⁿ − 1). Efektif oran, ilan edilen
           aylık faizin KKDF ve BSMV ile çarpılmış halidir.
         </p>

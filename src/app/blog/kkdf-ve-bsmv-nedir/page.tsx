@@ -30,19 +30,19 @@ export default function Page() {
       <h2>Bu vergiler nedir?</h2>
       <ul>
         <li>
-          <strong>KKDF — Kaynak Kullanımını Destekleme Fonu:</strong> Tüketici
+          <strong>KKDF — Kaynak Kullanımını Destekleme Fonu:</strong>{" "}Tüketici
           kredilerinde faiz tutarı üzerinden alınan %15&apos;lik kesinti.
         </li>
         <li>
-          <strong>BSMV — Banka ve Sigorta Muameleleri Vergisi:</strong> Yine faiz
+          <strong>BSMV — Banka ve Sigorta Muameleleri Vergisi:</strong>{" "}Yine faiz
           tutarı üzerinden alınan %15&apos;lik vergi (7 Temmuz 2023&apos;te
           yürürlüğe giren 7345 sayılı Cumhurbaşkanı Kararı ile %10&apos;dan
           %15&apos;e çıkarıldı).
         </li>
       </ul>
       <p>
-        Kritik ayrıntı şu: bu oranlar <em>anapara</em> üzerinden değil,{" "}
-        <em>faiz tutarı</em> üzerinden hesaplanır. Yani %15 + %15 = %30, faizin
+        Kritik ayrıntı şu: bu oranlar <em>anapara</em>{" "}üzerinden değil,{" "}
+        <em>faiz tutarı</em>{" "}üzerinden hesaplanır. Yani %15 + %15 = %30, faizin
         üzerine binen bir çarpandır.
       </p>
 
@@ -70,7 +70,7 @@ export default function Page() {
       </p>
       <p>
         Örneğin aylık %3,59 faizli bir ihtiyaç kredisinde efektif oran %3,59 ×
-        1,30 = <strong>%4,667</strong> olur. Taksitiniz bu oran üzerinden
+        1,30 = <strong>%4,667</strong>{" "}olur. Taksitiniz bu oran üzerinden
         hesaplanır. Ödeme planındaki her ayın faiz satırı da aynı mantıkla saf
         faiz, KKDF ve BSMV olarak ayrışır.
       </p>
@@ -92,7 +92,7 @@ export default function Page() {
 
       <p>
         Aynı anapara, aynı ilan edilen faiz, aynı vade — ama toplam geri ödeme
-        arasında <strong>28.616 TL fark</strong> var. Bunun 12.501 TL&apos;si
+        arasında <strong>28.616 TL fark</strong>{" "}var. Bunun 12.501 TL&apos;si
         KKDF, 12.501 TL&apos;si BSMV; kalan 3.614 TL ise vergilerin anapara
         ödemesini yavaşlatmasından doğan ek faiz. Aylık taksitte fark 795 TL.
       </p>

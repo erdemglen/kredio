@@ -50,9 +50,9 @@ export default function Page() {
       <h2>Taşıt kredisi neden ihtiyaç kredisinden farklı fiyatlanıyor?</h2>
       <p>
         Taşıt kredisi de tıpkı ihtiyaç kredisi gibi{" "}
-        <strong>KKDF ve BSMV&apos;ye tabi</strong> — konut kredisindeki gibi
+        <strong>KKDF ve BSMV&apos;ye tabi</strong>{" "}— konut kredisindeki gibi
         bir vergi istisnası yok. Bu iki verginin efektif maliyete etkisini{" "}
-        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir?</a> yazımızda
+        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir?</a>{" "}yazımızda
         ayrıntılı anlattık. Yani ilan edilen %3,14-3,72 bandındaki aylık
         oranın üzerine, ödeyeceğiniz gerçek maliyet KKDF ve BSMV ile birkaç
         puan daha yükselir.

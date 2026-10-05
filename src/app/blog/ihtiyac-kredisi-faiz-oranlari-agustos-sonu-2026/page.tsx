@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
-        <strong>Güncelleme (22 Eylül 2026):</strong> Aşağıda anlatılan
+        <strong>Güncelleme (22 Eylül 2026):</strong>{" "}Aşağıda anlatılan
         %1,99&apos;luk Kuveyt Türk teklifi 20 Eylül itibarıyla yalnızca 50.000
         TL&apos;ye kadar geçerli; 100.000 TL / 12 ay için en uygun oran %2,79
         ile Alternatif Bank. Güncel liste, taksit farkı ve krediyi iki
@@ -63,7 +63,7 @@ export default function Page() {
       <h2>İlan edilen faiz ile gerçek maliyet neden farklı</h2>
       <p>
         İhtiyaç kredisi, konut kredisinin aksine <strong>KKDF (%15) ve BSMV
-        (%15)</strong> vergilerinden istisna değil. Yani ilan edilen
+        (%15)</strong>{" "}vergilerinden istisna değil. Yani ilan edilen
         %1,99&apos;luk oran, efektif maliyeti tam yansıtmıyor — bu iki vergi
         eklendiğinde gerçek maliyet belirgin şekilde yükselir. Bu hesaplamanın
         nasıl yapıldığını{" "}
@@ -81,18 +81,18 @@ export default function Page() {
         Bunun iki nedeni var: ihtiyaç kredisi KKDF/BSMV&apos;den istisna değil
         ve konut kredisindeki gibi kamu bankası rekabeti aynı yoğunlukta
         değil. Güncel konut ve taşıt kredisi karşılaştırmasını{" "}
-        <a href="/faiz-oranlari">güncel faiz oranları</a> sayfamızdan
+        <a href="/faiz-oranlari">güncel faiz oranları</a>{" "}sayfamızdan
         görebilirsiniz.
       </p>
 
       <h2>Başvurmadan önce dikkat edilmesi gerekenler</h2>
       <ol>
         <li>
-          <strong>Sadece faize bakmayın.</strong> Dosya masrafı, hayat
+          <strong>Sadece faize bakmayın.</strong>{" "}Dosya masrafı, hayat
           sigortası gibi ek maliyetler toplam ödemeyi değiştirebilir.
         </li>
         <li>
-          <strong>Kredi notunuz oranı doğrudan etkiler.</strong> Findeks notu
+          <strong>Kredi notunuz oranı doğrudan etkiler.</strong>{" "}Findeks notu
           düşük olan biri, ilan edilen en uygun orana değil bankanın
           &quot;riskli müşteri&quot; bandına yerleştirilebilir — bu konuyu{" "}
           <a href="/blog/kredi-notu-faizi-nasil-etkiler">
@@ -101,7 +101,7 @@ export default function Page() {
           yazımızda ele aldık.
         </li>
         <li>
-          <strong>Vade uzunluğu toplam maliyeti büyütür.</strong> Taksit
+          <strong>Vade uzunluğu toplam maliyeti büyütür.</strong>{" "}Taksit
           küçülse de ödediğiniz toplam faiz artar; ayrıntısı{" "}
           <a href="/blog/vade-uzatmak-mantikli-mi">
             Vadeyi uzatmak mantıklı mı?

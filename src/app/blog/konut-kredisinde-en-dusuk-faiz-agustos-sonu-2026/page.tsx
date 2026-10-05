@@ -32,7 +32,7 @@ export default function Page() {
         katılım bankaları veriyordu — önce Vakıf Katılım, sonra Kuveyt Türk.
         Ay sonuna doğru tablo değişti: <strong>İş Bankası %2,65</strong>{" "}
         aylık faizle konvansiyonel bankalar arasında en düşük teklifi
-        verirken, <strong>Kuveyt Türk %2,76, Akbank ve TEB %2,85</strong> ile
+        verirken, <strong>Kuveyt Türk %2,76, Akbank ve TEB %2,85</strong>{" "}ile
         hemen arkasından geliyor. Bazı karşılaştırma kaynaklarına göre
         katılım bankaları tarafında Vakıf Katılım hâlâ %2,84 ile rekabetçi.
       </p>
@@ -84,7 +84,7 @@ export default function Page() {
 
       <p>
         Kendi kredi tutarınız ve vadenizle taksiti hesaplamak isterseniz{" "}
-        <a href="/kredi-hesaplama">kredi hesaplayıcımızı</a> kullanabilirsiniz.
+        <a href="/kredi-hesaplama">kredi hesaplayıcımızı</a>{" "}kullanabilirsiniz.
       </p>
     </PostLayout>
   );

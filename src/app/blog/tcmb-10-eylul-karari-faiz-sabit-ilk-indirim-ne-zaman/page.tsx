@@ -119,31 +119,31 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>İris Cibre:</strong> Arz şokları fiyatlara yansımazsa metin
+          <strong>İris Cibre:</strong>{" "}Arz şokları fiyatlara yansımazsa metin
           Ekim&apos;de indirime kapı aralıyor.
         </li>
         <li>
-          <strong>Haluk Bürümcekçi (AA Finans):</strong> Enerji fiyatlarında
+          <strong>Haluk Bürümcekçi (AA Finans):</strong>{" "}Enerji fiyatlarında
           iyileşme olursa yıl sonuna kadar sınırlı bir indirim alanı var,
           &quot;maksimum 200 baz puan&quot;; anketlerde yıl sonu medyan
           beklentisi %35&apos;e yükseldi.
         </li>
         <li>
-          <strong>Kutay Gözgör (Kuveyt Türk Yatırım):</strong> Görünüm
+          <strong>Kutay Gözgör (Kuveyt Türk Yatırım):</strong>{" "}Görünüm
           korunursa Ekim ve Aralık&apos;ta 100&apos;er baz puan, yıl sonunda
           %35.
         </li>
         <li>
-          <strong>Emre Alkin:</strong> &quot;Hevesim var ama sebebim yok&quot;
+          <strong>Emre Alkin:</strong>{" "}&quot;Hevesim var ama sebebim yok&quot;
           — yıl bitmeden düşebilir.
         </li>
         <li>
-          <strong>Ali Çufadar (TEPAV):</strong> Arz yönlü şok dışında ciddi
+          <strong>Ali Çufadar (TEPAV):</strong>{" "}Arz yönlü şok dışında ciddi
           enflasyonist baskı yok ama ekonomi zayıf, büyüme %3&apos;ün altında
           kalır; &quot;faizlerin askıda kalma riski arttı&quot;.
         </li>
         <li>
-          <strong>Mahfi Eğilmez:</strong> &quot;Doğru karar.&quot;
+          <strong>Mahfi Eğilmez:</strong>{" "}&quot;Doğru karar.&quot;
         </li>
       </ul>
       <p>
@@ -219,7 +219,7 @@ export default function Page() {
         Merkez Bankası&apos;nın haftalık verisine göre 4 Eylül haftasında
         bankaların fiilen kullandırdığı kredilerin ağırlıklı ortalama yıllık
         faizi konutta %41,94 (bir önceki hafta %41,89), ihtiyaçta{" "}
-        <strong>%62,95</strong> (231 baz puan artış), taşıtta %37,55. İhtiyaç
+        <strong>%62,95</strong>{" "}(231 baz puan artış), taşıtta %37,55. İhtiyaç
         kredisinde ilan edilen %1,99 ile gerçekleşen ortalama arasındaki uçurum,
         en düşük oranın herkese verilmediğini; kredi notu, gelir ve vade
         seçiminin oranı belirlediğini gösteriyor. TL mevduat faizi ise aynı
@@ -279,7 +279,7 @@ export default function Page() {
       <p>Sonuç ürüne göre değişiyor:</p>
       <ul>
         <li>
-          <strong>İhtiyaç kredisi:</strong> 12 aylık kredide 0,10 puan ayda 77
+          <strong>İhtiyaç kredisi:</strong>{" "}12 aylık kredide 0,10 puan ayda 77
           TL. Bir ay beklemenin kazancı bu kadar; o ay boyunca daha pahalı bir
           kaynak (kredi kartı, KMH) kullanıyorsanız beklemek zarar. Asıl fark
           bankalar arasında: %1,99 ile %3,68 (piyasa ortalaması) arasındaki
@@ -287,12 +287,12 @@ export default function Page() {
           bulmak, doğru ayı beklemekten 17 kat değerli.
         </li>
         <li>
-          <strong>Taşıt kredisi:</strong> 48 ay vadede 0,10 puan toplamda
+          <strong>Taşıt kredisi:</strong>{" "}48 ay vadede 0,10 puan toplamda
           yaklaşık 10.000 TL. Araç fiyatı bir ayda bundan fazla oynayabildiği
           için karar faizden çok fiyat pazarlığında veriliyor.
         </li>
         <li>
-          <strong>Konut kredisi:</strong> Burada bekleme gerçekten para eder:
+          <strong>Konut kredisi:</strong>{" "}Burada bekleme gerçekten para eder:
           0,10 puan 10 yılda 109.000 TL. Ama Ağustos&apos;ta %2,65&apos;lik
           kampanyanın listeden çıkıp oranın %2,87&apos;ye dönmesi, &quot;beklerken
           oran yükselebilir&quot; riskinin de gerçek olduğunu gösterdi. Uygun
@@ -307,40 +307,40 @@ export default function Page() {
       <h2>Takvim: bundan sonra ne var?</h2>
       <ul>
         <li>
-          <strong>17 Eylül:</strong> PPK toplantı özeti — Kurul&apos;un iç
+          <strong>17 Eylül:</strong>{" "}PPK toplantı özeti — Kurul&apos;un iç
           tartışmasını ve indirim koşullarını gösteren asıl metin.
         </li>
         <li>
-          <strong>5 Ekim</strong> (3 Ekim hafta sonuna denk geliyor): TÜİK
+          <strong>5 Ekim</strong>{" "}(3 Ekim hafta sonuna denk geliyor): TÜİK
           Eylül enflasyonu; Ekim&apos;de yenilenecek kira sözleşmelerinin
           tavanını da belirleyecek.
         </li>
         <li>
-          <strong>22 Ekim:</strong> Yılın yedinci PPK toplantısı —
+          <strong>22 Ekim:</strong>{" "}Yılın yedinci PPK toplantısı —
           ekonomistlerin ilk indirim için işaret ettiği tarih.
         </li>
         <li>
-          <strong>10 Aralık:</strong> Yılın son toplantısı.
+          <strong>10 Aralık:</strong>{" "}Yılın son toplantısı.
         </li>
       </ul>
 
       <h2>Ne yapmalı</h2>
       <ol>
         <li>
-          <strong>İhtiyaç kredisi düşünüyorsanız</strong> tarih değil banka
+          <strong>İhtiyaç kredisi düşünüyorsanız</strong>{" "}tarih değil banka
           seçin: vitrindeki %1,99&apos;a ulaşamıyorsanız, ikinci ve üçüncü
           sıradaki %2,79-2,84 bile ortalamanın çok altında. Tutar 125.000
           TL&apos;yi aşarsa vade sınırı 24 aya, 250.000 TL&apos;yi aşarsa 12
           aya düşüyor; taksiti buna göre planlayın.
         </li>
         <li>
-          <strong>Konut kredisi için</strong> 22 Ekim&apos;e kadar kampanyaları
+          <strong>Konut kredisi için</strong>{" "}22 Ekim&apos;e kadar kampanyaları
           haftalık izleyin; <a href="/faiz-oranlari">faiz oranları sayfamız</a>{" "}
           her hafta güncelleniyor. Kararınız netse ve %2,90&apos;ın altında
           teklif aldıysanız, refinansman opsiyonuyla bugün kullanmak makul.
         </li>
         <li>
-          <strong>Birikim yapıyorsanız</strong> mevduat faizinin kredi faizinden
+          <strong>Birikim yapıyorsanız</strong>{" "}mevduat faizinin kredi faizinden
           önce düştüğünü unutmayın; %44 civarındaki yıllık mevduat oranları
           Ekim&apos;de indirim gelirse hızla geriler. Hedefinize ne zaman
           ulaşacağınızı{" "}

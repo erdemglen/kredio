@@ -37,15 +37,15 @@ export default function Page() {
         oranı (LTV) uygularken ikinci el konutlarda bu oran daha düşük
         tutulurdu. Yeni düzenleme bu ayrımı kaldırıyor ve kredi tutarını
         sadece konutun bedeline göre kademeliyor: <strong>5 milyon TL
-        altındaki konutlar</strong> ve <strong>5-7 milyon TL arası
-        konutlar</strong> için farklı kredi/değer oranları uygulanıyor. Bant
+        altındaki konutlar</strong>{" "}ve <strong>5-7 milyon TL arası
+        konutlar</strong>{" "}için farklı kredi/değer oranları uygulanıyor. Bant
         sisteminin amacı, kredi imkânını daha çok orta segment konuta
         yönlendirmek.
       </p>
 
       <h2>Enerji sınıfı artık kredi tutarını etkiliyor</h2>
       <p>
-        Enerji kimlik belgesinde <strong>en az C sınıfı</strong> olan
+        Enerji kimlik belgesinde <strong>en az C sınıfı</strong>{" "}olan
         konutlar avantajlı kredi oranı kapsamına alındı. Yani iki konut aynı
         fiyatta olsa bile enerji verimliliği yüksek olan, daha fazla kredi
         tutarına erişim sağlayabiliyor.
@@ -53,7 +53,7 @@ export default function Page() {
 
       <h2>2010 sonrası yapılara ekstra avantaj</h2>
       <p>
-        <strong>2010 yılından sonra inşa edilen</strong> konutlar için de daha
+        <strong>2010 yılından sonra inşa edilen</strong>{" "}konutlar için de daha
         avantajlı kredi/değer oranı uygulanıyor — bu tarih genellikle güncel
         deprem yönetmeliğine uyumun bir eşiği olarak kabul ediliyor.
       </p>
@@ -63,7 +63,7 @@ export default function Page() {
         Düzenleme, ilk konut alıcılarını korumaya devam ediyor: tüketicinin,
         eşinin veya 18 yaş altındaki çocuğunun üzerine kayıtlı en az bir konut
         varsa, belirlenen kredi/değer oranları{" "}
-        <strong>%75 oranında azaltılarak</strong> uygulanıyor. Yani ikinci
+        <strong>%75 oranında azaltılarak</strong>{" "}uygulanıyor. Yani ikinci
         (veya sonraki) konut alımında çekilebilecek kredi tutarı belirgin
         şekilde düşüyor.
       </p>
@@ -101,7 +101,7 @@ export default function Page() {
 
       <p>
         Konut kredisinde vergi avantajını da merak ediyorsanız{" "}
-        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a> yazımıza göz
+        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a>{" "}yazımıza göz
         atabilirsiniz.
       </p>
     </PostLayout>

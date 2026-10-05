@@ -26,9 +26,9 @@ export default function Page() {
       <p>
         Bekleyiş bitti. TÜİK, Ağustos 2026 enflasyon verilerini 3 Eylül sabahı
         açıkladı ve Eylül&apos;de yenilenen kira sözleşmelerinde
-        uygulanabilecek yasal artış tavanı <strong>%31,79</strong> oldu.
+        uygulanabilecek yasal artış tavanı <strong>%31,79</strong>{" "}oldu.
         Ağustos&apos;taki %31,90&apos;a göre yalnızca 0,11 puanlık bir
-        gerileme var; hafta başında konuşulan <strong>%30,98</strong>
+        gerileme var; hafta başında konuşulan <strong>%30,98</strong>{" "}
         tahmininin ise belirgin üzerinde.
       </p>
 
@@ -49,7 +49,7 @@ export default function Page() {
       <h2>Tahmin neden tutmadı</h2>
       <p>
         %30,98 tahmini, Ağustos aylık enflasyonunun yaklaşık %1,44 gelmesi
-        varsayımına dayanıyordu. Gerçekleşme <strong>%1,84</strong> oldu —
+        varsayımına dayanıyordu. Gerçekleşme <strong>%1,84</strong>{" "}oldu —
         beklenenden 0,4 puan yüksek. Aylık artışı yukarı çeken ana kalem
         ulaştırma grubu (%4,82); konut, su, elektrik ve gaz grubu da %2,26
         arttı. 12 aylık ortalama tek bir ayın sapmasını yumuşatır, ama
@@ -111,13 +111,13 @@ export default function Page() {
       <h2>Ne yapmalı</h2>
       <ol>
         <li>
-          <strong>Sözleşmeniz Eylül&apos;de yenileniyorsa</strong> geçerli
+          <strong>Sözleşmeniz Eylül&apos;de yenileniyorsa</strong>{" "}geçerli
           oran bu: %31,79. Erken paylaşılan %30,98 üzerinden anlaşma
           yaptıysanız, taraflar bunu değiştirmek zorunda değil — tavanın
           altında kalan her oran geçerli.
         </li>
         <li>
-          <strong>Ekim&apos;de yenilenecek sözleşmeler</strong> için oran,
+          <strong>Ekim&apos;de yenilenecek sözleşmeler</strong>{" "}için oran,
           TÜİK&apos;in Eylül enflasyonunu açıklamasıyla (5 Ekim Pazartesi)
           belirlenecek; o zamana kadar konuşulan rakamlar yine tahmin. TÜFE
           endeksinden kendi hesabımızla yaptığımız tahmini ve senaryo
@@ -128,7 +128,7 @@ export default function Page() {
           yazımızda bulabilirsiniz.
         </li>
         <li>
-          <strong>Kira mı, ev mi</strong> hesabı yapıyorsanız, %30&apos;lar
+          <strong>Kira mı, ev mi</strong>{" "}hesabı yapıyorsanız, %30&apos;lar
           bandında seyreden kira artışı ile %2,65&apos;e inen konut kredisi
           faizini birlikte değerlendirmek gerekiyor; bu karşılaştırmayı{" "}
           <a href="/blog/kira-mi-ev-mi">Kira mı ödemeli, ev mi almalı?</a>{" "}

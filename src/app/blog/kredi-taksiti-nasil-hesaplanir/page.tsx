@@ -26,17 +26,17 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>A</strong> — kredi tutarı (anapara)
+          <strong>A</strong>{" "}— kredi tutarı (anapara)
         </li>
         <li>
-          <strong>i</strong> — aylık efektif faiz oranı (ondalık olarak)
+          <strong>i</strong>{" "}— aylık efektif faiz oranı (ondalık olarak)
         </li>
         <li>
-          <strong>n</strong> — vade, ay sayısı
+          <strong>n</strong>{" "}— vade, ay sayısı
         </li>
       </ul>
       <p>
-        Buradaki <em>efektif</em> kelimesi önemli. İhtiyaç ve taşıt kredilerinde
+        Buradaki <em>efektif</em>{" "}kelimesi önemli. İhtiyaç ve taşıt kredilerinde
         i, ilan edilen faizin KKDF ve BSMV ile çarpılmış halidir. Konut
         kredilerinde bu vergiler olmadığı için ilan edilen oran doğrudan
         kullanılır.
@@ -46,7 +46,7 @@ export default function Page() {
       <p>
         1.500.000 TL, aylık %2,89 faiz, 120 ay vadeli bir konut kredisinde i =
         0,0289 ve n = 120. Formülü uyguladığımızda taksit{" "}
-        <strong>44.818 TL</strong> çıkar. Vade boyunca ödenecek toplam tutar
+        <strong>44.818 TL</strong>{" "}çıkar. Vade boyunca ödenecek toplam tutar
         5.378.138 TL, bunun 3.878.138 TL&apos;si faizdir.
       </p>
 
@@ -72,7 +72,7 @@ export default function Page() {
         Rakamlar çarpıcı: ilk taksitinizin sadece <strong>%3,3&apos;ü</strong>{" "}
         borcunuzu azaltıyor, geri kalanı bankaya faiz olarak gidiyor. İlk 12 ayda
         toplam 537.816 TL ödemenize rağmen anaparadan sadece{" "}
-        <strong>20.702 TL</strong> silinmiş oluyor.
+        <strong>20.702 TL</strong>{" "}silinmiş oluyor.
       </p>
       <p>
         Bu, bir hata veya haksızlık değil; eşit taksitli sistemin doğal sonucu.
@@ -96,7 +96,7 @@ export default function Page() {
       </p>
       <p>
         Aylık %2,89 için basit çarpım %34,68 verirken, bileşik hesap{" "}
-        <strong>%40,76</strong> çıkar. Aradaki 6 puanlık fark, kredinizi başka
+        <strong>%40,76</strong>{" "}çıkar. Aradaki 6 puanlık fark, kredinizi başka
         yatırım araçlarıyla karşılaştırırken doğru rakamı kullanmanız gerektiği
         anlamına gelir.
       </p>
@@ -119,13 +119,13 @@ export default function Page() {
       <p>
         Bu yüzden bankadan aldığınız teklifi değerlendirirken faiz oranını değil,
         sözleşmede yer alması zorunlu olan{" "}
-        <strong>yıllık maliyet oranını</strong> karşılaştırın. Tüm masraflar bu
+        <strong>yıllık maliyet oranını</strong>{" "}karşılaştırın. Tüm masraflar bu
         orana dahildir ve bankalar arası tek gerçek kıyas ölçüsü budur.
       </p>
 
       <p>
         Vergilerin hesaba nasıl girdiğini merak ediyorsanız{" "}
-        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a> yazımıza,
+        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a>{" "}yazımıza,
         ödeme planını yorumlamak için{" "}
         <a href="/blog/amortisman-tablosu-nasil-okunur">
           amortisman tablosu nasıl okunur

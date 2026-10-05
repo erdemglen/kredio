@@ -42,7 +42,7 @@ export default function Page() {
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
         <strong>Güncelleme (5 Ekim 2026):</strong>{" "}TÜİK verisi açıklandı;
-        Ekim 2026 kira artış tavanı <strong>%31,49</strong> oldu — aşağıdaki
+        Ekim 2026 kira artış tavanı <strong>%31,49</strong>{" "}oldu — aşağıdaki
         %31,5 tahminiyle 0,01 puan fark. Kesinleşen rakam, manşet enflasyonla
         kira tavanı arasındaki makasın neden açıldığı ve güncel örnek hesap
         için{" "}
@@ -74,7 +74,7 @@ export default function Page() {
       <p>
         Türk Borçlar Kanunu&apos;nun 344. maddesine göre konut kirasındaki
         artış, TÜFE&apos;nin{" "}
-        <strong>12 aylık ortalamalara göre değişim oranını</strong> aşamaz.
+        <strong>12 aylık ortalamalara göre değişim oranını</strong>{" "}aşamaz.
         Bu oran, son 12 ayın endeks ortalamasının bir önceki 12 ayın
         ortalamasına bölünmesiyle bulunur. Ekim yenilemeleri için esas
         alınacak değer, Eylül 2026 verisiyle hesaplanan 12 aylık ortalama;
@@ -202,7 +202,7 @@ export default function Page() {
       <h2>Ne yapmalı</h2>
       <ol>
         <li>
-          <strong>Sözleşmeniz Ekim&apos;de yenileniyorsa</strong> 5
+          <strong>Sözleşmeniz Ekim&apos;de yenileniyorsa</strong>{" "}5
           Ekim&apos;i bekleyin; resmî oran açıklanmadan imzalanan
           &quot;%31,5&quot; bir tahmindir. Ekim&apos;in ilk günlerinde
           yenilenen sözleşmelerde uygulamada TÜİK açıklamasını bekleyip oranı
@@ -210,17 +210,17 @@ export default function Page() {
           yenileme ayından önceki aya ait 12 aylık ortalamadır.
         </li>
         <li>
-          <strong>Bütçe planı yapıyorsanız</strong> %31,5 ile çalışın;
+          <strong>Bütçe planı yapıyorsanız</strong>{" "}%31,5 ile çalışın;
           senaryo tablosu gösteriyor ki gerçekleşme bunun 0,1 puan dışına
           çıkmayacak. Eylül&apos;deki gibi bir sürpriz bu ay ihtimal dışı.
         </li>
         <li>
-          <strong>5 yıldan uzun süredir aynı evdeyseniz</strong> ev sahibi
+          <strong>5 yıldan uzun süredir aynı evdeyseniz</strong>{" "}ev sahibi
           tavanın üzerinde bir artış için rayiç bedel tespiti isteyebilir; bu,
           TÜFE tavanından ayrı bir süreç.
         </li>
         <li>
-          <strong>Kira mı, ev mi</strong> hesabı yapıyorsanız iki tarafı
+          <strong>Kira mı, ev mi</strong>{" "}hesabı yapıyorsanız iki tarafı
           birlikte okuyun: kira tavanı %31&apos;lerde yavaş geriliyor, konut
           kredisinde en uygun oran ise bu hafta %2,89 (Ziraat) — ikisini{" "}
           <a href="/blog/kira-mi-ev-mi">Kira mı ödemeli, ev mi almalı?</a>{" "}

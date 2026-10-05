@@ -52,18 +52,18 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Vitrin oranı</strong> (Hesapkurdu, HangiKredi gibi
+          <strong>Vitrin oranı</strong>{" "}(Hesapkurdu, HangiKredi gibi
           siteler): bankaların iyi kredi notuna, düzenli gelire ve genelde
           belirli bir vadeye sahip &quot;örnek müşteri&quot; için ilan
-          ettiği <em>aylık</em> en iyi teklif. Herkesin bu oranı alacağının
+          ettiği <em>aylık</em>{" "}en iyi teklif. Herkesin bu oranı alacağının
           garantisi yok.
         </li>
         <li>
           <strong>TCMB&apos;nin haftalık gerçekleşen ortalaması</strong>:
-          o hafta ülke genelinde fiilen kullandırılan <em>tüm</em> taşıt
+          o hafta ülke genelinde fiilen kullandırılan <em>tüm</em>{" "}taşıt
           kredilerinin (düşük kredi notlu, uzun vadeli, farklı bankalardan
           farklı kampanyalarla çekilen krediler dahil) tutar ağırlıklı{" "}
-          <em>yıllık</em> ortalaması.
+          <em>yıllık</em>{" "}ortalaması.
         </li>
       </ul>
       <p>
@@ -137,7 +137,7 @@ export default function Page() {
       />
       <p>
         En uygun teklifle piyasa ortalaması arasındaki fark 48 ayda{" "}
-        <strong>100.974 TL</strong> — kredinin üçte birine yakın bir tutar.
+        <strong>100.974 TL</strong>{" "}— kredinin üçte birine yakın bir tutar.
         Taşıt kredisinde vade genelde konut kredisinden kısa olduğu için bu
         fark, uzun vadeli konut kredilerindeki kadar &quot;gizli&quot;
         kalmıyor; taksitler arasındaki 2.100 TL&apos;lik aylık fark direkt
@@ -148,18 +148,18 @@ export default function Page() {
       <ol>
         <li>
           <strong>TCMB&apos;nin haftalık ortalamasına bakıp
-          panik yapmayın:</strong> %45,54 rakamı sizin alacağınız oranı değil,
+          panik yapmayın:</strong>{" "}%45,54 rakamı sizin alacağınız oranı değil,
           o hafta ülke genelinde kullandırılan tüm kredilerin ortalamasını
           gösteriyor. Vitrindeki %2,99-3,66 bandı almak istediğiniz krediye
           çok daha yakın bir referans.
         </li>
         <li>
-          <strong>Katılım bankalarını atlamayın:</strong> son birkaç haftadır
+          <strong>Katılım bankalarını atlamayın:</strong>{" "}son birkaç haftadır
           taşıt kredisinde en uygun tekliflerin çoğu katılım bankalarından
           (Dünya Katılım, Vakıf Katılım, Kuveyt Türk) geliyor.
         </li>
         <li>
-          <strong>Teklif almadan başvurmayın:</strong> taşıt kredisinde
+          <strong>Teklif almadan başvurmayın:</strong>{" "}taşıt kredisinde
           bankalar arası fark (2,99-3,66 arası) 48 ayda 100.000
           TL&apos;yi aşabiliyor; en az 2-3 banka teklifini karşılaştırmak
           bu farkın büyük kısmını ortadan kaldırır.

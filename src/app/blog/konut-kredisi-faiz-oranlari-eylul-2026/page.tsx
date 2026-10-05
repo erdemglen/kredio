@@ -37,7 +37,7 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
-        <strong>Güncelleme (22 Eylül 2026):</strong> Kuveyt Türk&apos;ün
+        <strong>Güncelleme (22 Eylül 2026):</strong>{" "}Kuveyt Türk&apos;ün
         aşağıda anlatılan %2,87&apos;lik teklifi 20 Eylül itibarıyla
         karşılaştırma listelerinde yer almıyor; 1.000.000 TL / 120 ay için en
         uygun oran %2,89 ile Ziraat Bankası, ardından Vakıf Katılım %2,94, QNB
@@ -49,7 +49,7 @@ export default function Page() {
         Ağustos&apos;un son haftasında konut kredisinde liderlik İş
         Bankası&apos;ndaydı: %2,65 ile katılım bankalarının önüne geçmişti.
         Eylül&apos;ün ilk haftasında tablo değişti. Karşılaştırma sitelerinde
-        İş Bankası&apos;nın oranı <strong>%3,10</strong> görünüyor;
+        İş Bankası&apos;nın oranı <strong>%3,10</strong>{" "}görünüyor;
         %2,65&apos;lik teklif listelerden çıktı. En uygun oran yeniden
         katılım bankalarında: <strong>%2,87 ile Kuveyt Türk</strong>. Kamu
         bankaları da yakın takipte — Ziraat %2,89, Halkbank %2,99.
@@ -157,12 +157,12 @@ export default function Page() {
       <h2>Başvurmadan önce</h2>
       <ol>
         <li>
-          <strong>Oranı kendi tutar ve vadenizle sorun.</strong> Listelerdeki
+          <strong>Oranı kendi tutar ve vadenizle sorun.</strong>{" "}Listelerdeki
           oran 1 milyon TL / 120 ay için; 500.000 TL ya da 60 ay vadede
           sıralama değişebiliyor.
         </li>
         <li>
-          <strong>Toplam maliyete bakın.</strong> Tahsis ücreti (kredinin
+          <strong>Toplam maliyete bakın.</strong>{" "}Tahsis ücreti (kredinin
           binde 5&apos;ine kadar), ekspertiz, ipotek tesis ve konut sigortası,
           0,05 puanlık oran farkını rahatlıkla silebilir; peşinat dışındaki
           kalemleri{" "}
@@ -172,7 +172,7 @@ export default function Page() {
           yazımızda listeledik.
         </li>
         <li>
-          <strong>Kredi tutarı sınırını unutmayın.</strong> BDDK kuralına
+          <strong>Kredi tutarı sınırını unutmayın.</strong>{" "}BDDK kuralına
           göre kullanabileceğiniz tutar konutun değerine ve enerji sınıfına
           bağlı; ayrıntısı{" "}
           <a href="/blog/konut-kredisinde-kredi-tutari-nasil-belirleniyor">

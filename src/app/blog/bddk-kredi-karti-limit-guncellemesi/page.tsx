@@ -22,17 +22,17 @@ export default function Page() {
       <p>
         Kredi kartınızı az kullanıyor ama yüksek bir limitiniz mi var?
         BDDK&apos;nın yeni düzenlemesi bu durumu değiştirebilir. Bankalar,{" "}
-        <strong>1 Ocak 2027&apos;ye kadar</strong> tüm kart hamillerinin
+        <strong>1 Ocak 2027&apos;ye kadar</strong>{" "}tüm kart hamillerinin
         limitlerini müşterinin ortalama geliriyle uyumlu hale getirmekle
         yükümlü. Toplam kart limiti <strong>400.000 TL&apos;yi aşan ve
-        kullanılmayan</strong> limitler, bankalar tarafından kısmen
+        kullanılmayan</strong>{" "}limitler, bankalar tarafından kısmen
         azaltılacak.
       </p>
 
       <h2>Bu kimin başına gelir</h2>
       <p>
         Kural, tek bir bankadaki değil <strong>tüm bankalardaki toplam kart
-        limitinizi</strong> kapsıyor. Yani üç farklı bankada kartı olan ve
+        limitinizi</strong>{" "}kapsıyor. Yani üç farklı bankada kartı olan ve
         toplam limiti 400.000 TL&apos;yi geçen ama kartlarının çoğunu
         kullanmayan biri, bu düzenlemeden etkilenebilir. Amaç, gelire kıyasla
         aşırı yüksek limitlerin sistemik risk oluşturmasını önlemek.

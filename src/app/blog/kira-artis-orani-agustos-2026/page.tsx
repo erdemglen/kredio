@@ -27,7 +27,7 @@ export default function Page() {
         Ev sahibiyseniz ya da kiracıysanız, sözleşmenizin yenilenme ayında
         karşınıza çıkan &quot;kira artış oranı&quot; her ay değişen bir sayı
         ve kafa karıştırabiliyor. Ağustos 2026&apos;da bu oran{" "}
-        <strong>%31,90</strong> olarak açıklandı. İşte bu rakamın nereden
+        <strong>%31,90</strong>{" "}olarak açıklandı. İşte bu rakamın nereden
         geldiği ve nasıl uygulanacağı.
       </p>
 
@@ -60,7 +60,7 @@ export default function Page() {
       />
 
       <p>
-        Bu, tarafların <strong>anlaşabileceği üst sınır</strong> — taraflar
+        Bu, tarafların <strong>anlaşabileceği üst sınır</strong>{" "}— taraflar
         isterlerse daha düşük bir artış üzerinde de anlaşabilir. Sözleşmede
         farklı bir artış oranı yazılı olsa bile, yasal tavanı aşan kısım
         geçersiz sayılır.
@@ -69,13 +69,13 @@ export default function Page() {
       <h2>Sık karıştırılan iki nokta</h2>
       <ol>
         <li>
-          <strong>Yıllık TÜFE ≠ kira artış oranı.</strong> Haberlerde
+          <strong>Yıllık TÜFE ≠ kira artış oranı.</strong>{" "}Haberlerde
           &quot;enflasyon %31,75 açıklandı&quot; dendiğinde bu o ayki yıllık
           değişim; kirada esas alınan ise 12 aylık ortalama (%31,90) —
           genelde birbirine yakın ama aynı değil.
         </li>
         <li>
-          <strong>5 yıldan uzun süredir aynı evde oturuyorsanız</strong> ev
+          <strong>5 yıldan uzun süredir aynı evde oturuyorsanız</strong>{" "}ev
           sahibi, TÜFE tavanının üzerinde bir artış için mahkemeye
           başvurabilir (rayiç bedel talebiyle). Bu durum yasal tavanın
           dışında, ayrı bir süreç.

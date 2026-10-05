@@ -120,18 +120,18 @@ export default function Page() {
       <h2>Ekstredeki oran, ödediğiniz oran değil</h2>
       <p>
         Kredi kartı faizi de ihtiyaç kredisi gibi vergiye tabi: hesaplanan
-        faizin üzerine <strong>%15 KKDF</strong> ve <strong>%15 BSMV</strong>{" "}
+        faizin üzerine <strong>%15 KKDF</strong>{" "}ve <strong>%15 BSMV</strong>{" "}
         ekleniyor, yani her 100 TL faiz için 130 TL ödüyorsunuz. Bankaların
         &quot;faiz oranlarına KKDF ve BSMV dahil değildir&quot; notu tam olarak
         bu. Konut kredisinin bu vergilerden istisna olduğunu, ihtiyaç ve taşıt
         kredisinde ise aynı %30&apos;un uygulandığını{" "}
-        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a> yazımızda
+        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a>{" "}yazımızda
         anlatmıştık.
       </p>
       <p>
         Örnek: 40.000 TL dönem borcunun asgarisini ödeyip kalanı bir ay
         taşıdığınızda (kademe %3,75) yaklaşık 1.500 TL faiz, 225 TL KKDF ve 225
-        TL BSMV ile ekstreye <strong>1.950 TL</strong> biner. Yıla vurunca
+        TL BSMV ile ekstreye <strong>1.950 TL</strong>{" "}biner. Yıla vurunca
         tablo şöyle:
       </p>
 
@@ -230,7 +230,7 @@ export default function Page() {
       <p>
         Piyasa ortalamasından kredi almak neredeyse hiçbir şey kazandırmıyor;
         tahsis ücreti eklenince eşitleniyor. %2 civarında bir teklif
-        alabiliyorsanız 12 ayda <strong>6.700 TL</strong> fark var — ve
+        alabiliyorsanız 12 ayda <strong>6.700 TL</strong>{" "}fark var — ve
         krediyle kapattıktan sonra kartı yeniden doldurmamak şartıyla. Elinize
         toplu para geçtiğinde borcu tek seferde mi kapatmalı sorusunu ise{" "}
         <a href="/blog/kredi-karti-borcu-taksit-mi-tek-cekim-mi">
@@ -242,7 +242,7 @@ export default function Page() {
       <h2>Ne yapmalı</h2>
       <ol>
         <li>
-          <strong>Kademe sınırına bakın.</strong> Dönem borcunuz 30.000 veya
+          <strong>Kademe sınırına bakın.</strong>{" "}Dönem borcunuz 30.000 veya
           180.000 TL eşiğinin hemen üstündeyse, hesap kesiminden önce
           yapacağınız küçük bir ödeme faizi 0,50 puan düşürür; 40.000 TL borçta
           bu ayda yaklaşık 260 TL.
@@ -254,7 +254,7 @@ export default function Page() {
           &quot;sadece asgari&quot; eğrisini yan yana görebilirsiniz.
         </li>
         <li>
-          <strong>Nakit avanstan uzak durun.</strong> Nakit çekim en üst
+          <strong>Nakit avanstan uzak durun.</strong>{" "}Nakit çekim en üst
           kademeden (%4,25, vergilerle %5,53) ve çekildiği gün faizlemeye
           başlar; üstüne nakit çekim ücreti gelir. Aynı para için en uygun
           ihtiyaç kredisi teklifi yarı maliyetli.

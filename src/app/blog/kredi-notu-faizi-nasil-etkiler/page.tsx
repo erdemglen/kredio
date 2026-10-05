@@ -31,7 +31,7 @@ export default function Page() {
       />
 
       <p>
-        En iyi ve en kötü senaryo arasındaki fark <strong>988.412 TL</strong> —
+        En iyi ve en kötü senaryo arasındaki fark <strong>988.412 TL</strong>{" "}—
         yani kredinin anaparasının üçte ikisi kadar. Aylık taksitte fark 8.237
         TL. İyi bir kredi notu, pazarlıkla elde edebileceğiniz her indirimden
         daha değerlidir.
@@ -50,21 +50,21 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Ödeme düzeni:</strong> Geciken taksit ve kart ödemeleri notu en
+          <strong>Ödeme düzeni:</strong>{" "}Geciken taksit ve kart ödemeleri notu en
           hızlı düşüren faktördür. Birkaç günlük gecikmeler bile kayda geçer.
         </li>
         <li>
-          <strong>Kredi kartı kullanım oranı:</strong> Limitinizin ne kadarını
+          <strong>Kredi kartı kullanım oranı:</strong>{" "}Limitinizin ne kadarını
           düzenli olarak kullandığınız. Sürekli limite yakın çalışmak olumsuz
           değerlendirilir.
         </li>
         <li>
-          <strong>Kredili ürün çeşitliliği ve geçmişi:</strong> Uzun süredir
+          <strong>Kredili ürün çeşitliliği ve geçmişi:</strong>{" "}Uzun süredir
           düzenli ödenen ürünler notu destekler. Hiç kredi geçmişi olmaması da
           not düşüklüğü sebebidir.
         </li>
         <li>
-          <strong>Yeni başvuru yoğunluğu:</strong> Kısa sürede çok sayıda kredi
+          <strong>Yeni başvuru yoğunluğu:</strong>{" "}Kısa sürede çok sayıda kredi
           başvurusu, nakit sıkışıklığı sinyali olarak okunur.
         </li>
       </ul>
@@ -72,27 +72,27 @@ export default function Page() {
       <h2>Notu iyileştirmenin somut yolları</h2>
       <ol>
         <li>
-          <strong>Otomatik ödeme talimatı verin.</strong> Notu bozan şeylerin
+          <strong>Otomatik ödeme talimatı verin.</strong>{" "}Notu bozan şeylerin
           çoğu unutkanlıktan kaynaklanır. Kart ve kredi ödemelerini talimata
           bağlamak en yüksek getirili tek hamledir.
         </li>
         <li>
-          <strong>Kart limitinizin tamamını kullanmayın.</strong> Harcamanızı
+          <strong>Kart limitinizin tamamını kullanmayın.</strong>{" "}Harcamanızı
           limitin belirgin biçimde altında tutmak oranı iyileştirir. Limit artışı
           talep etmek de aynı etkiyi yaratabilir.
         </li>
         <li>
-          <strong>Asgari ödeme alışkanlığından çıkın.</strong> Asgari ödemek
+          <strong>Asgari ödeme alışkanlığından çıkın.</strong>{" "}Asgari ödemek
           gecikme sayılmaz ama borcun döndüğünü gösterir ve hem notunuzu hem
           bütçenizi yıpratır.
         </li>
         <li>
-          <strong>Başvuruları yığmayın.</strong> Kredi arayışındayken kısa sürede
+          <strong>Başvuruları yığmayın.</strong>{" "}Kredi arayışındayken kısa sürede
           çok sayıda bankaya başvurmak yerine, önce oranları öğrenip iki-üç
           bankaya başvurun.
         </li>
         <li>
-          <strong>Eski hesapları kapatmakta acele etmeyin.</strong> Uzun geçmişli
+          <strong>Eski hesapları kapatmakta acele etmeyin.</strong>{" "}Uzun geçmişli
           düzenli ödenen ürünler notunuza katkı sağlar.
         </li>
       </ol>

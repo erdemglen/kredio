@@ -31,8 +31,8 @@ export default function Page() {
       />
 
       <p>
-        Dikkat edilmesi gereken nokta, oranın <em>kredi tutarı</em> üzerinden
-        değil <em>kapatma anındaki kalan anapara</em> üzerinden hesaplanmasıdır.
+        Dikkat edilmesi gereken nokta, oranın <em>kredi tutarı</em>{" "}üzerinden
+        değil <em>kapatma anındaki kalan anapara</em>{" "}üzerinden hesaplanmasıdır.
         Kredinin ilerlemiş olması tazminatı da küçültür.
       </p>
 

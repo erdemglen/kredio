@@ -60,7 +60,7 @@ export default function Page() {
         başında duran rakam bu hafta yerinden oynadı. Kuveyt Türk&apos;ün
         100.000 TL için verdiği <strong>%1,99</strong>&apos;luk 12 ay teklifi,
         20 Eylül tarihli karşılaştırmada yok; bankanın kendi sayfasında aynı
-        oran duruyor ama finansman tutarı <strong>50.000 TL</strong> ile
+        oran duruyor ama finansman tutarı <strong>50.000 TL</strong>{" "}ile
         sınırlı. 100.000 TL / 12 ay için en uygun teklif artık{" "}
         <strong>%2,79 ile Alternatif Bank</strong>, hemen arkasında{" "}
         <strong>%2,84 ile QNB</strong>. Piyasa ortalaması ise 18 Eylül
@@ -103,7 +103,7 @@ export default function Page() {
         Listenin ilk iki sırası bir hafta önceki tabloyla aynı bankalar;
         değişen şey %1,99&apos;un üstlerinden çekilmesi. Bu hafta 100.000 TL
         çeken biri için en uygun teklif geçen haftaya göre ayda{" "}
-        <strong>626 TL</strong>, 12 ayda <strong>7.509 TL</strong> daha
+        <strong>626 TL</strong>, 12 ayda <strong>7.509 TL</strong>{" "}daha
         pahalı.
       </p>
 
@@ -130,7 +130,7 @@ export default function Page() {
 
       <p>
         Desen net: bankalar düşük oranı{" "}
-        <strong>küçük tutar ve kısa vadeye</strong> çekiyor. 50.000
+        <strong>küçük tutar ve kısa vadeye</strong>{" "}çekiyor. 50.000
         TL&apos;ye kadar ihtiyacı olan için tablo Ağustos&apos;takinden
         farksız; 50.000 TL / 12 ay %1,99 ile taksit 4.900 TL, toplam 58.801
         TL. Aynı tutarı %2,79&apos;dan alan 5.213 TL öder; 12 ayda fark 3.754
@@ -155,7 +155,7 @@ export default function Page() {
       />
 
       <p>
-        Bölmek 12 ayda <strong>3.755 TL</strong> kazandırıyor. Bedeli iki
+        Bölmek 12 ayda <strong>3.755 TL</strong>{" "}kazandırıyor. Bedeli iki
         ayrı başvuru, iki ayrı kredi sorgusu ve iki bankada da onay almak;
         kredi notunuz her ikisinde de vitrindeki oranı almaya yetiyorsa
         yapılabilir. Ayrıca her iki krediyi 12 ayda kapatacağınız için toplam
@@ -209,7 +209,7 @@ export default function Page() {
         olması bankaların o üründe agresif fiyatlamasını kolaylaştırırken,
         ihtiyaç kredisinde faizin üzerine eklenen %30 vergi yükü aynı
         esnekliği bırakmıyor; bu farkı{" "}
-        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a> yazımızda
+        <a href="/blog/kkdf-ve-bsmv-nedir">KKDF ve BSMV nedir</a>{" "}yazımızda
         hesaplamıştık.
       </p>
 
@@ -220,7 +220,7 @@ export default function Page() {
         ortalama yıllık faizi <strong>%64,14</strong>; bir önceki hafta
         %62,95&apos;ti. Aynı hafta konut kredisinde ortalama %41,93
         (değişmedi), taşıtta %40,53, TL mevduat faizi ise 47 baz puan
-        gerileyerek <strong>%43,90</strong> oldu.
+        gerileyerek <strong>%43,90</strong>{" "}oldu.
       </p>
       <p>
         İki hafta üst üste yükselen ihtiyaç kredisi ortalaması, vitrindeki en
@@ -270,14 +270,14 @@ export default function Page() {
       <h2>Ne yapmalı</h2>
       <ol>
         <li>
-          <strong>İhtiyacınız 50.000 TL&apos;nin altındaysa</strong> %1,99
+          <strong>İhtiyacınız 50.000 TL&apos;nin altındaysa</strong>{" "}%1,99
           hâlâ masada: Kuveyt Türk&apos;te 12 ay, yeni müşteriyseniz
           TEB&apos;de 6 ay. 3-4 aylık kısa ihtiyaçlarda yeni müşteri
           kampanyalarındaki %0 teklifleri (50.000-65.000 TL) en ucuz kaynak;
           ödeyemezseniz sonrasında normal orana döndüğünü unutmayın.
         </li>
         <li>
-          <strong>100.000 TL ve üzeri için</strong> ilk iki sıra %2,79 ve
+          <strong>100.000 TL ve üzeri için</strong>{" "}ilk iki sıra %2,79 ve
           %2,84; kredi notunuz uygunsa 50.000 TL&apos;lik dilimi
           %1,99&apos;dan ayrı bankadan almak 12 ayda 3.755 TL kazandırıyor.
         </li>
@@ -287,7 +287,7 @@ export default function Page() {
           TL&apos;lik 12 aylık kredide 12.700-17.300 TL fazla ödeme demek.
         </li>
         <li>
-          <strong>Vadeyi ihtiyaç kadar tutun:</strong> aynı kredide 36 ay
+          <strong>Vadeyi ihtiyaç kadar tutun:</strong>{" "}aynı kredide 36 ay
           vade, 12 aya göre 55.000 TL fazla ödeme; oranınız iyiyse bile vade
           uzadıkça avantaj küçülmüyor, toplam maliyet büyüyor.
         </li>

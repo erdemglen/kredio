@@ -52,18 +52,18 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Acil durum fonu:</strong> En az 3-6 aylık giderinizi karşılayan
+          <strong>Acil durum fonu:</strong>{" "}En az 3-6 aylık giderinizi karşılayan
           bir nakit rezervini asla peşinata aktarmayın. İş kaybı veya sağlık
           gideri gibi durumlarda tek alternatifiniz yüksek faizli ihtiyaç kredisi
           olur.
         </li>
         <li>
-          <strong>Alım masrafları:</strong> Tapu harcı, komisyon, ekspertiz ve
+          <strong>Alım masrafları:</strong>{" "}Tapu harcı, komisyon, ekspertiz ve
           taşınma için konut değerinin %4-6&apos;sı kadar ayrı bir nakit
           gerekir. Peşinatı bu kalemleri unutarak planlamak yaygın bir hatadır.
         </li>
         <li>
-          <strong>Alternatif getiri:</strong> Paranızı kredinin efektif
+          <strong>Alternatif getiri:</strong>{" "}Paranızı kredinin efektif
           maliyetinden daha yüksek getiriyle değerlendirebiliyorsanız, düşük
           peşinat verip farkı yatırımda tutmak matematiksel olarak daha kârlı
           olabilir.
@@ -73,7 +73,7 @@ export default function Page() {
       <h2>Karşılaştırmanız gereken sayı</h2>
       <p>
         Karar basit bir kıyasa indirgenir: <strong>kredinin yıllık maliyet
-        oranı</strong> ile <strong>yatırımınızın vergi sonrası net
+        oranı</strong>{" "}ile <strong>yatırımınızın vergi sonrası net
         getirisi</strong>. Aylık %2,89 faizli bir konut kredisinde yıllık maliyet
         oranı %40,76&apos;dır. Yatırımınız bunu net olarak geçmiyorsa, peşinatı
         yükseltmek daha kârlıdır.
@@ -93,7 +93,7 @@ export default function Page() {
       </p>
       <p>
         Ayrıca <strong>ekspertiz değerinin satış fiyatınızın altında çıkma
-        riski</strong> var. Bu durumda banka krediyi düşük değere göre hesaplar
+        riski</strong>{" "}var. Bu durumda banka krediyi düşük değere göre hesaplar
         ve farkı nakit tamamlamanız gerekir. Peşinatınızı sınırda planlamak bu
         yüzden risklidir.
       </p>

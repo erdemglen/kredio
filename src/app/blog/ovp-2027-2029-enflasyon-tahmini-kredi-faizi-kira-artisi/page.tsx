@@ -60,7 +60,7 @@ export default function Page() {
         yeni Orta Vadeli Programı (OVP) 6 Eylül Pazar günü açıkladı; program
         aynı gün Resmî Gazete&apos;nin mükerrer sayısında yayımlandı. Manşet
         rakam, 2026 yıl sonu enflasyon tahmininin geçen yılki programdaki
-        %16&apos;dan <strong>%28,4&apos;e</strong> çıkarılması. Tek haneli
+        %16&apos;dan <strong>%28,4&apos;e</strong>{" "}çıkarılması. Tek haneli
         enflasyon hedefi de bir yıl ötelenerek 2029&apos;a bırakıldı.
       </p>
       <p>
@@ -214,19 +214,19 @@ export default function Page() {
       <h2>Ne yapmalı</h2>
       <ol>
         <li>
-          <strong>Kredi düşünüyorsanız:</strong> 10 Eylül kararını beklemenin
+          <strong>Kredi düşünüyorsanız:</strong>{" "}10 Eylül kararını beklemenin
           maliyeti düşük, ama kararın taksitinize etkisi de sınırlı olacak.
           Asıl fark, önümüzdeki 2-3 toplantıda birikecek indirimlerde; bugün
           uygun bir kampanya yakalarsanız refinansman kapısı açık.
         </li>
         <li>
-          <strong>Kiracı ya da ev sahibiyseniz:</strong> 2027 boyunca yasal
+          <strong>Kiracı ya da ev sahibiyseniz:</strong>{" "}2027 boyunca yasal
           tavanın %25-30 bandında kalması en olası senaryo. Eylül için
           geçerli oran %31,79; hesabı için{" "}
           <a href="/kira-artis-hesaplama?tufe=31.79">kira artış hesaplayıcı</a>.
         </li>
         <li>
-          <strong>Ev alma hesabı yapıyorsanız:</strong> düşen kira tavanı ile
+          <strong>Ev alma hesabı yapıyorsanız:</strong>{" "}düşen kira tavanı ile
           düşen kredi faizini birlikte değerlendirin; kesişim noktasını{" "}
           <a href="/blog/kira-mi-ev-mi">Kira mı ödemeli, ev mi almalı?</a>{" "}
           yazımızdaki yöntemle bulabilirsiniz.

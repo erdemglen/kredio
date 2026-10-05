@@ -42,7 +42,7 @@ export default function Page() {
         kredisinde 90 baz puana varan indirimlere gitti, katılım
         bankalarının konut kredisi teklifleri haftalardır %2,9 civarında
         kalıcı hale geldi. Bunun sebebi PPK&apos;nın gizlice faiz
-        indirmesi değil — TCMB&apos;nin <strong>repo faizi</strong> ve
+        indirmesi değil — TCMB&apos;nin <strong>repo faizi</strong>{" "}ve
         likidite yönetimi araçlarıyla, ilan edilen orana dokunmadan
         bankaların fiili fonlama maliyetini aşağı çekmesi.
       </p>
@@ -68,7 +68,7 @@ export default function Page() {
         başlattı ve %37&apos;den fonlama sağladı. HSBC&apos;nin
         değerlendirmesine göre bu adım, bankaların ortalama fonlama
         maliyetini gecelik %40&apos;tan haftalık %37&apos;ye, yani{" "}
-        <strong>3 puan</strong> düşürdü — resmi bir PPK kararı olmadan.
+        <strong>3 puan</strong>{" "}düşürdü — resmi bir PPK kararı olmadan.
         Piyasa bunu &quot;örtülü faiz indirimi&quot; olarak okudu: hamle
         sonrası tahvil getirileri ve OIS eğrisi 50-60 baz puan geriledi,
         yatırımcılar Eylül PPK&apos;sı için ~40 baz puanlık, yıl sonuna
@@ -86,7 +86,7 @@ export default function Page() {
         ihaleleriyle sağlanan fonlama miktarını artıracağını, bankalar
         arası para piyasası limitlerini bilanço büyüklüklerine göre
         güncellediğini ve TCMB nezdindeki teminat işlemlerinde geçerli{" "}
-        <strong>iskonto oranlarını düşürdüğünü</strong> duyurdu — yani
+        <strong>iskonto oranlarını düşürdüğünü</strong>{" "}duyurdu — yani
         bankaların ellerindeki teminatlar karşılığında daha fazla nakit
         çekebilmesini sağladı. TCMB açıklamasında bu adımları doğrudan fon
         krizine bağlamadı, ama zamanlama örtüşüyor; ekonomist Hakan
@@ -132,7 +132,7 @@ export default function Page() {
         kamu bankası indirimlerinin (%3,74&apos;ten %2,84-3,49 bandına)
         ve konut kredisinde Ziraat/Ziraat Katılım&apos;ın haftalardır
         %2,89 gibi düşük bir seviyede kalabilmesinin arka planı. Yani{" "}
-        <strong>siz 22 Ekim&apos;i beklemeden de</strong> daha ucuz teklif
+        <strong>siz 22 Ekim&apos;i beklemeden de</strong>{" "}daha ucuz teklif
         görebilirsiniz — çünkü faizi indiren PPK değil, TCMB&apos;nin
         arka planda sürdürdüğü likidite politikası.
       </p>
@@ -154,13 +154,13 @@ export default function Page() {
           aşağı yönlü baskı sürüyor demektir.
         </li>
         <li>
-          <strong>22 Ekim PPK toplantısı:</strong> resmi bir indirim gelirse
+          <strong>22 Ekim PPK toplantısı:</strong>{" "}resmi bir indirim gelirse
           bu, zaten süregelen örtülü gevşemenin üzerine ek bir düşüş
           getirir; gelmezse dahi repo kanalıyla süren kademeli ucuzlama
           devam edebilir.
         </li>
         <li>
-          <strong>Kamu bankalarının vitrin oranları:</strong> fonlama
+          <strong>Kamu bankalarının vitrin oranları:</strong>{" "}fonlama
           maliyeti değişikliklerini genelde ilk yansıtan bankalar bunlar
           oluyor; ihtiyaç ve konut kredisinde güncel karşılaştırma için{" "}
           <a href="/faiz-oranlari">güncel faiz oranları sayfamıza</a>{" "}

@@ -50,8 +50,8 @@ export default function Page() {
       <h2>Neden bu kadar büyük bir etki yapıyor?</h2>
       <p>
         Ara ödeme doğrudan anaparadan düşer. Kredinizin faizi her ay{" "}
-        <em>kalan anapara</em> üzerinden hesaplandığı için, anaparayı bir kez
-        düşürdüğünüzde o günden vade sonuna kadar <em>her ayın</em> faizi daha
+        <em>kalan anapara</em>{" "}üzerinden hesaplandığı için, anaparayı bir kez
+        düşürdüğünüzde o günden vade sonuna kadar <em>her ayın</em>{" "}faizi daha
         küçük bir rakam üzerinden işler. Etki tek seferlik değil, kalan tüm
         aylara yayılır ve bileşik olarak birikir.
       </p>
@@ -97,11 +97,11 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Vade kısalsın:</strong> Taksitiniz aynı kalır, krediyi daha
+          <strong>Vade kısalsın:</strong>{" "}Taksitiniz aynı kalır, krediyi daha
           erken bitirirsiniz. Faiz tasarrufu en yüksek bu seçenekte olur.
         </li>
         <li>
-          <strong>Taksit düşsün:</strong> Vade aynı kalır, aylık ödemeniz
+          <strong>Taksit düşsün:</strong>{" "}Vade aynı kalır, aylık ödemeniz
           hafifler. Nakit akışınız rahatlar ama toplam faiz tasarrufunuz belirgin
           biçimde daha az olur.
         </li>

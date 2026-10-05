@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
-        <strong>Güncelleme (10 Eylül 2026):</strong> TCMB politika faizini
+        <strong>Güncelleme (10 Eylül 2026):</strong>{" "}TCMB politika faizini
         beklentilere paralel %37&apos;de sabit tuttu. Karar metnindeki yeni
         sinyalleri, ekonomistlerin 22 Ekim beklentisini ve kredi taksitlerine
         etkisini{" "}
@@ -36,7 +36,7 @@ export default function Page() {
       <p>
         Merkez Bankası, Ağustos ayında Para Politikası Kurulu (PPK)
         toplantısı yapmadı. Son karar 23 Temmuz&apos;da alınmıştı ve politika
-        faizi <strong>%37&apos;de sabit</strong> tutulmuştu. Piyasanın gözü
+        faizi <strong>%37&apos;de sabit</strong>{" "}tutulmuştu. Piyasanın gözü
         şimdi <strong>10 Eylül 2026 Perşembe, saat 14:00</strong>&apos;teki
         bir sonraki toplantıda; kararın gerekçeleri de 17 Eylül&apos;de
         yayımlanacak toplantı özetiyle netleşecek.
@@ -51,17 +51,17 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Faiz sabit kalır</strong> — mevcut %2,84-3,70 bandındaki
+          <strong>Faiz sabit kalır</strong>{" "}— mevcut %2,84-3,70 bandındaki
           konut/ihtiyaç/taşıt kredisi faizlerinde belirgin bir değişim olmaz;
           bankalar arası rekabet fiyatlamayı belirlemeye devam eder.
         </li>
         <li>
-          <strong>Kademeli indirim başlar</strong> — TCMB küçük bir indirimle
+          <strong>Kademeli indirim başlar</strong>{" "}— TCMB küçük bir indirimle
           (25-50 baz puan gibi) sürece kapı aralarsa, kredi faizlerinde hemen
           değil birkaç hafta içinde kademeli bir gevşeme görülebilir.
         </li>
         <li>
-          <strong>Faiz artışı</strong> — enflasyon beklentileri kötüleşirse bu
+          <strong>Faiz artışı</strong>{" "}— enflasyon beklentileri kötüleşirse bu
           ihtimal düşük olsa da tamamen dışlanmıyor; böyle bir kararda konut
           kredisi gibi KKDF/BSMV istisnalı ürünler görece daha az etkilenir,
           ihtiyaç ve taşıt kredisi daha hızlı tepki verir.

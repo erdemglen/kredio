@@ -27,11 +27,11 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
-        Kısa cevap: <strong>hayır, henüz çıkmadı.</strong> Orta Vadeli Program
+        Kısa cevap: <strong>hayır, henüz çıkmadı.</strong>{" "}Orta Vadeli Program
         (OVP) kapsamında gündeme gelen devlet destekli %1,20 faizli konut
         kredisi için bankalar üzerinden aktif bir başvuru süreci{" "}
         <strong>başlatılmadı</strong>. Şu an dolaşan faiz, vade ve limit
-        rakamlarının tamamı <em>beklenti</em> düzeyinde; resmî bir tebliğ ya
+        rakamlarının tamamı <em>beklenti</em>{" "}düzeyinde; resmî bir tebliğ ya
         da banka duyurusu yayımlanmış değil.
       </p>
 
@@ -56,21 +56,21 @@ export default function Page() {
       <h2>Beklenen: dolaşan rakamlar</h2>
       <ul>
         <li>
-          <strong>Faiz:</strong> aylık %1,20 olması bekleniyor. Bugünkü
+          <strong>Faiz:</strong>{" "}aylık %1,20 olması bekleniyor. Bugünkü
           piyasada en uygun konut kredisi faizinin %2,65 civarında olduğu
           düşünülürse, bu yaklaşık yarı yarıya bir maliyet farkı anlamına
           gelir.
         </li>
         <li>
-          <strong>Vade:</strong> 180 aya (15 yıl) kadar uzayabileceği
+          <strong>Vade:</strong>{" "}180 aya (15 yıl) kadar uzayabileceği
           konuşuluyor.
         </li>
         <li>
-          <strong>Limit:</strong> 2 milyon TL olarak öngörülen üst sınırın
+          <strong>Limit:</strong>{" "}2 milyon TL olarak öngörülen üst sınırın
           artırılması gündemde.
         </li>
         <li>
-          <strong>Temel şart:</strong> başvuru sahibinin ve hane
+          <strong>Temel şart:</strong>{" "}başvuru sahibinin ve hane
           bireylerinin üzerine kayıtlı konut bulunmaması, gelirin
           belgelendirilmesi ve belirlenecek gelir sınırının aşılmaması
           bekleniyor.
@@ -101,17 +101,17 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Takvim belirsiz.</strong> Programın ne zaman açılacağına
+          <strong>Takvim belirsiz.</strong>{" "}Programın ne zaman açılacağına
           dair resmî bir tarih yok. Alım kararınızı yalnızca bu krediye
           bağlamak, belirsiz süreli bir bekleme anlamına gelebilir.
         </li>
         <li>
-          <strong>&quot;İlk konut&quot; şartı kritik.</strong> Beklenen
+          <strong>&quot;İlk konut&quot; şartı kritik.</strong>{" "}Beklenen
           şartlar arasında en net olanı bu. Üzerinize kayıtlı bir konut
           varsa program açılsa bile kapsam dışında kalmanız muhtemel.
         </li>
         <li>
-          <strong>Peşinat hazırlığı her senaryoda işe yarar.</strong> Kredi
+          <strong>Peşinat hazırlığı her senaryoda işe yarar.</strong>{" "}Kredi
           çıksın ya da çıkmasın, peşinat ve peşinat dışı masraflar
           değişmiyor. Bu konuyu{" "}
           <a href="/blog/ev-alirken-pesinat-disinda-gereken-nakit">
@@ -120,7 +120,7 @@ export default function Page() {
           yazımızda ayrıntılı ele aldık.
         </li>
         <li>
-          <strong>Erken duyuru vaadi yapan yerlere dikkat.</strong> Program
+          <strong>Erken duyuru vaadi yapan yerlere dikkat.</strong>{" "}Program
           resmîleşmeden &quot;başvurunuzu şimdiden alalım&quot; diyen
           aracılara temkinli yaklaşın; başvurular açıldığında bankalar
           üzerinden yürüyecek.
@@ -133,7 +133,7 @@ export default function Page() {
         girdiğinde bu yazıyı kesinleşen şartlarla güncelleyeceğiz. O zamana
         kadar buradaki rakamları &quot;beklenen&quot; olarak okumanız
         gerekiyor. Bu arada güncel piyasa oranlarını{" "}
-        <a href="/faiz-oranlari">faiz oranları sayfamızdan</a> haftalık
+        <a href="/faiz-oranlari">faiz oranları sayfamızdan</a>{" "}haftalık
         olarak takip edebilirsiniz.
       </p>
     </PostLayout>

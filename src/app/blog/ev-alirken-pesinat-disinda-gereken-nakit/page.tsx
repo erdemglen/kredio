@@ -107,12 +107,12 @@ export default function Page() {
       <h2>İki tavsiye</h2>
       <ul>
         <li>
-          <strong>Acil durum fonunuzu peşinata yatırmayın.</strong> Ev aldıktan
+          <strong>Acil durum fonunuzu peşinata yatırmayın.</strong>{" "}Ev aldıktan
           sonra elinizde hiç nakit kalmaması, ilk arızada yüksek faizli ihtiyaç
           kredisine mecbur bırakır. En az 3-6 aylık giderinizi dokunulmaz tutun.
         </li>
         <li>
-          <strong>Ekspertiz için tampon bırakın.</strong> Değerleme raporunun
+          <strong>Ekspertiz için tampon bırakın.</strong>{" "}Değerleme raporunun
           fiyatın altında çıkma ihtimaline karşı, planladığınız peşinatın
           üzerinde bir miktar esneklik bulundurun.
         </li>

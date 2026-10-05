@@ -53,7 +53,7 @@ export default function Page() {
       <p>
         Doğru soru şu: <strong>taksiti ödedikten sonra kalan parayla, mevcut
         yaşam standardınızı sürdürebiliyor ve üstüne tasarruf
-        yapabiliyor musunuz?</strong> Cevap hayırsa oran ne olursa olsun o kredi
+        yapabiliyor musunuz?</strong>{" "}Cevap hayırsa oran ne olursa olsun o kredi
         sizin için fazladır.
       </p>
 
@@ -86,21 +86,21 @@ export default function Page() {
       <h2>Makul bir çerçeve</h2>
       <ol>
         <li>
-          <strong>Önce acil durum fonu.</strong> En az 3-6 aylık gideriniz nakit
+          <strong>Önce acil durum fonu.</strong>{" "}En az 3-6 aylık gideriniz nakit
           olarak dursun. Bu fon yoksa taksit oranı ne olursa olsun risk
           altındasınız.
         </li>
         <li>
-          <strong>Kötü ay testi yapın.</strong> Gelirinizin %20 düştüğü bir ayı
+          <strong>Kötü ay testi yapın.</strong>{" "}Gelirinizin %20 düştüğü bir ayı
           hayal edin. Taksiti hâlâ ödeyebiliyor musunuz? Cevap hayırsa taksiti
           düşürün.
         </li>
         <li>
-          <strong>Tasarruf payını koruyun.</strong> Taksit sonrası hiç birikim
+          <strong>Tasarruf payını koruyun.</strong>{" "}Taksit sonrası hiç birikim
           yapamıyorsanız, kredi bütçenizin tamamını yutuyor demektir.
         </li>
         <li>
-          <strong>Faiz artışı riskini düşünün.</strong> Değişken faizli bir kredi
+          <strong>Faiz artışı riskini düşünün.</strong>{" "}Değişken faizli bir kredi
           kullanıyorsanız, taksitin yükselme ihtimaline karşı baştan pay
           bırakın.
         </li>
