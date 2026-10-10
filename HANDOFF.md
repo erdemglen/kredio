@@ -39,7 +39,7 @@ Hesaplayıcılar: `/kredi-hesaplama` (+ ana sayfada aynısı), `/kira-mi-satin-a
 
 ## 3. Haftalık içerik rutini (pazartesi)
 
-Bu rutin kayıtlı bir zamanlanmış görev değil; commit geçmişinden çıkardığım elle yürütülen akış (`Haftalık içerik: …` commit'leri). Her hafta:
+**Otomasyon:** 10 Ekim'den beri Claude masaüstü uygulamasında `kredio-haftalik-icerik` zamanlanmış görevi var (her pazartesi 09:00, `~/.claude/scheduled-tasks/kredio-haftalik-icerik/SKILL.md`). Aşağıdaki adımları `haftalik-icerik-<tarih>` dalında yapar ve PR açar; `main`'e push/merge etmez, PR'ı kullanıcı onaylar. Uygulama kapalıysa bir sonraki açılışta çalışır. Eski Cowork hesabındaki `kredio-haftalik-seo-blog` görevi (4 Ağustos, yalnız taslak üretiyordu) kapatılmalı/kapatıldı; ikisi birlikte çalışmasın. Akış:
 
 1. **Veri topla:** TCMB politika faizi/PPK takvimi, Hesapkurdu (konut, ihtiyaç, taşıt en uygun + piyasa ortalaması), TCMB haftalık ağırlıklı ortalama faizler (BMD Araştırma PDF'i iyi kaynak), gündemdeki TÜİK/BDDK/TCMB kararları.
 2. **`src/lib/rates.ts`:** `RATE_HISTORY` sonuna yeni snapshot ekle (`date`, `policyRate`, `konut/ihtiyac/tasit {min, avg, source}`, `nextPpkDate`, `note`).
