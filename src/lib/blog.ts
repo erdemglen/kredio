@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tcmb-22-ekim-toplantisi-ne-bekleniyor",
+    title:
+      "TCMB 22 Ekim'de faizi indirecek mi? Citi, JPMorgan ve anket 100 baz puan diyor, Goldman sabit — kredi çekecekler için üç senaryo",
+    description:
+      "Eylül'de yıllık enflasyonun %29,73'e inmesiyle 22 Ekim PPK'sında 100 baz puanlık indirim beklentisi güçlendi; Goldman Sachs ise gevşeme için erken olduğunu söylüyor. Kurumların tahminleri, kararı belirleyecek veriler, indirimin ihtiyaç, taşıt ve konut kredisi taksitlerine olası etkisi ve toplantıyı beklemenin gerçekte ne kadar ettiği.",
+    date: "2026-10-10",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
+    slug: "konut-kredisi-faiz-oranlari-ekim-2026",
+    title:
+      "Konut kredisi faiz oranları Ekim 2026: en düşük %2,87, en yüksek %3,83 — 1 milyon TL'de bankalar arası fark 10 yılda 1,08 milyon TL",
+    description:
+      "1.000.000 TL / 120 ay için 13 bankanın Ekim oranları ve taksitleri: Kuveyt Türk %2,87 ile lider, Ziraat ve Ziraat Katılım %2,89, Garanti BBVA ve Akbank Eylül başına göre 0,10-0,11 puan indirdi. Vitrin oranı ile gerçekleşen ortalama arasındaki fark, 22 Ekim öncesi 'beklemek mi, bugün çekip refinansman mı' hesabı ve erken kapama tazminatı dahil örnek.",
+    date: "2026-10-10",
+    readingMinutes: 7,
+    category: "Konut",
+  },
+  {
     slug: "ekim-2026-kira-artis-orani-aciklandi",
     title:
       "Ekim 2026 kira artış oranı %31,49 açıklandı: tahminimiz %31,5 idi, yıllık enflasyon %30'un altına indi",

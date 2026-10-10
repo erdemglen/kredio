@@ -60,6 +60,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (10 Ekim 2026):</strong>{" "}Aşağıda anılan Kuveyt
+        Türk&apos;ün %1,99&apos;luk ihtiyaç kredisi teklifi artık listede yok;
+        10 Ekim itibarıyla 100.000 TL / 12 ay için en uygun oran %2,84 ile
+        QNB&apos;de. Eylül enflasyonunun %29,73&apos;e inmesinin ardından
+        kurumların çoğu 22 Ekim&apos;de 100 baz puanlık indirim bekliyor,
+        Goldman Sachs sabit; ayrıntılar{" "}
+        <a href="/blog/tcmb-22-ekim-toplantisi-ne-bekleniyor">
+          TCMB 22 Ekim
+        </a>{" "}
+        yazımızda. Aşağıdaki metin yazıldığı tarihteki hâliyle korunuyor.
+      </p>
+      <p>
         Merkez Bankası Para Politikası Kurulu, 10 Eylül Perşembe günü politika
         faizini beklentilere paralel biçimde <strong>%37&apos;de sabit</strong>{" "}
         tuttu. Gecelik borç verme faizi %40, borçlanma faizi %35,5&apos;te

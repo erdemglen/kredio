@@ -37,6 +37,16 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (10 Ekim 2026):</strong>{" "}Kuveyt Türk&apos;ün
+        %2,87&apos;lik teklifi Ekim başında listeye geri döndü ve yine en
+        uygun oran; Garanti BBVA %3,13&apos;e, Akbank %3,15&apos;e indi.
+        13 bankalık güncel tablo ve 22 Ekim öncesi refinansman hesabı{" "}
+        <a href="/blog/konut-kredisi-faiz-oranlari-ekim-2026">
+          Ekim 2026 konut kredisi
+        </a>{" "}
+        yazımızda.
+      </p>
+      <p>
         <strong>Güncelleme (22 Eylül 2026):</strong>{" "}Kuveyt Türk&apos;ün
         aşağıda anlatılan %2,87&apos;lik teklifi 20 Eylül itibarıyla
         karşılaştırma listelerinde yer almıyor; 1.000.000 TL / 120 ay için en
