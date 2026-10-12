@@ -236,6 +236,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; 22 Ekim Perşembe saat 14:00'teki PPK öncesinde beklentiler indirim yönünde. Citi, JPMorgan, Morgan Stanley ve Bank of America 100 baz puanlık indirimle %36 bekliyor (Citi, JPMorgan ve Morgan Stanley yıl sonu için %35); Goldman Sachs ise 7 Ekim değerlendirmesinde gevşeme için 'henüz erken' diyerek sabit tutma bekliyor. Eylül Piyasa Katılımcıları Anketi'nde de Ekim için %36, Aralık için %35 beklentisi vardı. Eylül'de yıllık enflasyon %29,73'e, yıllık çekirdek (C) %28,70'e geriledi; politika faizi ile manşet enflasyon arasındaki fark 7,27 puan. Vitrinde tek belirgin değişiklik ihtiyaç kredisinde: Kuveyt Türk'ün geçen haftaki %2,77'lik 12 ay teklifi %3,77'ye çıktı, liderlik QNB'de (%2,84; Alternatif Bank %2,99, Odeabank ve Anadolubank %3,19). Konutta Kuveyt Türk %2,87, Ziraat Bankası ve Ziraat Katılım %2,89, Garanti BBVA %3,13, Akbank %3,15; taşıtta Dünya Katılım %2,99, Vakıf Katılım %3,14. Piyasa ortalaması üç türde de %3,61'de yatay. TCMB'nin haftalık banka verisine göre 2 Ekim haftasında konut kredisi gerçekleşen ortalama faizi %41,87'ye (+5 baz puan) çıktı, taşıt kredisi %45,05'e (-266 baz puan) ve ihtiyaç kredisi %62,03'e (-70 baz puan) geriledi; TL ticari kredi %53,07 (+79 baz puan), TL mevduat %43,30 (-5 baz puan).",
   },
+  {
+    date: "2026-10-12",
+    policyRate: 37,
+    konut: {
+      min: 2.87,
+      avg: 3.61,
+      source:
+        "Kuveyt Türk (en uygun, 1.000.000 TL / 120 ay, 12 Ekim), Hesapkurdu.com piyasa ortalaması (9 Ekim)",
+    },
+    ihtiyac: {
+      min: 2.84,
+      avg: 3.61,
+      source:
+        "QNB (en uygun, 100.000 TL / 12 ay, 12 Ekim), Hesapkurdu.com piyasa ortalaması (9 Ekim)",
+    },
+    tasit: {
+      min: 3.14,
+      avg: 3.61,
+      source:
+        "Vakıf Katılım (en uygun taşıt finansmanı, 200.000 TL / 48 ay, 12 Ekim), Hesapkurdu.com piyasa ortalaması (9 Ekim)",
+    },
+    nextPpkDate: "2026-10-22",
+    note:
+      "TCMB politika faizi %37'de sabit; PPK 22 Ekim Perşembe 14:00'te, toplantı özeti 30 Ekim'de. Kurumların çoğunluğu 100 baz puanlık indirim (%36), Goldman Sachs sabit bekliyor. Taşıt kredisinde düzeltme: Hesapkurdu'nun taşıt sayfasında en üstte görünen Dünya Katılım %2,99 teklifi 'Konut Kredisi' ürünü olarak etiketli (200.000 TL / 48 ay taksiti 7.901 TL, KKDF/BSMV'siz hesapla birebir tutuyor); bu nedenle en uygun taşıt oranını Vakıf Katılım'ın %3,14'lük taşıt finansmanı olarak kaydettik. Dünya Katılım'ın taşıt kredisi %3,29. Önceki haftalardaki %2,99 kayıtlarının da aynı listelemeden gelmiş olması muhtemel, geriye dönük doğrulanamadı. İhtiyaç kredisinde QNB %2,84 ile lider; getirfinans %2,99 ile listeye girdi (Alternatif Bank %2,99, Odeabank ve Anadolubank %3,19). 24 ay vadede en uygun teklif getirfinans %2,99. Konut vitrini 10 Ekim'le aynı (Kuveyt Türk %2,87, Ziraat Bankası ve Ziraat Katılım %2,89). Piyasa ortalaması üç türde de %3,61. TCMB'nin 9 Ekim haftası verisi henüz yayımlanmadı; en son veri 2 Ekim haftası (konut %41,87, taşıt %45,05, ihtiyaç %62,03, TL mevduat %43,30).",
+  },
 ];
 
 export function latestRates(): RateSnapshot {
