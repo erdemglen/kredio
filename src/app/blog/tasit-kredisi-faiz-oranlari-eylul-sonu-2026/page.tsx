@@ -32,6 +32,19 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (12 Ekim 2026):</strong>{" "}Bu yazıda en uygun
+        taşıt oranı olarak verdiğimiz Dünya Katılım %2,99 teklifi, 12 Ekim
+        itibarıyla Hesapkurdu&apos;nun taşıt sayfasında &quot;Konut
+        Kredisi&quot; ürünü olarak listeleniyor (taksiti KKDF ve BSMV
+        olmadan hesaplanmış); 27 Eylül&apos;deki kaydın da aynı ürün olup
+        olmadığını doğrulayamadık. Taşıt finansmanında en uygun teklif %3,14
+        ile Vakıf Katılım. Düzeltilmiş Ekim tablosu{" "}
+        <a href="/blog/tasit-kredisi-faiz-oranlari-ekim-2026">
+          Ekim 2026 taşıt kredisi
+        </a>{" "}
+        yazımızda.
+      </p>
+      <p>
         Karşılaştırma sitelerine bakan biri taşıt kredisinde her şeyin sakin
         gittiğini düşünür: 27 Eylül itibarıyla en uygun teklif{" "}
         <strong>%2,99 ile Dünya Katılım</strong>&apos;da, hemen arkasında

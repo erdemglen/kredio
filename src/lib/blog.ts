@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tasit-kredisi-faiz-oranlari-ekim-2026",
+    title:
+      "Taşıt kredisi faiz oranları Ekim 2026: en düşük %3,14 — vitrindeki %2,99 aslında konut kredisi, 200.000 TL'de bankalar arası fark 165 bin TL",
+    description:
+      "200.000 TL / 48 ay için 14 taşıt kredisi teklifi KKDF ve BSMV dahil: Vakıf Katılım %3,14 ile lider, QNB %4,72 ile listenin sonunda. Karşılaştırma sitesinde en üstte görünen %2,99'luk teklifin neden taşıt kredisi olmadığı, araç fiyatına göre kredi oranı ve vade kademeleri, vadeyi 48'den 24 aya indirmenin toplam maliyete etkisi ve TCMB'nin haftalık verisindeki oynaklık.",
+    date: "2026-10-12",
+    readingMinutes: 6,
+    category: "Kredi",
+  },
+  {
+    slug: "ihtiyac-kredisi-faiz-oranlari-ekim-2026",
+    title:
+      "İhtiyaç kredisi faiz oranları Ekim 2026: QNB %2,84 ile lider, 28 banka arasında 100.000 TL'de fark 25 bin TL",
+    description:
+      "100.000 TL / 12 ay için 28 bankanın Ekim oranları ve KKDF-BSMV dahil taksitleri: QNB %2,84, getirfinans ve Alternatif Bank %2,99, Fibabanka %5,38. 24 ay vadede sıralama neden değişiyor, Kuveyt Türk'ün %2,77'den %3,77'ye çıkan teklifi ne kadar fark ettiriyor, yeni müşteriye %0 kampanyalar kime uygun ve 22 Ekim PPK'sını beklemenin karşılığı.",
+    date: "2026-10-12",
+    readingMinutes: 6,
+    category: "Kredi",
+  },
+  {
     slug: "tcmb-22-ekim-toplantisi-ne-bekleniyor",
     title:
       "TCMB 22 Ekim'de faizi indirecek mi? Citi, JPMorgan ve anket 100 baz puan diyor, Goldman sabit — kredi çekecekler için üç senaryo",

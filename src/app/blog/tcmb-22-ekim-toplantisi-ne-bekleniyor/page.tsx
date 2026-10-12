@@ -47,6 +47,17 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (12 Ekim 2026):</strong>{" "}Aşağıdaki taşıt kredisi
+        hesabında kullandığımız %2,99, Hesapkurdu&apos;nun taşıt sayfasında
+        listelenen bir konut kredisi ürününe ait çıktı; en uygun taşıt
+        finansmanı %3,14 (Vakıf Katılım). Bu oranla 0,10 puanlık düşüşün
+        200.000 TL / 48 ayda etkisi 9.853 TL; ayrıntılar{" "}
+        <a href="/blog/tasit-kredisi-faiz-oranlari-ekim-2026">
+          Ekim 2026 taşıt kredisi
+        </a>{" "}
+        yazımızda.
+      </p>
+      <p>
         Merkez Bankası Para Politikası Kurulu yılın yedinci toplantısında, 22
         Ekim Perşembe saat 14:00&apos;te faiz kararını açıklayacak. Politika
         faizi <strong>%37</strong>; gecelik borç verme

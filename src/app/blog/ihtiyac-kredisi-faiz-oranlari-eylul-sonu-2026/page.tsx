@@ -56,6 +56,16 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (12 Ekim 2026):</strong>{" "}100.000 TL / 12 ay için
+        en uygun oran artık %2,84 ile QNB; Alternatif Bank %2,79&apos;dan
+        %2,99&apos;a çıktı, piyasa ortalaması %3,61&apos;e geriledi. 28
+        bankalık güncel tablo ve 24 ay karşılaştırması{" "}
+        <a href="/blog/ihtiyac-kredisi-faiz-oranlari-ekim-2026">
+          Ekim 2026 ihtiyaç kredisi
+        </a>{" "}
+        yazımızda.
+      </p>
+      <p>
         Ağustos&apos;un son haftasından beri her karşılaştırma listesinin
         başında duran rakam bu hafta yerinden oynadı. Kuveyt Türk&apos;ün
         100.000 TL için verdiği <strong>%1,99</strong>&apos;luk 12 ay teklifi,
