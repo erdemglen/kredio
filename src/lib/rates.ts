@@ -261,6 +261,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB politika faizi %37'de sabit; PPK 22 Ekim Perşembe 14:00'te, toplantı özeti 30 Ekim'de. Kurumların çoğunluğu 100 baz puanlık indirim (%36), Goldman Sachs sabit bekliyor. Taşıt kredisinde düzeltme: Hesapkurdu'nun taşıt sayfasında en üstte görünen Dünya Katılım %2,99 teklifi 'Konut Kredisi' ürünü olarak etiketli (200.000 TL / 48 ay taksiti 7.901 TL, KKDF/BSMV'siz hesapla birebir tutuyor); bu nedenle en uygun taşıt oranını Vakıf Katılım'ın %3,14'lük taşıt finansmanı olarak kaydettik. Dünya Katılım'ın taşıt kredisi %3,29. Önceki haftalardaki %2,99 kayıtlarının da aynı listelemeden gelmiş olması muhtemel, geriye dönük doğrulanamadı. İhtiyaç kredisinde QNB %2,84 ile lider; getirfinans %2,99 ile listeye girdi (Alternatif Bank %2,99, Odeabank ve Anadolubank %3,19). 24 ay vadede en uygun teklif getirfinans %2,99. Konut vitrini 10 Ekim'le aynı (Kuveyt Türk %2,87, Ziraat Bankası ve Ziraat Katılım %2,89). Piyasa ortalaması üç türde de %3,61. TCMB'nin 9 Ekim haftası verisi henüz yayımlanmadı; en son veri 2 Ekim haftası (konut %41,87, taşıt %45,05, ihtiyaç %62,03, TL mevduat %43,30).",
   },
+  {
+    date: "2026-10-26",
+    policyRate: 36,
+    konut: {
+      min: 2.87,
+      avg: 3.52,
+      source:
+        "Kuveyt Türk (en uygun, 1.000.000 TL / 120 ay, 26 Ekim), Hesapkurdu.com piyasa ortalaması (23 Ekim)",
+    },
+    ihtiyac: {
+      min: 2.79,
+      avg: 3.44,
+      source:
+        "Enpara (en uygun, 100.000 TL / 12 ay, 26 Ekim), Hesapkurdu.com piyasa ortalaması (23 Ekim)",
+    },
+    tasit: {
+      min: 3.14,
+      avg: 3.77,
+      source:
+        "Vakıf Katılım (en uygun taşıt finansmanı, 200.000 TL / 48 ay, 26 Ekim), Hesapkurdu.com piyasa ortalaması (23 Ekim)",
+    },
+    nextPpkDate: "2026-12-10",
+    note:
+      "TCMB 22 Ekim'de politika faizini 100 baz puan indirerek %37'den %36'ya çekti (yılın ikinci indirimi; 22 Ocak'tan sonra ilk). Gecelik borç verme faizi %39'a, borçlanma faizi %34,5'e indi. Karar metni ana eğilimdeki gerilemenin teyit edildiğini, enerji fiyatlarının yukarı yönlü risk olmayı sürdürdüğünü ve adımların toplantı bazlı, ihtiyatlı belirleneceğini söylüyor. Toplantı özeti 30 Ekim'de, bir sonraki PPK 10 Aralık'ta. Vitrinde ilk tepki ihtiyaç kredisinde: Enpara %3,54'ten %2,79'a indirip listenin başına geçti (QNB %2,84, Odeabank ve Alternatif Bank %2,99, Anadolubank %3,09); getirfinans ise %2,99'dan %3,29'a çıktı. Konutta tek değişiklik TEB'in %3,20'den %3,09'a inmesi; Kuveyt Türk %2,87, Ziraat Bankası ve Ziraat Katılım %2,89 yerinde. Taşıtta İş Bankası %3,59'dan %3,49'a indi, Vakıf Katılım %3,14 ile lider. Hesapkurdu piyasa ortalaması (23 Ekim) konutta %3,61'den %3,52'ye, ihtiyaçta %3,44'e geriledi, taşıtta ise %3,77'ye yükseldi. Taşıt sayfasında en üstteki Dünya Katılım %2,99 satırı hâlâ konut kredisi ürünü. TCMB'nin haftalık verisine göre 16 Ekim haftasında (indirim öncesi) konut kredisi %41,50 (-16 baz puan), ihtiyaç %61,50 (-71 baz puan), taşıt %43,63 (+386 baz puan), TL ticari kredi %48,44 (-458 baz puan), TL mevduat %42,88 (-6 baz puan). 9 Ekim haftası: konut %41,66, ihtiyaç %62,21, taşıt %39,77. İndirimin yansıyacağı ilk haftalık veri 2 Kasım'da.",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

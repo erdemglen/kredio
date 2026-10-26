@@ -20,6 +20,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tcmb-22-ekim-karari-faiz-yuzde-36-kredi-faizleri",
+    title:
+      "TCMB faizi %36'ya indirdi: ilk haftada vitrinde ne değişti? Enpara ihtiyaçta %2,79'a indi, konut ortalaması %3,52'ye geriledi, taşıt ortalaması yükseldi",
+    description:
+      "Merkez Bankası 22 Ekim'de politika faizini 100 baz puan indirdi. Karar metninde ne var, indirimin ilk dört gününde ihtiyaç, konut ve taşıt kredisi oranlarında ne değişti, 100 baz puan aylık orana çevrilince taksite ne kadar yansır ve 10 Aralık toplantısını beklemek mantıklı mı — Kredio hesaplayıcısıyla KKDF ve BSMV dahil örnekler.",
+    date: "2026-10-26",
+    readingMinutes: 7,
+    category: "Kredi",
+  },
+  {
+    slug: "kasim-2026-kira-artis-orani-ne-olacak",
+    title:
+      "Kasım 2026 kira artış oranı ne olacak? Hesabımız %31,17 diyor — Ekim enflasyonu ne gelirse gelsin tavan %31,1-31,3 aralığında",
+    description:
+      "Kasım'da yenilenen kira sözleşmelerinin yasal tavanı 3 Kasım Salı açıklanacak Ekim enflasyonuyla belli olacak. TÜFE endeksinden kendi hesabımız: anket beklentisi %2,11 ile tavan %31,17. Senaryo tablosu, geçen yılın Ekim'i neden tavanı az oynatıyor, 20.000-40.000 TL kiralar için tutarlar ve Aralık için ilk tahmin.",
+    date: "2026-10-26",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
     slug: "tasit-kredisi-faiz-oranlari-ekim-2026",
     title:
       "Taşıt kredisi faiz oranları Ekim 2026: en düşük %3,14 — vitrindeki %2,99 aslında konut kredisi, 200.000 TL'de bankalar arası fark 165 bin TL",

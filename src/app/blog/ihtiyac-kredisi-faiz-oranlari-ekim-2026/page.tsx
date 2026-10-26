@@ -35,6 +35,17 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (26 Ekim 2026):</strong>{" "}TCMB&apos;nin 22
+        Ekim&apos;deki 100 baz puanlık indiriminin ardından Enpara 12 ay
+        vadede oranını %3,54&apos;ten %2,79&apos;a indirip listenin başına
+        geçti; QNB %2,84 ile ikinci, getirfinans ise %3,29&apos;a çıktı.
+        Piyasa ortalaması %3,44. Değişen oranların tablosu{" "}
+        <a href="/blog/tcmb-22-ekim-karari-faiz-yuzde-36-kredi-faizleri">
+          TCMB faizi %36&apos;ya indirdi
+        </a>{" "}
+        yazımızda; aşağıdaki tablo 12 Ekim itibarıyla korunuyor.
+      </p>
+      <p>
         İhtiyaç kredisinde Ekim&apos;in ikinci haftasında liderlik{" "}
         <strong>%2,84 ile QNB</strong>&apos;de. Geçen hafta kısa süreliğine
         öne geçen Kuveyt Türk&apos;ün %2,77&apos;lik 12 ay teklifi

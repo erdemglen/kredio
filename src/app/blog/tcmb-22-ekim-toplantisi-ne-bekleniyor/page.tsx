@@ -47,6 +47,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (26 Ekim 2026):</strong>{" "}Karar açıklandı: TCMB
+        politika faizini beklendiği gibi 100 baz puan indirerek %36&apos;ya
+        çekti; Goldman Sachs&apos;ın sabit tutma beklentisi gerçekleşmedi.
+        Karar metni, ilk dört günde kredi vitrinindeki değişiklikler ve
+        indirimin taksite etkisi için{" "}
+        <a href="/blog/tcmb-22-ekim-karari-faiz-yuzde-36-kredi-faizleri">
+          TCMB faizi %36&apos;ya indirdi
+        </a>{" "}
+        yazımıza bakın. Aşağıdaki metin, karar öncesi yazıldığı hâliyle
+        korunuyor.
+      </p>
+      <p>
         <strong>Güncelleme (12 Ekim 2026):</strong>{" "}Aşağıdaki taşıt kredisi
         hesabında kullandığımız %2,99, Hesapkurdu&apos;nun taşıt sayfasında
         listelenen bir konut kredisi ürününe ait çıktı; en uygun taşıt
