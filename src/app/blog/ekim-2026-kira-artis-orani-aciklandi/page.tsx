@@ -36,6 +36,17 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (26 Ekim 2026):</strong>{" "}Aşağıdaki Kasım tahmini
+        (~%31,3) kaba bir hesaptı. TÜFE endeks penceresini tam hesapladığımız
+        ve Ekim anketi beklentisini (%2,11) kullandığımız yeni tahminimiz{" "}
+        <strong>%31,17</strong>; Aralık için ~%31,0. Senaryo tablosu ve
+        örnek kira tutarları{" "}
+        <a href="/blog/kasim-2026-kira-artis-orani-ne-olacak">
+          Kasım 2026 kira artış oranı ne olacak?
+        </a>{" "}
+        yazımızda. Resmî oran 3 Kasım Salı açıklanacak.
+      </p>
+      <p>
         Bekleyiş bitti. TÜİK, Eylül 2026 enflasyon verilerini 5 Ekim sabahı
         açıkladı ve Ekim&apos;de yenilenen kira sözleşmelerinde
         uygulanabilecek yasal artış tavanı <strong>%31,49</strong>{" "}oldu.
