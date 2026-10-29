@@ -494,17 +494,17 @@ export function LoanCalculator({
                     <stop offset="100%" stopColor="#b91c1c" stopOpacity={0.02} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid stroke="#eef0f3" vertical={false} />
+                <CartesianGrid stroke="#efeee9" vertical={false} />
                 <XAxis
                   dataKey="name"
-                  tick={{ fontSize: 11, fill: "#5b6472" }}
+                  tick={{ fontSize: 11, fill: "#55554f" }}
                   tickLine={false}
-                  axisLine={{ stroke: "#e5e7eb" }}
+                  axisLine={{ stroke: "#e4e3dd" }}
                   minTickGap={16}
                 />
                 <YAxis
                   tickFormatter={formatCompact}
-                  tick={{ fontSize: 11, fill: "#5b6472" }}
+                  tick={{ fontSize: 11, fill: "#55554f" }}
                   tickLine={false}
                   axisLine={false}
                   width={54}
@@ -513,7 +513,7 @@ export function LoanCalculator({
                   formatter={(v) => formatTRY(Number(v))}
                   contentStyle={{
                     borderRadius: 8,
-                    border: "1px solid #e5e7eb",
+                    border: "1px solid #e4e3dd",
                     fontSize: 12,
                   }}
                 />

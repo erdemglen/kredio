@@ -250,17 +250,17 @@ export function SavingsGoalCalculator() {
                 data={chartData}
                 margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
               >
-                <CartesianGrid stroke="#eef0f3" vertical={false} />
+                <CartesianGrid stroke="#efeee9" vertical={false} />
                 <XAxis
                   dataKey="name"
-                  tick={{ fontSize: 11, fill: "#5b6472" }}
+                  tick={{ fontSize: 11, fill: "#55554f" }}
                   tickLine={false}
-                  axisLine={{ stroke: "#e5e7eb" }}
+                  axisLine={{ stroke: "#e4e3dd" }}
                   minTickGap={16}
                 />
                 <YAxis
                   tickFormatter={formatCompact}
-                  tick={{ fontSize: 11, fill: "#5b6472" }}
+                  tick={{ fontSize: 11, fill: "#55554f" }}
                   tickLine={false}
                   axisLine={false}
                   width={54}
@@ -269,7 +269,7 @@ export function SavingsGoalCalculator() {
                   formatter={(v) => formatTRY(Number(v))}
                   contentStyle={{
                     borderRadius: 8,
-                    border: "1px solid #e5e7eb",
+                    border: "1px solid #e4e3dd",
                     fontSize: 12,
                   }}
                 />

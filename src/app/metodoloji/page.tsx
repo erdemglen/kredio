@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <PageHeader title={TITLE} description={DESCRIPTION} />
+      <PageHeader eyebrow="Şeffaflık" title={TITLE} description={DESCRIPTION} />
       <Article>
         <h2>Hesaplama metodolojisi</h2>
         <p>

@@ -13,6 +13,7 @@ export default function Page() {
   return (
     <>
       <PageHeader
+        eyebrow="Gizlilik"
         title="Gizlilik ve KVKK Aydınlatma Metni"
         description="Kredio.co'yu kullanırken hangi verilerin işlendiğini ve işlenmediğini açıkça anlatır."
       />
