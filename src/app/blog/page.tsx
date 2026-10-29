@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { SORTED_POSTS } from "@/lib/blog";
+import { OG_IMAGES } from "@/lib/site";
 
 const TITLE = "Kredi ve Konut Rehberi";
 const DESCRIPTION =
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: "/blog" },
-  openGraph: { title: `${TITLE} | Kredio.co`, description: DESCRIPTION, url: "/blog" },
+  openGraph: { images: OG_IMAGES, title: `${TITLE} | Kredio.co`, description: DESCRIPTION, url: "/blog" },
 };
 
 function formatDate(iso: string) {

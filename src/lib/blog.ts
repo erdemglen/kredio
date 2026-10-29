@@ -6,6 +6,8 @@
  * dizini hem de sitemap aynı veriden beslensin.
  */
 
+import { OG_IMAGES } from "@/lib/site";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -416,6 +418,7 @@ export function postMetadata(slug: string) {
     description: post.description,
     alternates: { canonical: url },
     openGraph: {
+      images: OG_IMAGES,
       type: "article" as const,
       title: `${post.title} | Kredio.co`,
       description: post.description,

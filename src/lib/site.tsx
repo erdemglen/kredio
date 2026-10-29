@@ -4,6 +4,20 @@ export const SITE_URL =
 export const SITE_NAME = "Kredio.co";
 
 /**
+ * app/opengraph-image.tsx'in ürettiği paylaşım görseli. Kendi openGraph
+ * nesnesini tanımlayan sayfalar kök görseli devralmadığı için (Next
+ * openGraph'ı sığ birleştirir) her birine bunu açıkça veriyoruz.
+ */
+export const OG_IMAGES = [
+  {
+    url: "/opengraph-image",
+    width: 1200,
+    height: 630,
+    alt: "Kredio.co — Tahminle değil, rakamla karar verin.",
+  },
+];
+
+/**
  * Google'ın araç sayfalarını zengin sonuçlarla göstermesi için
  * WebApplication şeması. Her hesaplayıcı sayfasına gömülür.
  */

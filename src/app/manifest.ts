@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
       "Kredi taksiti, ara ödeme tasarrufu, kira mı satın alma mı ve borçlanma limiti hesaplayıcıları.",
     start_url: "/",
     display: "standalone",
-    background_color: "#fafafa",
+    background_color: "#f6f6f3",
     theme_color: "#1d4ed8",
     icons: [
       { src: "/icon-512.png", sizes: "512x512", type: "image/png" },

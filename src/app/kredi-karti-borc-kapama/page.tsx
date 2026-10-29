@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CreditCardPayoffCalculator } from "@/components/CreditCardPayoffCalculator";
 import { Article, Container, FaqList, PageHeader } from "@/components/Content";
-import { faqJsonLd, JsonLd, toolJsonLd } from "@/lib/site";
+import { faqJsonLd, JsonLd, OG_IMAGES, toolJsonLd } from "@/lib/site";
 
 const TITLE = "Kredi Kartı Borcu Kapama Planlayıcısı";
 const DESCRIPTION =
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/kredi-karti-borc-kapama" },
   openGraph: {
+    images: OG_IMAGES,
     title: `${TITLE} | Kredio.co`,
     description: DESCRIPTION,
     url: "/kredi-karti-borc-kapama",

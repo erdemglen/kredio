@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SavingsGoalCalculator } from "@/components/SavingsGoalCalculator";
 import { Article, Container, FaqList, PageHeader } from "@/components/Content";
-import { faqJsonLd, JsonLd, toolJsonLd } from "@/lib/site";
+import { faqJsonLd, JsonLd, OG_IMAGES, toolJsonLd } from "@/lib/site";
 
 const TITLE = "Emeklilik ve Birikim Hedefi Hesaplama";
 const DESCRIPTION =
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/birikim-hedefi-hesaplama" },
   openGraph: {
+    images: OG_IMAGES,
     title: `${TITLE} | Kredio.co`,
     description: DESCRIPTION,
     url: "/birikim-hedefi-hesaplama",
