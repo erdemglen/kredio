@@ -4,7 +4,7 @@ Bu belge, projeyi başka bir hesaba/oturuma devreden kişinin bilmesi gerekenler
 
 ## 1. Proje ne
 
-**kredio.co** — Türkiye'ye yönelik, reklamsız ve üyeliksiz finansal hesaplayıcılar + haftalık güncellenen faiz/blog içeriği. Hafta sonu yan projesi: amaç hızlı çıkıp trafiğe bakmak, trafiğe göre zaman yatırmak. Gelir modeli sonradan: önce AdSense/Ad Manager, ileride affiliate. Tasarım referansı loan.tools (sade, beyaz, "araç gibi").
+**kredio.co** — Türkiye'ye yönelik, reklamsız ve üyeliksiz finansal hesaplayıcılar + haftalık güncellenen faiz/blog içeriği. Hafta sonu yan projesi: amaç hızlı çıkıp trafiğe bakmak, trafiğe göre zaman yatırmak. Gelir modeli sonradan: önce AdSense/Ad Manager, ileride affiliate. Tasarım: 29 Ekim'den beri Virtus Opus (virtusop.us) diliyle, açık zemin ve ince tipografi (Unbounded başlık, Hanken Grotesk metin, Martian Mono etiket; ağırlıklar `globals.css`'te tema düzeyinde inceltildi). İlk referans loan.tools idi.
 
 - Canlı: https://kredio.co (www de çalışıyor, SSL düzeltildi)
 - Repo: https://github.com/erdemglen/kredio (private), dal: `main`, remote `origin`
@@ -39,7 +39,7 @@ Hesaplayıcılar: `/kredi-hesaplama` (+ ana sayfada aynısı), `/kira-mi-satin-a
 
 ## 3. Haftalık içerik rutini (pazartesi)
 
-**Otomasyon:** 10 Ekim'den beri Claude masaüstü uygulamasında `kredio-haftalik-icerik` zamanlanmış görevi var (her pazartesi 09:00, `~/.claude/scheduled-tasks/kredio-haftalik-icerik/SKILL.md`). Aşağıdaki adımları `haftalik-icerik-<tarih>` dalında yapar ve PR açar; `main`'e push/merge etmez, PR'ı kullanıcı onaylar. Uygulama kapalıysa bir sonraki açılışta çalışır. Eski Cowork hesabındaki `kredio-haftalik-seo-blog` görevi (4 Ağustos, yalnız taslak üretiyordu) kapatılmalı/kapatıldı; ikisi birlikte çalışmasın. Akış:
+**Otomasyon:** 10 Ekim'den beri Claude masaüstü uygulamasında `kredio-haftalik-icerik` zamanlanmış görevi var (her pazartesi 09:00, `~/.claude/scheduled-tasks/kredio-haftalik-icerik/SKILL.md`). 29 Ekim'den beri **doğrudan `main`'e** çalışır: adımları `main`'de yapar, `tsc`/`eslint`/`build` ve boşluk kontrolü temizse commit + push eder (push = yayın). Ayrı dal ve PR kullanılmıyor; doğrulama geçmezse push etmez. İzinler `.claude/settings.local.json`'da (bu makineye özel, git'e girmez). Uygulama kapalıysa bir sonraki açılışta çalışır. Eski Cowork hesabındaki `kredio-haftalik-seo-blog` görevi (4 Ağustos, yalnız taslak üretiyordu) kapatılmalı/kapatıldı; ikisi birlikte çalışmasın. Akış:
 
 1. **Veri topla:** TCMB politika faizi/PPK takvimi, Hesapkurdu (konut, ihtiyaç, taşıt en uygun + piyasa ortalaması), TCMB haftalık ağırlıklı ortalama faizler (BMD Araştırma PDF'i iyi kaynak), gündemdeki TÜİK/BDDK/TCMB kararları.
 2. **`src/lib/rates.ts`:** `RATE_HISTORY` sonuna yeni snapshot ekle (`date`, `policyRate`, `konut/ihtiyac/tasit {min, avg, source}`, `nextPpkDate`, `note`).
