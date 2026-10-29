@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { RentVsBuyCalculator } from "@/components/RentVsBuyCalculator";
 import { Article, Container, FaqList, PageHeader } from "@/components/Content";
-import { faqJsonLd, JsonLd, toolJsonLd } from "@/lib/site";
+import { faqJsonLd, JsonLd, OG_IMAGES, toolJsonLd } from "@/lib/site";
 
 const TITLE = "Kira mı Ödemeli, Ev mi Almalı?";
 const DESCRIPTION =
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/kira-mi-satin-almi" },
   openGraph: {
+    images: OG_IMAGES,
     title: `${TITLE} | Kredio.co`,
     description: DESCRIPTION,
     url: "/kira-mi-satin-almi",

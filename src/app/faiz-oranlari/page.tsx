@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Article, Container, FaqList, PageHeader } from "@/components/Content";
-import { faqJsonLd, JsonLd, SITE_URL } from "@/lib/site";
+import { faqJsonLd, JsonLd, OG_IMAGES, SITE_URL } from "@/lib/site";
 import { formatPercent } from "@/lib/format";
 import { formatRateDate, latestRates } from "@/lib/rates";
 
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/faiz-oranlari" },
   openGraph: {
+    images: OG_IMAGES,
     title: `${TITLE} | Kredio.co`,
     description: DESCRIPTION,
     url: "/faiz-oranlari",

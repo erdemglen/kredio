@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LoanCalculator } from "@/components/LoanCalculator";
 import { Article, Container, FaqList, PageHeader } from "@/components/Content";
-import { faqJsonLd, JsonLd, toolJsonLd } from "@/lib/site";
+import { faqJsonLd, JsonLd, OG_IMAGES, toolJsonLd } from "@/lib/site";
 
 const TITLE = "Kredi Hesaplama ve Ara Ödeme Simülasyonu";
 const DESCRIPTION =
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/kredi-hesaplama" },
   openGraph: {
+    images: OG_IMAGES,
     title: `${TITLE} | Kredio.co`,
     description: DESCRIPTION,
     url: "/kredi-hesaplama",

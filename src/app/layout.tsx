@@ -35,6 +35,8 @@ export const metadata: Metadata = {
     siteName: "Kredio.co",
     url: SITE_URL,
   },
+  // Görsel app/opengraph-image.tsx'ten gelir; X de aynı görseli kullanır.
+  twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
   // Search Console doğrulama kodu Vercel'de NEXT_PUBLIC_GSC_VERIFICATION
   // ortam değişkeni olarak tanımlanır; yoksa etiket hiç basılmaz.

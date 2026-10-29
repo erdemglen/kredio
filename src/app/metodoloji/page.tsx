@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Article, PageHeader } from "@/components/Content";
+import { OG_IMAGES } from "@/lib/site";
 
 const TITLE = "Metodoloji ve Kaynaklar";
 const DESCRIPTION =
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/metodoloji" },
   openGraph: {
+    images: OG_IMAGES,
     title: `${TITLE} | Kredio.co`,
     description: DESCRIPTION,
     url: "/metodoloji",
