@@ -3,55 +3,70 @@ import type { ReactNode } from "react";
 import { ALL_TOOLS, MAIN_TOOLS, MORE_TOOLS } from "@/lib/tools";
 
 export const NAV_LINKS = [
-  { href: "/kredi-hesaplama", label: "Kredi Hesaplama" },
-  { href: "/kira-mi-satin-almi", label: "Kira mı, Satın Alma mı?" },
-  { href: "/kredi-cekebilir-miyim", label: "Ne Kadar Kredi Çekebilirim?" },
-  { href: "/blog", label: "Blog" },
+  { href: "/kredi-hesaplama", label: "Kredi Hesaplama", short: "Kredi" },
+  {
+    href: "/kira-mi-satin-almi",
+    label: "Kira mı, Satın Alma mı?",
+    short: "Kira mı, Ev mi",
+  },
+  {
+    href: "/kredi-cekebilir-miyim",
+    label: "Ne Kadar Kredi Çekebilirim?",
+    short: "Kredi Limiti",
+  },
+  { href: "/faiz-oranlari", label: "Güncel Faiz Oranları", short: "Faizler" },
+  { href: "/blog", label: "Blog", short: "Blog" },
 ];
+
+/** kredio.co logosu: Unbounded, ince. */
+function Wordmark({ className = "" }: { className?: string }) {
+  return (
+    <span className={`font-display font-normal tracking-[-0.02em] ${className}`}>
+      kredio<span className="text-accent">.co</span>
+    </span>
+  );
+}
 
 /**
  * Açılır menü — JS gerektirmez.
  *
- * Mobilde ana navigasyon linkleri sığmadığı için onlar da bu menüye
- * ekleniyor; masaüstünde linkler zaten üstte durduğundan menü yalnızca
- * hesaplayıcıları listeler.
+ * Geniş ekranda ana linkler zaten üstte durduğundan menü yalnızca
+ * hesaplayıcıları listeler; daha dar ekranlarda linkler de buraya taşınır.
  */
 function ToolsDropdown() {
   return (
     <details className="group relative shrink-0">
-      <summary className="flex cursor-pointer list-none items-center gap-1 whitespace-nowrap rounded-md px-2.5 py-1.5 text-sm font-medium text-muted transition hover:bg-accent-soft hover:text-accent [&::-webkit-details-marker]:hidden">
-        <span className="sm:hidden">Menü</span>
-        <span className="hidden sm:inline">Tüm Araçlar</span>
-        <span className="text-xs transition-transform group-open:rotate-180">
+      <summary className="flex min-h-10 cursor-pointer list-none items-center gap-2 whitespace-nowrap rounded-full border border-accent/60 px-4 font-mono text-[11.5px] uppercase tracking-[0.08em] text-accent transition hover:bg-accent hover:text-white [&::-webkit-details-marker]:hidden">
+        <span className="lg:hidden">Menü</span>
+        <span className="hidden lg:inline">Tüm Araçlar</span>
+        <span className="text-[10px] transition-transform group-open:rotate-180">
           ▾
         </span>
       </summary>
-      <div className="absolute right-0 z-40 mt-2 max-h-[70vh] w-72 overflow-y-auto rounded-xl border border-line bg-surface p-2 shadow-lg">
-        <div className="sm:hidden">
+      <div className="absolute right-0 z-40 mt-3 max-h-[75vh] w-80 overflow-y-auto rounded-xl border border-line bg-surface p-2 shadow-[0_24px_48px_-24px_rgb(17_17_19/0.25)]">
+        <div className="lg:hidden">
           {NAV_LINKS.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="block rounded-lg px-3 py-2 text-sm font-medium text-ink transition hover:bg-accent-soft"
+              className="block rounded-lg px-3 py-2 text-sm text-ink transition hover:bg-canvas"
             >
               {l.label}
             </Link>
           ))}
           <div className="my-2 border-t border-line" />
-          <p className="px-3 pb-1 text-xs font-medium uppercase tracking-wide text-muted">
-            Tüm Araçlar
-          </p>
+          <p className="eyebrow px-3 pb-1 pt-1">Tüm Araçlar</p>
         </div>
         {ALL_TOOLS.map((tool) => (
           <Link
             key={tool.href}
             href={tool.href}
-            className="block rounded-lg px-3 py-2 transition hover:bg-accent-soft"
+            className="block rounded-lg px-3 py-2.5 transition hover:bg-canvas"
           >
             <span className="block text-sm font-medium text-ink">
               {tool.title}
             </span>
-            <span className="block text-xs text-muted">
+            <span className="mt-0.5 block text-xs leading-relaxed text-muted">
               {tool.description}
             </span>
           </Link>
@@ -63,24 +78,23 @@ function ToolsDropdown() {
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-30 border-b border-line bg-surface/90 backdrop-blur no-print">
-      <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
-        <Link href="/" className="text-lg font-bold tracking-tight">
-          kredio<span className="text-accent">.co</span>
+    <header className="sticky top-0 z-30 border-b border-line bg-canvas/85 backdrop-blur-md no-print">
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4 sm:h-[72px]">
+        <Link href="/" aria-label="kredio.co ana sayfa" className="text-lg">
+          <Wordmark />
         </Link>
-        {/* Mobilde bu linkler menüye taşınır; burada gizlenir. */}
-        <nav className="ml-auto hidden gap-1 sm:flex">
+        <nav className="ml-auto hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="whitespace-nowrap rounded-md px-2.5 py-1.5 text-sm text-muted transition hover:bg-accent-soft hover:text-accent"
+              className="whitespace-nowrap font-mono text-[11.5px] uppercase tracking-[0.08em] text-ink transition hover:text-accent"
             >
-              {l.label}
+              {l.short}
             </Link>
           ))}
         </nav>
-        <div className="ml-auto sm:ml-0">
+        <div className="ml-auto lg:ml-0">
           <ToolsDropdown />
         </div>
       </div>
@@ -88,72 +102,66 @@ export function SiteHeader() {
   );
 }
 
+function FooterColumn({
+  title,
+  links,
+}: {
+  title: string;
+  links: { href: string; title: string }[];
+}) {
+  return (
+    <div>
+      <h2 className="eyebrow">{title}</h2>
+      <ul className="mt-4 space-y-2.5">
+        {links.map((l) => (
+          <li key={l.href}>
+            <Link href={l.href} className="text-ink transition hover:text-accent">
+              {l.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export function SiteFooter() {
   return (
-    <footer className="mt-16 border-t border-line bg-surface no-print">
-      <div className="mx-auto max-w-6xl space-y-8 px-4 py-10 text-sm text-muted">
-        <div className="grid gap-8 sm:grid-cols-3">
+    <footer className="mt-20 border-t border-line bg-surface no-print">
+      <div className="mx-auto max-w-6xl px-4 pt-14 pb-10 text-sm text-muted">
+        <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-ink">
-              Ana Araçlar
-            </h2>
-            <ul className="mt-2.5 space-y-1.5">
-              {MAIN_TOOLS.map((tool) => (
-                <li key={tool.href}>
-                  <Link href={tool.href} className="hover:text-accent">
-                    {tool.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <Link href="/" className="text-2xl">
+              <Wordmark />
+            </Link>
+            <p className="mt-4 max-w-xs leading-relaxed">
+              Reklamsız, üyeliksiz kredi ve konut hesaplayıcıları. Hesaplamalar
+              tarayıcınızda yapılır, verileriniz sunucuya gitmez.
+            </p>
           </div>
-          <div>
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-ink">
-              Diğer Hesaplayıcılar
-            </h2>
-            <ul className="mt-2.5 space-y-1.5">
-              {MORE_TOOLS.map((tool) => (
-                <li key={tool.href}>
-                  <Link href={tool.href} className="hover:text-accent">
-                    {tool.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-ink">
-              Kredio.co
-            </h2>
-            <ul className="mt-2.5 space-y-1.5">
-              <li>
-                <Link href="/blog" className="hover:text-accent">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/metodoloji" className="hover:text-accent">
-                  Metodoloji ve Kaynaklar
-                </Link>
-              </li>
-              <li>
-                <Link href="/gizlilik" className="hover:text-accent">
-                  Gizlilik ve KVKK
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <FooterColumn title="Ana Araçlar" links={MAIN_TOOLS} />
+          <FooterColumn title="Diğer Hesaplayıcılar" links={MORE_TOOLS} />
+          <FooterColumn
+            title="Kredio.co"
+            links={[
+              { href: "/faiz-oranlari", title: "Güncel Faiz Oranları" },
+              { href: "/blog", title: "Blog" },
+              { href: "/metodoloji", title: "Metodoloji ve Kaynaklar" },
+              { href: "/gizlilik", title: "Gizlilik ve KVKK" },
+            ]}
+          />
         </div>
-        <p className="max-w-3xl text-xs leading-relaxed">
+        <p className="mt-12 max-w-3xl text-xs leading-relaxed">
           Kredio.co&apos;daki hesaplamalar yalnızca bilgilendirme amaçlıdır ve
           yatırım danışmanlığı ya da finansal tavsiye niteliği taşımaz. Sonuçlar
           girdiğiniz varsayımlara dayanır; bankaların uyguladığı dosya masrafı,
           sigorta ve komisyon gibi kalemler nedeniyle gerçek ödeme planınızdan
           farklılık gösterebilir. Kesin bilgi için bankanıza başvurun.
         </p>
-        <p className="text-xs">
-          © {new Date().getFullYear()} kredio.co
-        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-6 font-mono text-[11px] uppercase tracking-[0.08em] text-faint">
+          <span>© {new Date().getFullYear()} kredio.co</span>
+          <span>Reklamsız · Üyeliksiz · Türkiye</span>
+        </div>
       </div>
     </footer>
   );
@@ -162,8 +170,16 @@ export function SiteFooter() {
 export function PageShell({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col">
+      <a
+        href="#icerik"
+        className="absolute -top-16 left-4 z-50 rounded-full bg-accent px-4 py-2.5 text-sm text-white focus:top-4"
+      >
+        İçeriğe geç
+      </a>
       <SiteHeader />
-      <main className="flex-1">{children}</main>
+      <main id="icerik" className="flex-1">
+        {children}
+      </main>
       <SiteFooter />
     </div>
   );
@@ -193,13 +209,13 @@ export function Stat({
           : "text-ink";
 
   return (
-    <div className="rounded-lg border border-line bg-surface px-4 py-3">
-      <div className="text-xs font-medium uppercase tracking-wide text-muted">
+    <div className="rounded-lg border border-line bg-surface px-4 py-3.5">
+      <div className="font-mono text-[10.5px] uppercase tracking-[0.08em] text-muted">
         {label}
       </div>
       <div
-        className={`tabular mt-1 font-bold ${toneClass} ${
-          large ? "text-2xl sm:text-3xl" : "text-lg sm:text-xl"
+        className={`tabular mt-1.5 font-normal tracking-[-0.01em] ${toneClass} ${
+          large ? "text-[1.75rem] sm:text-[2.1rem]" : "text-xl sm:text-[1.4rem]"
         }`}
       >
         {value}
@@ -223,12 +239,14 @@ export function Panel({
   return (
     <section className={`rounded-xl border border-line bg-surface ${className}`}>
       {title ? (
-        <div className="flex items-center justify-between gap-3 border-b border-line px-4 py-3">
-          <h2 className="text-sm font-semibold">{title}</h2>
+        <div className="flex items-center justify-between gap-3 border-b border-line px-5 py-3.5">
+          <h2 className="font-mono text-[11.5px] font-normal uppercase tracking-[0.08em] text-ink">
+            {title}
+          </h2>
           {action}
         </div>
       ) : null}
-      <div className="p-4">{children}</div>
+      <div className="p-5">{children}</div>
     </section>
   );
 }

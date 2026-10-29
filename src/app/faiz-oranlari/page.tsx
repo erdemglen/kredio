@@ -57,17 +57,16 @@ export default function Page() {
       <JsonLd data={faqJsonLd(FAQ)} />
 
       <PageHeader
+        eyebrow={`Haftalık güncel · ${formatRateDate(latest.date)}`}
         title={TITLE}
         description={`${DESCRIPTION} Son güncelleme: ${formatRateDate(latest.date)}.`}
       />
 
       <Container>
         <div className="mx-auto max-w-3xl space-y-6">
-          <div className="rounded-xl border border-accent/30 bg-accent-soft px-5 py-4">
-            <p className="text-sm font-medium text-muted">
-              TCMB politika faizi
-            </p>
-            <p className="tabular mt-1 text-3xl font-bold text-accent sm:text-4xl">
+          <div className="rounded-xl border border-line bg-surface px-6 py-6">
+            <p className="eyebrow">TCMB politika faizi</p>
+            <p className="h-display tabular mt-3 text-5xl text-accent sm:text-6xl">
               {formatPercent(latest.policyRate, 0)}
             </p>
             {latest.nextPpkDate ? (
@@ -83,15 +82,15 @@ export default function Page() {
           <div className="scroll-thin overflow-x-auto rounded-lg border border-line bg-surface">
             <table className="tabular w-full text-right text-sm">
               <thead>
-                <tr className="border-b border-line text-xs uppercase tracking-wide text-muted">
-                  <th className="px-3 py-2 text-left font-medium">
+                <tr className="border-b border-line font-mono text-[10.5px] uppercase tracking-[0.08em] text-muted">
+                  <th className="whitespace-nowrap px-4 py-3 text-left font-normal">
                     Kredi türü
                   </th>
-                  <th className="px-3 py-2 font-medium">En uygun (aylık)</th>
-                  <th className="px-3 py-2 font-medium">
+                  <th className="px-4 py-3 font-normal">En uygun (aylık)</th>
+                  <th className="px-4 py-3 font-normal">
                     Piyasa ortalaması (aylık)
                   </th>
-                  <th className="px-3 py-2 text-left font-medium">Kaynak</th>
+                  <th className="px-4 py-3 text-left font-normal">Kaynak</th>
                 </tr>
               </thead>
               <tbody>
@@ -103,10 +102,12 @@ export default function Page() {
                   ] as const
                 ).map(([label, r]) => (
                   <tr key={label} className="border-b border-line/60 last:border-0">
-                    <td className="px-3 py-2 text-left font-medium">{label}</td>
-                    <td className="px-3 py-2">{formatPercent(r.min, 2)}</td>
-                    <td className="px-3 py-2">{formatPercent(r.avg, 2)}</td>
-                    <td className="px-3 py-2 text-left text-xs text-muted">
+                    <td className="whitespace-nowrap px-4 py-3 text-left font-medium">
+                      {label}
+                    </td>
+                    <td className="px-4 py-3 text-base">{formatPercent(r.min, 2)}</td>
+                    <td className="px-4 py-3 text-base">{formatPercent(r.avg, 2)}</td>
+                    <td className="px-4 py-3 text-left text-xs leading-relaxed text-muted">
                       {r.source}
                     </td>
                   </tr>
@@ -119,8 +120,8 @@ export default function Page() {
             <p className="text-sm leading-relaxed text-muted">{latest.note}</p>
           ) : null}
 
-          <div className="rounded-xl border border-line bg-surface px-4 py-4">
-            <p className="text-sm font-semibold text-ink">
+          <div className="rounded-xl border border-line bg-surface px-6 py-6">
+            <p className="font-display text-lg font-normal tracking-[-0.02em] text-ink">
               Bu oranla kendi senaryonuzu hesaplayın
             </p>
             <p className="mt-1 text-sm leading-relaxed text-muted">
@@ -129,7 +130,7 @@ export default function Page() {
             </p>
             <Link
               href="/kredi-hesaplama"
-              className="mt-2.5 inline-block rounded-md bg-accent px-3 py-1.5 text-sm font-medium text-white transition hover:opacity-90"
+              className="btn btn-sm mt-4"
             >
               Kredi hesaplayıcıyı aç →
             </Link>

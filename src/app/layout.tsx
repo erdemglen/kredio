@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
+import { Hanken_Grotesk, Martian_Mono, Unbounded } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { PageShell } from "@/components/Shell";
 import { SITE_URL } from "@/lib/site";
+
+// Değişken fontlar: ince ağırlıklar (250-500) globals.css'te tanımlı.
+const unbounded = Unbounded({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-unbounded",
+});
+const hanken = Hanken_Grotesk({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-hanken",
+});
+const martian = Martian_Mono({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-martian",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -34,7 +49,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="h-full">
+    <html
+      lang="tr"
+      className={`h-full ${unbounded.variable} ${hanken.variable} ${martian.variable}`}
+    >
       <body className="min-h-full">
         <PageShell>{children}</PageShell>
         <Analytics />

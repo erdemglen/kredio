@@ -33,7 +33,7 @@ export function ShareButton({ text }: { text?: string }) {
     <button
       type="button"
       onClick={share}
-      className="no-print rounded-md border border-line px-2.5 py-1.5 text-xs font-medium text-muted transition hover:border-accent hover:text-accent"
+      className="no-print inline-flex min-h-9 items-center rounded-full border border-line-strong px-3.5 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ink transition hover:border-accent hover:text-accent"
     >
       {copied ? "Bağlantı kopyalandı" : "Sonucu paylaş"}
     </button>

@@ -23,33 +23,36 @@ function formatDate(iso: string) {
 
 export default function BlogIndex() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10">
-      <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{TITLE}</h1>
-      <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+    <div className="mx-auto max-w-4xl px-4 pt-12 pb-10 sm:pt-16">
+      <p className="eyebrow">
+        <span className="live-dot" aria-hidden />
+        Blog · Her hafta yeni yazı
+      </p>
+      <h1 className="h-display mt-5 text-[2rem] sm:text-[2.75rem]">{TITLE}</h1>
+      <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted sm:text-[17px]">
         {DESCRIPTION}
       </p>
 
-      <ul className="mt-8 divide-y divide-line border-y border-line">
+      <ul className="mt-12 divide-y divide-line border-y border-line">
         {SORTED_POSTS.map((post) => (
           <li key={post.slug}>
             <Link
               href={`/blog/${post.slug}`}
-              className="group block py-5 transition"
+              className="group grid gap-2 py-7 transition sm:grid-cols-[140px_1fr] sm:gap-8"
             >
-              <div className="flex items-center gap-2 text-xs text-muted">
-                <span className="rounded bg-accent-soft px-1.5 py-0.5 font-medium text-accent">
-                  {post.category}
-                </span>
+              <div className="flex gap-3 font-mono text-[10.5px] uppercase tracking-[0.08em] text-muted sm:flex-col sm:gap-1.5 sm:pt-1">
+                <span className="text-accent">{post.category}</span>
                 <time dateTime={post.date}>{formatDate(post.date)}</time>
-                <span>·</span>
-                <span>{post.readingMinutes} dk</span>
+                <span>{post.readingMinutes} dk okuma</span>
               </div>
-              <h2 className="mt-1.5 font-semibold leading-snug group-hover:text-accent">
-                {post.title}
-              </h2>
-              <p className="mt-1 text-sm leading-relaxed text-muted">
-                {post.description}
-              </p>
+              <div>
+                <h2 className="text-lg font-medium leading-snug text-ink transition group-hover:text-accent">
+                  {post.title}
+                </h2>
+                <p className="mt-2 text-[15px] leading-relaxed text-muted">
+                  {post.description}
+                </p>
+              </div>
             </Link>
           </li>
         ))}
