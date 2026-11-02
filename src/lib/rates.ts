@@ -286,6 +286,31 @@ export const RATE_HISTORY: RateSnapshot[] = [
     note:
       "TCMB 22 Ekim'de politika faizini 100 baz puan indirerek %37'den %36'ya çekti (yılın ikinci indirimi; 22 Ocak'tan sonra ilk). Gecelik borç verme faizi %39'a, borçlanma faizi %34,5'e indi. Karar metni ana eğilimdeki gerilemenin teyit edildiğini, enerji fiyatlarının yukarı yönlü risk olmayı sürdürdüğünü ve adımların toplantı bazlı, ihtiyatlı belirleneceğini söylüyor. Toplantı özeti 30 Ekim'de, bir sonraki PPK 10 Aralık'ta. Vitrinde ilk tepki ihtiyaç kredisinde: Enpara %3,54'ten %2,79'a indirip listenin başına geçti (QNB %2,84, Odeabank ve Alternatif Bank %2,99, Anadolubank %3,09); getirfinans ise %2,99'dan %3,29'a çıktı. Konutta tek değişiklik TEB'in %3,20'den %3,09'a inmesi; Kuveyt Türk %2,87, Ziraat Bankası ve Ziraat Katılım %2,89 yerinde. Taşıtta İş Bankası %3,59'dan %3,49'a indi, Vakıf Katılım %3,14 ile lider. Hesapkurdu piyasa ortalaması (23 Ekim) konutta %3,61'den %3,52'ye, ihtiyaçta %3,44'e geriledi, taşıtta ise %3,77'ye yükseldi. Taşıt sayfasında en üstteki Dünya Katılım %2,99 satırı hâlâ konut kredisi ürünü. TCMB'nin haftalık verisine göre 16 Ekim haftasında (indirim öncesi) konut kredisi %41,50 (-16 baz puan), ihtiyaç %61,50 (-71 baz puan), taşıt %43,63 (+386 baz puan), TL ticari kredi %48,44 (-458 baz puan), TL mevduat %42,88 (-6 baz puan). 9 Ekim haftası: konut %41,66, ihtiyaç %62,21, taşıt %39,77. İndirimin yansıyacağı ilk haftalık veri 2 Kasım'da.",
   },
+  {
+    date: "2026-11-02",
+    policyRate: 36,
+    konut: {
+      min: 2.87,
+      avg: 3.52,
+      source:
+        "Kuveyt Türk (en uygun, 1.000.000 TL / 120 ay, 2 Kasım), Hesapkurdu.com piyasa ortalaması (30 Ekim)",
+    },
+    ihtiyac: {
+      min: 2.79,
+      avg: 3.37,
+      source:
+        "Enpara (en uygun, 100.000 TL / 12 ay, 2 Kasım), Hesapkurdu.com piyasa ortalaması (30 Ekim)",
+    },
+    tasit: {
+      min: 3.14,
+      avg: 3.77,
+      source:
+        "Vakıf Katılım (en uygun taşıt finansmanı, 200.000 TL / 48 ay, 2 Kasım), Hesapkurdu.com piyasa ortalaması (30 Ekim)",
+    },
+    nextPpkDate: "2026-12-10",
+    note:
+      "TCMB politika faizi %36'da; 22 Ekim toplantısının özeti 30 Ekim'de yayımlandı. Özet, ana eğilimdeki gerilemenin 'teyit edildiğini' (Eylül'de 'işaret ediyor') ve ana eğilim göstergesinin ikinci çeyrekteki %2,2'den üçüncü çeyrekte %1,8'e indiğini söylüyor; Ekim'de gıda, akaryakıt, tüp gaz ve katı yakıt fiyatları nedeniyle tüketici enflasyonunun Eylül'e göre yükselmesini bekliyor. Görünümde belirgin ve kalıcı bozulma olursa sıkılaştırma şartı korunuyor. Ekim enflasyonu 3 Kasım Salı 10:00'da: TCMB anketi %2,11, AA Finans ortalaması %2,20, Matriks medyanı %2,40 aylık bekliyor (Eylül %1,84, yıllık %29,73). Kurumların çoğu 10 Aralık'ta 100 baz puanlık indirimle yıl sonu %35 bekliyor (dokuz kurumdan yedisi %35, Akbank dahil ikisi %36). Vitrinde değişiklik yalnız ihtiyaç kredisinde: getirfinans %3,29'dan %2,89'a indi, Alternatif Bank %2,99'dan %3,19'a çıktı; Enpara %2,79, QNB %2,84 ile ilk iki sırada. Konut (Kuveyt Türk %2,87, Ziraat Bankası ve Ziraat Katılım %2,89, Vakıf Katılım %2,94, QNB ve Halkbank %2,99) ve taşıt (Vakıf Katılım %3,14, Kuveyt Türk %3,24) vitrini 26 Ekim'le aynı. Hesapkurdu piyasa ortalaması (30 Ekim) ihtiyaçta %3,44'ten %3,37'ye geriledi, konutta %3,52 ve taşıtta %3,77'de sabit. Taşıt sayfasında en üstteki Dünya Katılım %2,99 satırı hâlâ konut kredisi ürünü. TCMB'nin 23 Ekim haftasına (indirim sonrası ilk hafta) ait haftalık faiz verisini kaynaklarda bulamadık; son erişilen veri 16 Ekim haftası (konut %41,50, ihtiyaç %61,50, taşıt %43,63, TL ticari kredi %48,44, TL mevduat %42,88).",
+  },
 ];
 
 export function latestRates(): RateSnapshot {

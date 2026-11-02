@@ -30,6 +30,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (2 Kasım 2026):</strong>{" "}TCMB 22 Ekim&apos;de
+        politika faizini %36&apos;ya indirdi; konut vitrininde yalnız TEB
+        oranını %3,20&apos;den %3,09&apos;a çekti, en uygun oran %2,87&apos;de
+        kaldı, piyasa ortalaması %3,52&apos;ye geriledi. Güncel tablo ve
+        Aralık senaryoları için{" "}
+        <a href="/blog/konut-kredisi-faiz-oranlari-kasim-2026">
+          Kasım 2026 konut kredisi
+        </a>{" "}
+        yazımıza bakın. Aşağıdaki metin 10 Ekim&apos;de yazıldığı hâliyle
+        duruyor.
+      </p>
+      <p>
         Konut kredisinde Ekim tablosu, Eylül başındakine çok benziyor: en
         uygun oran yine <strong>%2,87 ile Kuveyt Türk</strong>&apos;te, onu
         %2,89 ile Ziraat Bankası ve Ziraat Katılım izliyor. Bir ayda değişen,

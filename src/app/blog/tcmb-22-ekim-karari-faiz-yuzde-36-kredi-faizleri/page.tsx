@@ -52,6 +52,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (2 Kasım 2026):</strong>{" "}Toplantının özeti 30
+        Ekim&apos;de yayımlandı: Kurul ana eğilimdeki gerilemeyi teyit
+        ediyor ama Ekim&apos;de enflasyonun yükselmesini bekliyor. İhtiyaç
+        kredisi ortalaması %3,37&apos;ye indi, konut %3,52 ve taşıt
+        %3,77&apos;de sabit. Özetin ayrıntısı, 3 Kasım enflasyon beklentileri
+        ve kurumların 10 Aralık tahminleri için{" "}
+        <a href="/blog/tcmb-ppk-ozeti-aralik-faiz-indirimi-ekim-enflasyonu">
+          TCMB toplantı özeti ve Aralık beklentileri
+        </a>{" "}
+        yazımıza bakın.
+      </p>
+      <p>
         Beklenen oldu. Merkez Bankası Para Politikası Kurulu 22 Ekim
         Perşembe günü politika faizini 100 baz puan indirerek{" "}
         <strong>%37&apos;den %36&apos;ya</strong>{" "}çekti. Gecelik borç verme

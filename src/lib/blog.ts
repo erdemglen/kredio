@@ -22,6 +22,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tcmb-ppk-ozeti-aralik-faiz-indirimi-ekim-enflasyonu",
+    title:
+      "TCMB toplantı özeti çıktı, Ekim enflasyonu yarın: Aralık'ta yeni indirim gelir mi? Kurumların çoğu %35 bekliyor, ihtiyaç kredisi ortalaması %3,37'ye indi",
+    description:
+      "Merkez Bankası 22 Ekim toplantısının özetinde ana eğilimdeki gerilemeyi 'teyit etti' ama Ekim enflasyonunun yükseleceği uyarısını yaptı. 3 Kasım'daki veri için beklentiler (%2,11-2,40), kurumların 10 Aralık tahminleri, Ekim indiriminin iki haftada kredi vitrinine ne kadar yansıdığı ve Aralık'ta bir indirim daha gelirse taksitlerin ne kadar değişeceği — Kredio hesaplayıcısıyla.",
+    date: "2026-11-02",
+    readingMinutes: 6,
+    category: "Kredi",
+  },
+  {
+    slug: "konut-kredisi-faiz-oranlari-kasim-2026",
+    title:
+      "Konut kredisi faiz oranları Kasım 2026: faiz indiriminden sonra vitrinde yalnız TEB oynadı, en düşük oran yine %2,87 — 1 milyon TL'de bankalar arası fark 1,08 milyon TL",
+    description:
+      "1.000.000 TL / 120 ay için 13 bankanın Kasım başı konut kredisi oranları, taksit ve toplam geri ödemeleri: Kuveyt Türk %2,87, Ziraat %2,89, ICBC Turkey %3,83. Ekim'e göre ne değişti, TCMB'nin 100 baz puanlık indirimi konut vitrinine neden yansımadı, Aralık'ta bir indirim daha gelirse taksit ne olur ve bugün çekip sonra refinansman yapmanın hesabı.",
+    date: "2026-11-02",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
     slug: "tcmb-22-ekim-karari-faiz-yuzde-36-kredi-faizleri",
     title:
       "TCMB faizi %36'ya indirdi: ilk haftada vitrinde ne değişti? Enpara ihtiyaçta %2,79'a indi, konut ortalaması %3,52'ye geriledi, taşıt ortalaması yükseldi",
