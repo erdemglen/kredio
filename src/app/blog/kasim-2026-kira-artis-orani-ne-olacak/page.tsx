@@ -36,6 +36,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (9 Kasım 2026):</strong>{" "}TÜİK Ekim
+        enflasyonunu aylık %2,58 (beklenti %2,11), yıllık %29,77 olarak
+        açıkladı; Kasım kira artış tavanı kesin olarak{" "}
+        <strong>%31,23</strong>{" "}oldu. Tahminimiz %31,17 idi; gerçekleşen
+        veriyle aynı hesap %31,23&apos;ü birebir veriyor. Yeni tutarlar ve
+        Aralık tahmini (~%31,14) için{" "}
+        <a href="/blog/kasim-2026-kira-artis-orani-aciklandi">
+          Kasım 2026 kira artış oranı açıklandı
+        </a>{" "}
+        yazımıza bakın; aşağıdaki metin 26 Ekim itibarıyla korunuyor.
+      </p>
+      <p>
         Kasım&apos;da kira sözleşmesi yenilenecekler için tarih{" "}
         <strong>3 Kasım Salı, saat 10:00</strong>. TÜİK o sabah Ekim
         enflasyonunu açıklayacak; aynı veriyle Kasım&apos;da yenilenen konut

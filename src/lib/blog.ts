@@ -22,6 +22,26 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "kasim-2026-kira-artis-orani-aciklandi",
+    title:
+      "Kasım 2026 kira artış oranı %31,23 açıklandı: Ekim enflasyonu beklentiyi aştı (%2,58), Aralık tavanı için hesabımız ~%31,14",
+    description:
+      "TÜİK Ekim enflasyonunu açıkladı: aylık %2,58 (anket beklentisi %2,11), yıllık %29,77, 12 aylık ortalama %31,23. Kasım'da yenilenen kira sözleşmelerinin yasal tavanı Ekim'deki %31,49'dan 0,26 puan geriledi. Tahminimiz %31,17 neden 0,06 puan aşağıda kaldı, 20.000-40.000 TL kiralar için yeni tutarlar, Kasım enflasyonu senaryolarıyla Aralık tavanı ve yıllık enflasyonun Kasım'da neden yeniden %30'u aşabileceği.",
+    date: "2026-11-09",
+    readingMinutes: 6,
+    category: "Konut",
+  },
+  {
+    slug: "ihtiyac-kredisi-faiz-oranlari-kasim-2026",
+    title:
+      "İhtiyaç kredisi faiz oranları Kasım 2026: GSPara ve Fenerpara %2,49 ile listenin başında — ama 24-36 ay vadede en ucuz teklif yine Enpara",
+    description:
+      "100.000 TL / 12 ay için 30 teklifin Kasım oranları ve KKDF-BSMV dahil taksitleri: GSPara ve Fenerpara %2,49, Enpara %2,79, QNB %2,84, Ziraat Katılım %4,99. Vade uzayınca sıralama neden değişiyor, en uygun ile ortalama arasındaki fark 12 ayda 8.439 TL, 36 ayda 19.882 TL; Ekim enflasyonunun beklentiyi aşmasından sonra Aralık indirimi için beklemeye değer mi — Kredio hesaplayıcısıyla.",
+    date: "2026-11-09",
+    readingMinutes: 6,
+    category: "Kredi",
+  },
+  {
     slug: "tcmb-ppk-ozeti-aralik-faiz-indirimi-ekim-enflasyonu",
     title:
       "TCMB toplantı özeti çıktı, Ekim enflasyonu yarın: Aralık'ta yeni indirim gelir mi? Kurumların çoğu %35 bekliyor, ihtiyaç kredisi ortalaması %3,37'ye indi",

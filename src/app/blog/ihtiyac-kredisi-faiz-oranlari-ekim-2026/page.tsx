@@ -35,6 +35,16 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (9 Kasım 2026):</strong>{" "}12 ay vadede GSPara
+        ve Fenerpara %2,49 ile listenin başına geçti; Enpara %2,79, QNB
+        %2,84. Piyasa ortalaması %3,37. 30 teklifin güncel tablosu ve vadeye
+        göre değişen sıralama için{" "}
+        <a href="/blog/ihtiyac-kredisi-faiz-oranlari-kasim-2026">
+          Kasım 2026 ihtiyaç kredisi
+        </a>{" "}
+        yazımıza bakın.
+      </p>
+      <p>
         <strong>Güncelleme (26 Ekim 2026):</strong>{" "}TCMB&apos;nin 22
         Ekim&apos;deki 100 baz puanlık indiriminin ardından Enpara 12 ay
         vadede oranını %3,54&apos;ten %2,79&apos;a indirip listenin başına

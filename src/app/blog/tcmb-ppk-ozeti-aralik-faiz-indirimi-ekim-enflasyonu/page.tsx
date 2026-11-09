@@ -52,6 +52,18 @@ export default function Page() {
   return (
     <PostLayout post={getPost(SLUG)} sources={SOURCES}>
       <p>
+        <strong>Güncelleme (9 Kasım 2026):</strong>{" "}Ekim enflasyonu
+        aylık %2,58 ile anketlerin üst ucunun da üzerinde geldi, yıllık oran
+        %29,77&apos;ye çıktı. Kurumların çoğu yine de 10 Aralık&apos;ta 100
+        baz puan indirim (%35) bekliyor; Akbank, BBVA Research ve Goldman
+        Sachs sabit bekliyor. Güncel tablo ve ihtiyaç kredisinde yeni lider
+        (%2,49) için{" "}
+        <a href="/blog/ihtiyac-kredisi-faiz-oranlari-kasim-2026">
+          Kasım 2026 ihtiyaç kredisi
+        </a>{" "}
+        yazımıza bakın; aşağıdaki metin 2 Kasım itibarıyla korunuyor.
+      </p>
+      <p>
         Merkez Bankası 22 Ekim&apos;de politika faizini %37&apos;den
         %36&apos;ya indirmişti (ayrıntı{" "}
         <a href="/blog/tcmb-22-ekim-karari-faiz-yuzde-36-kredi-faizleri">
